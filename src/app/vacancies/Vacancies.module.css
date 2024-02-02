@@ -1,0 +1,165 @@
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.centerCrop {
+  width: 100%;
+  height: 423px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.vacancieContainer {
+  display: flex;
+}
+
+.vacancieContainer:not(:last-child) {
+  margin-bottom: 39px;
+}
+
+.vacancieDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 227px;
+}
+
+.vacancieImg {
+  width: 63px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.vacancieTitle {
+  color: var(--black, #333);
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.skillsTitle {
+  color: var(--black, #333);
+  font-family: Montserrat-Semibold;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.skillsDescription {
+  color: var(--black, #333);
+
+  font-family: Montserrat-Medium;
+  font-size: 14px;
+  line-height: normal;
+
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.btnRespond {
+  color: var(--white, #fff);
+  text-align: center;
+  border: none;
+
+  font-family: Benzin-Medium;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+
+  background: var(--black, #333);
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.vacanciesContacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacanciesContacts a {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #5e6a8a;
+}
+
+.btnContactUs {
+  color: var(--white, #fff);
+  text-align: center;
+  border: none;
+
+  font-family: Benzin-Medium;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+
+  display: inline-flex;
+  /* padding: 15px 20px; */
+  width: 246px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--black, #333);
+
+  margin: 8px auto;
+}
+
+.btnSvg {
+  width: 37px;
+  height: 21px;
+  fill: white;
+  margin-right: 10px;
+}
+
+/* title styles */
+
+/* .vacTitleContainer {
+  margin: 0 auto;
+} */
+
+/* .vacContainerLine {
+  width: 95px;
+  height: 1px;
+  background: #333;
+  transform: rotate(-90deg);
+} */
+
+.vacTitle {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+}
+
+.vacTitle span {
+  font-family: 'Benzin-ExtraBold', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #5169ff;
+}
+
+.vacTitleDescription {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+.vacSubTitle {
+  text-align: start;
+}
