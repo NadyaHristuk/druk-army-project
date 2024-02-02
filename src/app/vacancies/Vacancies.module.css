@@ -4,6 +4,11 @@
   margin-bottom: 40px;
   margin-left: -10px;
   margin-right: -10px;
+
+  @media only screen and (min-width: 768px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 
 .centerCrop {
@@ -15,6 +20,10 @@
 
 .vacancieContainer {
   display: flex;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 .vacancieContainer:not(:last-child) {
@@ -26,6 +35,10 @@
   flex-direction: column;
   align-items: flex-start;
   width: 227px;
+
+  @media only screen and (min-width: 768px) {
+    width: 476px;
+  }
 }
 
 .vacancieImg {
@@ -33,6 +46,11 @@
   height: auto;
   object-fit: cover;
   margin-right: 20px;
+
+  @media only screen and (min-width: 768px) {
+    width: 227px;
+    height: auto;
+  }
 }
 
 .vacancieTitle {
@@ -41,6 +59,10 @@
   font-size: 24px;
   line-height: normal;
   text-transform: uppercase;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 36px;
+  }
 }
 
 .skillsTitle {
@@ -54,12 +76,16 @@
 .skillsDescription {
   color: var(--black, #333);
 
-  font-family: Montserrat-Medium;
+  font-family: Montserrat-Medium, sans-serif;
   font-size: 14px;
   line-height: normal;
 
   list-style: disc;
   margin-left: 20px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .btnRespond {
@@ -83,13 +109,25 @@
 .vacanciesContacts {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
 }
 
-.vacanciesContacts a {
+.vacContactInfo {
   font-family: 'Montserrat-Medium', sans-serif;
   font-size: 16px;
   text-align: center;
   color: #5e6a8a;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
 }
 
 .btnContactUs {
@@ -103,7 +141,6 @@
   text-transform: uppercase;
 
   display: inline-flex;
-  /* padding: 15px 20px; */
   width: 246px;
   height: 51px;
   justify-content: center;
@@ -113,6 +150,10 @@
   background: var(--black, #333);
 
   margin: 8px auto;
+
+  @media only screen and (min-width: 768px) {
+    margin: 8px 0;
+  }
 }
 
 .btnSvg {
@@ -122,7 +163,7 @@
   margin-right: 10px;
 }
 
-/* title styles */
+/* TITLES/TEXT styles */
 
 /* .vacTitleContainer {
   margin: 0 auto;
@@ -141,6 +182,14 @@
   text-transform: uppercase;
   color: #333;
   text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  /* @media only screen and (min-width: 1200px) {
+    font-size: 36px;
+  } */
 }
 
 .vacTitle span {
@@ -150,16 +199,41 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: #5169ff;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1;
+  }
 }
 
 .vacTitleDescription {
   font-family: 'Montserrat-Medium', sans-serif;
-  font-weight: 500;
   font-size: 14px;
   text-align: center;
   color: #333;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    /* width: 552px; */
+    margin: 0 auto;
+  }
+}
+
+.vacSubTitleDescr {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 552px;
+  }
 }
 
 .vacSubTitle {
   text-align: start;
+
+  @media only screen and (min-width: 768px) {
+    width: 552px;
+  }
 }

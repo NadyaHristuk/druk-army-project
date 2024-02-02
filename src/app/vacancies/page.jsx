@@ -44,9 +44,7 @@ const Vacancies = () => {
             <h3 className={`${styles.vacTitle} ${styles.vacSubTitle}`}>
               Зараз відкриті <span>Вакансія:</span>
             </h3>
-            <p
-              className={`${styles.vacTitleDescription} ${styles.vacSubTitle}`}
-            >
+            <p className={`${styles.vacSubTitleDescr} ${styles.vacSubTitle}`}>
               Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій
               команді.
             </p>
@@ -219,8 +217,10 @@ const Vacancies = () => {
             спільного блага.{' '}
           </p>
           <div className={styles.vacanciesContacts}>
-            <a href="+380739207804"> +38 0(73) 920 78 04</a>
-            <a href="3d@drukarmy.org.ua">3d@drukarmy.org.ua</a>
+            <div className={styles.vacContactInfo}>
+              <a href="+380739207804"> +38 0(73) 920 78 04</a>
+              <a href="3d@drukarmy.org.ua">3d@drukarmy.org.ua</a>
+            </div>
             <button className={styles.btnContactUs} type="button">
               <Icon name="icon-people" className={styles.btnSvg} />
               Напишіть нам
