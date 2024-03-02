@@ -16,6 +16,7 @@ const i18nNamespaces = [
   "about",
   "vacancies",
   "how-it-works",
+  "technical-works",
 ];
 
 const font = Inter({ subsets: ["latin"] });

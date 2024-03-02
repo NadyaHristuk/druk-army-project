@@ -1,0 +1,128 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 114px 8px 105px;
+
+  text-align: center;
+
+  outline: 1px solid green;
+
+  @media only screen and (min-width: 960px) {
+    flex-direction: column-reverse;
+    width: 840px;
+    padding: 224px 0 192px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 1920px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  color: var(--accent-color);
+
+  font-family: Benzin-ExtraBold;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media only screen and (min-width: 960px) {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  margin-bottom: 10px;
+
+  color: var(--black);
+
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+
+  @media only screen and (min-width: 960px) {
+    width: 730px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+.info {
+  width: 200px;
+  margin: 0 auto 10px;
+
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    margin-bottom: 40px;
+  }
+}
+
+.flex {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 5px;
+  }
+}
+
+.text {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: var(--bg-loader);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 20px;
+  }
+}
+
+.time {
+  margin-bottom: 10px;
+  font-family: Benzin-Bold;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 auto 18px;
+  padding: 10px 15px;
+
+  background-color: var(--bg-details);
+  color: var(--buttons-text);
+  font-family: Benzin-Regular;
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media only screen and (min-width: 960px) {
+    margin: 0;
+  }
+}
+
+.icon {
+  width: 27px;
+  height: 18px;
+  fill: var(--buttons-text);
+}
