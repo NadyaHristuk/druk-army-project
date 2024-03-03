@@ -8,8 +8,6 @@
 
   text-align: center;
 
-  outline: 1px solid green;
-
   @media only screen and (min-width: 960px) {
     flex-direction: column-reverse;
     width: 840px;
