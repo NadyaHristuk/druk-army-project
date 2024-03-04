@@ -25,6 +25,7 @@ const ImageNotFound = () => {
             : "/img/notfound/notfound-dark.png"
         }
         alt="Error 404. This page not found"
+        priority
         width={
           isMobileStart && isMobileEnd
             ? 442
