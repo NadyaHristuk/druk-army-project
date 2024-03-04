@@ -72,6 +72,7 @@ const Calculator = () => {
     setWidthValue(Math.round(value));
   };
 
+
   return (
     <div className={css.container}>
       <div className={css.firstPart}>
@@ -88,7 +89,7 @@ const Calculator = () => {
             {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
             <span
               className={quality <= minQuality ? css.counterLeftLimit : quality >= maxQuality ? css.counterRightLimit : css.counter}
-              style={{ marginLeft: widthValue - 12 }}
+              style={{ marginLeft: widthValue - 12}}
             >
               <Icon
                 className={
