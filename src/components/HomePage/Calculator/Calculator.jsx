@@ -86,7 +86,6 @@ const Calculator = () => {
 
         <div>
           <label htmlFor="money" className={css.inputContainer}>
-            {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
             <span
               className={quality <= minQuality ? css.counterLeftLimit : quality >= maxQuality ? css.counterRightLimit : css.counter}
               style={{ marginLeft: widthValue - 12}}
@@ -117,7 +116,7 @@ const Calculator = () => {
             />
             <span
               className={css.fillRange}
-              style={{ width: widthValue }}
+              style={{ width: widthValue + 2 }}
             ></span>
           </label>
           <div className={css.scaleContainer}>
