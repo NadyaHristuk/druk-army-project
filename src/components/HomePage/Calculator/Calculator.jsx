@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
-import Icon from "@/components/Icon/Icon";
 import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
 import css from "./Calculator.module.css";
 
@@ -89,18 +88,14 @@ const Calculator = () => {
             <span
               className={quality <= minQuality ? css.counterLeftLimit : quality >= maxQuality ? css.counterRightLimit : css.counter}
               style={{ marginLeft: widthValue - 12}}
-            >
-              <Icon
-                className={
-                  (quality <= minQuality)
-                    ? css.shapeLeftLimit
-                    :
-                      (quality >= maxQuality)
-                    ? css.shapeRightLimit
-                    : css.shape
-                }
-                name={"icon-modal"}
-              />
+            ><span  className={
+              (quality <= minQuality)
+                ? css.triangleLeftLimit
+                :
+                  (quality >= maxQuality)
+                ? css.triangleRightLimit
+                : css.triangle
+            }></span>
               <p className={css.showResult}>
                 {quality <= 100 ? 100 : quality}$
               </p>

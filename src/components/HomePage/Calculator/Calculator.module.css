@@ -112,13 +112,25 @@
   padding-top: 4px;
   z-index: 10;
 }
+
+.triangle {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  position: absolute;
+  width: 46px;
+  height: 27px;
+  bottom: -15px;
+  left: 13px;
+  background-color: var(--accent-color);
+  z-index: 2;
+}
+
 /* Якщо бігунок доходить до правого краю */
 .counterRightLimit {
   position: absolute;
   width: 74px;
   height: 27px;
   top: -64px;
-  left: -47px;
+  left: -58px;
   color: white;
   background-color: var(--accent-color);
   text-align: center;
@@ -126,13 +138,15 @@
   z-index: 10;
 }
 
-.shapeRightLimit {
+.triangleRightLimit {
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
   position: absolute;
-  bottom: -14px;
-  left: 47px;
-  width: 27px;
+  width: 33px;
   height: 27px;
-  z-index: 1;
+  bottom: -15px;
+  left: 41px;
+  background-color: var(--accent-color);
+  z-index: 2;
 }
 
 /* Якщо бігунок доходить доь лівого краю */
@@ -141,7 +155,7 @@
   width: 74px;
   height: 27px;
   top: -64px;
-  left: 0px;
+  left: 13px;
   color: white;
   background-color: var(--accent-color);
   text-align: center;
@@ -149,24 +163,17 @@
   z-index: 10;
 }
 
-.shapeLeftLimit {
+.triangleLeftLimit {
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   position: absolute;
-  bottom: -14px;
-  left: 0;
-  width: 27px;
+  width: 33px;
   height: 27px;
-  z-index: 1;
+  bottom: -15px;
+  left: 0px;
+  background-color: var(--accent-color);
+  z-index: 2;
 }
 /* ****************************************** */
-
-.shape {
-  position: absolute;
-  bottom: -14px;
-  left: 22px;
-  width: 27px;
-  height: 27px;
-  z-index: 1;
-}
 
 .showResult {
   font-family: "Benzin-ExtraBold", sans-serif;
