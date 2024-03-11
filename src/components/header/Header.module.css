@@ -1,12 +1,16 @@
+.header {
+  background-color: var(--header-bg);
+  box-shadow: 0px 4px 139.3px 0px rgba(0, 0, 0, 0.11);
+  width: 100%;
+}
+
 .headerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1920px;
+  max-width: 1440px;
   padding-left: 48px;
   padding-right: 29px;
-  background: var(--header-bg);
-  box-shadow: 0px 4px 139.3px 0px rgba(0, 0, 0, 0.11);
 }
 
 .buttonsBox {
@@ -36,7 +40,7 @@
 
 @media screen and (min-width: 1200px) {
   .headerContainer {
-    max-width: 1900px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 

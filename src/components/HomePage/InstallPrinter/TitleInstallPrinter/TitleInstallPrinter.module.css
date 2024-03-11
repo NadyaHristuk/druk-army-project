@@ -1,0 +1,128 @@
+.mainTitleContainer {
+    border-left: 3px solid var(--paragraph-text);
+    padding-left: 10px;
+    position: relative;
+    margin-left: 8px;
+  }
+  
+  .mainTitle {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+
+  .decorationLine {
+    position: absolute;
+    left: -14px;
+    min-height: 100%;
+    width: 6px;
+    background-color: var(--accent-color);
+    margin-right: 6px;
+  }
+
+  .yellowAccent {
+    display: inline-block;
+    position: absolute;
+    height: 50%;
+    width: 6px;
+    background-color: #FECA00;
+    bottom: 0;
+  }
+  
+  .titleAccent {
+    font-family: "Benzin-ExtraBold", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--accent-color);
+  }
+  
+  .mainTitleText {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+   .mainTitleContainer {
+    margin-left: 48px;
+   }
+
+   .decorationLine {
+    width: 20px;
+    left: -32px;
+   }
+
+   .yellowAccent {
+    width: 20px;
+   }
+
+    .mainTitle {
+      font-size: 20px;
+    }
+  
+    .titleAccent {
+      font-size: 36px;
+    }
+  
+    .mainTitleText {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mainTitleContainer {
+      max-width: 680px;
+      margin: 0 auto 46px auto;
+    }
+  
+    .mainTitle {
+      font-size: 32px;
+    }
+  
+    .titleAccent {
+      font-size: 48px;
+    }
+  
+    .mainTitleText {
+      max-width: 100%;
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .mainTitleContainer {
+      max-width: 96%;
+      margin-bottom: 63px;
+    }
+  
+    .titleFirst {
+      font-size: 36px;
+    }
+  
+    .titleAccent {
+      font-size: 64px;
+    }
+  
+    .mainTitleText {
+      margin-bottom: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .mainTitleContainer {
+      max-width: 903px;
+      margin-left: auto;
+      margin-bottom: 58px;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .mainTitleContainer {
+      margin-left: 0;
+    }
+  }

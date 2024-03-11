@@ -1,0 +1,74 @@
+.imagesContainer {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: 12px 0 0 0;
+}
+
+.catImage {
+   object-fit: cover;
+   object-position: -86px;
+}
+
+.tweet {
+    position: absolute;
+    top: 0;
+    right: 4px;
+}
+
+@media screen and (min-width: 480px) {
+    .imagesContainer {
+        max-width: 480px;
+        margin: 50px auto 0 auto;
+    }
+
+    .catImage {
+        width: 305.7px;
+        height: 361.04px;
+        object-position: center;
+    }
+
+    .tweet {
+        width: 262.83px;
+        height: 146.61px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imagesContainer {
+        max-width: 598px;
+        margin: 44px auto 0 auto;
+    }
+
+    .catImage {
+        width: 402.94px;
+        height: 475.88px;
+    }
+
+    .tweet {
+        width: 346.44px;
+        height: 193.25px;
+        top: -24px;
+        right: -24px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .imagesContainer {
+        margin: 44px 0 160px 0;
+    }
+
+    .tweet {
+        right: -240px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imagesContainer {
+        margin: 0 0 110px 0;
+    }
+
+    .tweet {
+        top: -36px;
+    }
+}

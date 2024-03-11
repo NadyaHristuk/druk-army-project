@@ -37,7 +37,7 @@ operateScroll();
   }, [pathname])
 
   return (
-    <header>
+    <header className={css.header}>
       <div className={css.headerContainer}>
         <Logo />
         <HeaderMenu />

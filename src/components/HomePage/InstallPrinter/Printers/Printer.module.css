@@ -1,0 +1,99 @@
+.printersContainer {
+  margin-top: 35px;
+}
+
+.printersList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 38px;
+  background-color: #fff;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.printerCard {
+  text-align: center;
+  color: #333333;
+}
+
+.printerImage {
+  object-fit: cover;
+}
+
+.model {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quality {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+    .printersList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .printerCard:last-of-type {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .printersList {
+    max-width: 768px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .printersList {
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .imageContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .printersContainer {
+    position: relative;
+  }
+
+  .printersList {
+    max-width: 750px;
+    margin: 0 auto 0 0;
+  }
+
+  .imageContainer {
+    display: block;
+    position: absolute;
+    max-width: 858px;
+    top: -190px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .imageWorking {
+    object-fit: cover;
+    object-position: -6%;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .imageWorking {
+    width: 858px;
+    height: 474px;
+  }
+}
