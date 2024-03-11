@@ -6,6 +6,7 @@ import { useRef } from "react";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { nanoid } from "nanoid";
+import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
 import css from "./SecondSlider.module.css";
 
@@ -20,10 +21,11 @@ const SecondSlider = () => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
-    <div>
+    <Container>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        loop={true}
         modules={[Navigation]}
         navigation={{
           prevEl: navigationPrevRef.current,
@@ -39,14 +41,14 @@ const SecondSlider = () => {
           <SwiperSlide key={id}>
             <p className={css.titleSlide}>{title}</p>
             <p className={css.subtitleSlide}>{subtitle}</p>
-            <div className={css.progressBar}><span>{progress}</span></div>
+            <div className={css.progressBar}><span style={{width: `${progress}`}}>{progress}</span></div>
             <Image alt="photo" src={img} width={228} height={157} priority />
           </SwiperSlide>
         ))}
         <div ref={navigationPrevRef} className={css.arrowLeftBtn}><Icon name={'icon-arrow-left'} className={css.arrowLeftIcon}/></div>
         <div ref={navigationNextRef} className={css.arrowRightBtn}><Icon name={'icon-arrow-right'} className={css.arrowRightIcon}/></div>
       </Swiper>
-    </div>
+    </Container>
   );
 };
 
