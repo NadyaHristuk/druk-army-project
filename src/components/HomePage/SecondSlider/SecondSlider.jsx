@@ -47,7 +47,7 @@ const SecondSlider = () => {
   const navigationNextRef = useRef(null);
   return (
     <>
-      <Container>
+      <div className={css.container}>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -64,13 +64,22 @@ const SecondSlider = () => {
           className={css.mySwiper}
         >
           {slides.map(({ img, id, title, subtitle, progress }) => (
-            <SwiperSlide key={id}>
-              <p className={css.titleSlide}>{title}</p>
-              <p className={css.subtitleSlide}>{subtitle}</p>
-              <div className={css.progressBar}>
-                <span style={{ width: `${progress}` }}>{progress}</span>
+            <SwiperSlide key={id} className={css.slide}>
+              <div>
+                <p className={css.titleSlide}>{title}</p>
+                <p className={css.subtitleSlide}>{subtitle}</p>
+                <div className={css.progressBar}>
+                  <span style={{ width: `${progress}` }}>{progress}</span>
+                </div>
               </div>
-              <Image alt="photo" src={img} width={228} height={157} priority />
+              <Image
+                alt="photo"
+                src={img}
+                width={228}
+                height={157}
+                priority
+                className={css.slideImage}
+              />
             </SwiperSlide>
           ))}
           <div ref={navigationPrevRef} className={css.arrowLeftBtn}>
@@ -80,7 +89,7 @@ const SecondSlider = () => {
             <Icon name={"icon-arrow-right"} className={css.arrowRightIcon} />
           </div>
         </Swiper>
-      </Container>
+      </div>
       <TitleNeedSupport />
     </>
   );

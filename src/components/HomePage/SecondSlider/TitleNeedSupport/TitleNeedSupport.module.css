@@ -33,16 +33,6 @@
     margin-bottom: 10px;
   }
 
-  .buttonSupport {
-  text-transform: uppercase;
-  font-family: "Benzin-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  transition: all 400ms ease;
-  position: relative;
-}
-
 .btnText {
   display: flex;
   align-items: center;
@@ -85,6 +75,13 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  text-transform: uppercase;
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  transition: all 400ms ease;
+  position: relative;
 }
 
 .buttonSupport:hover,
@@ -95,4 +92,94 @@
 .buttonSupport:hover .iconSupportBtn,
 .buttonSupport:focus .iconSupportBtn {
   fill: white;
+}
+
+@media screen and (min-width: 480px) {
+ .titleContainer {
+  margin-top: -60px;
+  padding-left: 4px;
+ }
+
+  .mainTitle {
+    font-size: 20px;
+    line-height: 1.28;
+    letter-spacing: 0.03em;
+  }
+
+  .titleAccent {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .mainTitleText {
+    font-size: 16px;
+    line-height: 1.28;
+    letter-spacing: 0.03em;
+  }
+
+  .buttonSupport {
+    font-size: 20px;
+    width: 251px;
+    height: 48px;
+    padding: 15px 20px;
+  }
+
+  .buttonSupport::after {
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainTitleContainer {
+    max-width: 580px;
+  }
+
+  .mainTitle {
+    font-size: 32px;
+  }
+
+  .titleFirst {
+    padding-right: 190px;
+  }
+
+  .titleAccent {
+    font-size: 48px;
+  }
+
+  .mainTitleText {
+    font-size: 20px;
+    padding-right: 90px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .mainTitleContainer {
+    max-width: 100%;
+    margin-bottom: 63px;
+  }
+
+  .titleFirst {
+    font-size: 36px;
+  }
+
+  .titleAccent {
+    font-size: 64px;
+  }
+
+  .mainTitleText {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainTitleContainer {
+    margin-left: 130px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainTitleContainer {
+    margin-left: 180px;
+  }
 }
