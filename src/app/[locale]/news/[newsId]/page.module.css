@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contentWrapper {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    column-gap: 17px;
+  }
+  .contentWrapper {
+    width: 479px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .wrapper {
+    column-gap: 20px;
+  }
+  .contentWrapper {
+    width: 1135px;
+  }
+}
