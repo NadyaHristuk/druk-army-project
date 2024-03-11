@@ -1,0 +1,98 @@
+.titleContainer {
+    background-color: var(--accent-color);
+    padding-top: 95px;
+    padding-bottom: 25px;
+    margin-top: -80px;
+}
+
+.mainTitleContainer {
+    border-left: 3px solid #ffffff;
+    padding-left: 16px;
+    color: #ffffff;
+  }
+  
+  .mainTitle {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  
+  .titleAccent {
+    font-family: "Benzin-ExtraBold", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  
+  .mainTitleText {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .buttonSupport {
+  text-transform: uppercase;
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  transition: all 400ms ease;
+  position: relative;
+}
+
+.btnText {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+.buttonSupport::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: #333333;
+  display: block;
+  height: 38px;
+  z-index: 1;
+  transition: all 400ms ease;
+}
+
+.buttonSupport:focus::after,
+.buttonSupport:hover::after {
+  width: 100%;
+}
+
+.iconSupportBtn {
+  width: 27px;
+  height: 18px;
+  fill: var(--accent-color);
+  transition: all 400ms ease;
+}
+
+.buttonSupport {
+  background-color: #ffffff;
+  color: var(--accent-color);
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.buttonSupport:hover,
+.buttonSupport:focus {
+  color: white;
+}
+
+.buttonSupport:hover .iconSupportBtn,
+.buttonSupport:focus .iconSupportBtn {
+  fill: white;
+}
