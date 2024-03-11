@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { nanoid } from "nanoid";
 import css from "./Slider.module.css";
 
@@ -27,8 +27,8 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        navigation={false}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
         {slides.map(({ img, id }) => (

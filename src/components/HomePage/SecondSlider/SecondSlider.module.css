@@ -1,4 +1,35 @@
-.swiper-button-prev,
-.swiper-button-next {
-    color: var(--main-bg);
+.arrowLeftBtn,
+.arrowRightBtn,
+.arrowLeftIcon, 
+.arrowRightIcon {
+    width: 31.95px;
+    height: 55.08px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrowLeftIcon, 
+.arrowRightIcon {
+    fill: var(--paragraph-text);
+}
+
+.arrowLeftBtn {
+    display: none;
+}
+
+.arrowRightBtn {
+    position: absolute;
+    top: 90px;
+    right: 19px;
+}
+
+.titleSlide {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subtitleSlide {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
