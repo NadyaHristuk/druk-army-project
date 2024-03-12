@@ -199,15 +199,30 @@
 }
 
 @media screen and (min-width: 1200px) {
+   .titleContainer {
+    padding-bottom: 79px;
+    padding-top: 200px;
+   }
+
   .mainTitleContainer {
-    margin-left: 130px;
+    max-width: 610px;
+    margin-left: auto;
     margin-bottom: 0;
   }
 
+  .titleAccent {
+    line-height: 0.8;
+  }
+
+  .mainTitleText {
+    max-width: 610px;
+    padding-right: 0;
+    margin-top: 14px;
+  }
+
   .container {
-    width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 1095px;
+    padding: 0;
   }
 }
 

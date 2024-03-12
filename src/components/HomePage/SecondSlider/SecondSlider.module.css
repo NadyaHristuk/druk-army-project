@@ -193,8 +193,27 @@
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+
+  .mySwiper {
+    width: 1200px;
+  }
+
+  .slide {
+    transform: translateX(145px) !important;
+  }
+
+  .arrowLeftBtn,
+  .arrowRightBtn {
+    width: 210px;
+  }
+
+  .arrowLeftIcon {
+    right: 118px;
+  }
+
+  .arrowRightIcon {
+    left: 118px;
   }
 }
 
