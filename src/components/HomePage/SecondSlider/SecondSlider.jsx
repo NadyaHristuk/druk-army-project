@@ -1,12 +1,11 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { useRef } from "react";
 import "swiper/css/navigation";
 import Image from "next/image";
 import { nanoid } from "nanoid";
-import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
 import css from "./SecondSlider.module.css";
 import TitleNeedSupport from "./TitleNeedSupport/TitleNeedSupport";
@@ -51,8 +50,12 @@ const SecondSlider = () => {
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          modules={[Navigation]}
+          modules={[Autoplay, Navigation]}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,
