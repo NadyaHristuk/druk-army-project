@@ -1,8 +1,12 @@
-import Container from "@/components/container/Container";
+"use client";
+
+import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 import Icon from "@/components/Icon/Icon";
 import css from "./TitleNeedSupport.module.css";
 
 const TitleNeedSupport = () => {
+  const isDesktop1200 = useMediaQuery({ minWidth: 1200 });
   return (
     <div className={css.titleContainer}>
       <div className={css.container}>
@@ -17,11 +21,22 @@ const TitleNeedSupport = () => {
             підтримуєте наших героїв та зміцнюєте оборону нашої держави.
           </p>
           <button type="button" className={css.buttonSupport}>
-          <span className={css.btnText}><Icon className={css.iconSupportBtn} name={"icon-banknote"} />
-          підтримати</span>
-        </button>
+            <span className={css.btnText}>
+              <Icon className={css.iconSupportBtn} name={"icon-banknote"} />
+              підтримати
+            </span>
+          </button>
         </div>
       </div>
+      {isDesktop1200 && (
+        <Image
+          src={"/img/home/slider2-man.png"}
+          alt="Волонтер з посилками"
+          width={606}
+          height={922}
+          className={css.sliderMan}
+        />
+      )}
     </div>
   );
 };

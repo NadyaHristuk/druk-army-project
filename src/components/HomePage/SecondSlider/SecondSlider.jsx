@@ -15,6 +15,7 @@ const SecondSlider = () => {
   const isTablet = useMediaQuery({minWidth: 768});
   const isTabletEnd = useMediaQuery({maxWidth: 959.98});
   const isDesktop = useMediaQuery({minWidth: 960});
+  const isDesktop1200 = useMediaQuery({minWidth: 1200});
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
@@ -27,6 +28,7 @@ const SecondSlider = () => {
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
+             reverseDirection: isDesktop1200 ? true : false,
           }}
           loop={true}
           modules={[Navigation, Autoplay]}
