@@ -120,7 +120,7 @@
 
   .slide {
     padding-left: 0px;
-    transform: translateX(-196px)!important;
+    transform: translateX(-196px) !important;
   }
 
   .arrowLeftIcon,
@@ -152,7 +152,7 @@
   }
 
   .slide {
-    transform: translateX(454px)!important;
+    transform: translateX(454px) !important;
     max-width: 365px;
   }
 
@@ -162,8 +162,31 @@
 
   .arrowLeftBtn,
   .arrowRightBtn {
-    width: 85px;
-    height: 243px;
+    width: 88px;
+    height: 331px;
+    top: 0;
+  }
+
+  .arrowRightBtn {
+    right: -2px;
+  }
+
+  .arrowLeftBtn {
+    left: -4px;
+  }
+
+  .arrowLeftIcon,
+  .arrowRightIcon {
+    position: absolute;
+    top: 50%;
+  }
+
+  .arrowLeftIcon {
+    right: -14px;
+  }
+
+  .arrowRightIcon {
+    left: -14px;
   }
 }
 

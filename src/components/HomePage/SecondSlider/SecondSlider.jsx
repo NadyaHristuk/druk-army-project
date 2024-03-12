@@ -6,41 +6,10 @@ import { useMediaQuery } from "react-responsive";
 import { useRef } from "react";
 import "swiper/css/navigation";
 import Image from "next/image";
-import { nanoid } from "nanoid";
 import Icon from "@/components/Icon/Icon";
+import { slides } from "./slides";
 import css from "./SecondSlider.module.css";
 import TitleNeedSupport from "./TitleNeedSupport/TitleNeedSupport";
-
-const slides = [
-  {
-    img: "/img/home/slider2/fire.png",
-    id: nanoid(),
-    title: "Збір від Оксани",
-    subtitle: "окопні свічки",
-    progress: "7%",
-  },
-  {
-    img: "/img/home/slider2/cars.png",
-    id: nanoid(),
-    title: "Збір від Андрія",
-    subtitle: "автівки для зсу",
-    progress: "54%",
-  },
-  {
-    img: "/img/home/slider2/items.png",
-    id: nanoid(),
-    title: "Збір від Майора Чорнобаєва",
-    subtitle: "3D-друковані ортези",
-    progress: "32%",
-  },
-  {
-    img: "/img/home/slider2/boxes.png",
-    id: nanoid(),
-    title: "Збір від Життя Переможе",
-    subtitle: "бандажі для зсу",
-    progress: "68%",
-  },
-];
 
 const SecondSlider = () => {
   const isTablet = useMediaQuery({minWidth: 768});
@@ -60,7 +29,7 @@ const SecondSlider = () => {
             disableOnInteraction: false,
           }}
           loop={true}
-          modules={[Autoplay, Navigation]}
+          modules={[Navigation, Autoplay]}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,
