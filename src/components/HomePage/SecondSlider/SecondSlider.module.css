@@ -116,15 +116,54 @@
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 20px;
-    padding-right: 20px;
+  }
+
+  .slide {
+    padding-left: 0px;
+    transform: translateX(-196px)!important;
+  }
+
+  .arrowLeftIcon,
+  .arrowRightIcon {
+    width: 56.05px;
+    height: 96.64px;
+  }
+
+  .arrowLeftBtn,
+  .arrowRightBtn {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 85px;
+    height: 243px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 87px;
   }
 }
+
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+  }
+
+  .mySwiper {
+    width: 960px;
+  }
+
+  .slide {
+    transform: translateX(454px)!important;
+    max-width: 365px;
+  }
+
+  .slideImage {
+    width: 365px;
+  }
+
+  .arrowLeftBtn,
+  .arrowRightBtn {
+    width: 85px;
+    height: 243px;
   }
 }
 

@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useMediaQuery } from "react-responsive";
 import { useRef } from "react";
 import "swiper/css/navigation";
 import Image from "next/image";
@@ -42,13 +43,17 @@ const slides = [
 ];
 
 const SecondSlider = () => {
+  const isTablet = useMediaQuery({minWidth: 768});
+  const isTabletEnd = useMediaQuery({maxWidth: 959.98});
+  const isDesktop = useMediaQuery({minWidth: 960});
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
     <>
       <div className={css.container}>
         <Swiper
-          spaceBetween={30}
+          spaceBetween={isTablet && isTabletEnd ? 38 : isDesktop ? 20: 30}
+          slidesPerView={isTablet ? 2 : 1}
           centeredSlides={true}
           autoplay={{
             delay: 2500,

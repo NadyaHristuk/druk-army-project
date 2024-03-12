@@ -5,7 +5,7 @@ import css from "./TitleNeedSupport.module.css";
 const TitleNeedSupport = () => {
   return (
     <div className={css.titleContainer}>
-      <Container>
+      <div className={css.container}>
         <div className={css.mainTitleContainer}>
           <h2 className={css.mainTitle}>
             потребуємо вашої
@@ -21,7 +21,7 @@ const TitleNeedSupport = () => {
           підтримати</span>
         </button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

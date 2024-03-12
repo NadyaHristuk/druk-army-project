@@ -5,6 +5,13 @@
     margin-top: -80px;
 }
 
+.container {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
 .mainTitleContainer {
     border-left: 3px solid #ffffff;
     padding-left: 16px;
@@ -100,6 +107,12 @@
   padding-left: 4px;
  }
 
+ .container {
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
   .mainTitle {
     font-size: 20px;
     line-height: 1.28;
@@ -131,7 +144,13 @@
 
 @media screen and (min-width: 768px) {
   .mainTitleContainer {
-    max-width: 580px;
+    max-width: 636px;
+  }
+
+  .container {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .mainTitle {
@@ -153,8 +172,16 @@
 }
 
 @media screen and (min-width: 960px) {
+  .titleContainer {
+    padding-left: 110px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .mainTitleContainer {
-    max-width: 100%;
     margin-bottom: 63px;
   }
 
@@ -176,10 +203,20 @@
     margin-left: 130px;
     margin-bottom: 0;
   }
+
+  .container {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .mainTitleContainer {
     margin-left: 180px;
+  }
+
+  .container {
+    width: 1920px;
   }
 }
