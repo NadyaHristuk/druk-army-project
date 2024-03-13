@@ -14,6 +14,7 @@ const i18nNamespaces = [
   "terms",
   "notfound",
   "about",
+  "home",
   "vacancies",
   "how-it-works",
   "technical-works",
