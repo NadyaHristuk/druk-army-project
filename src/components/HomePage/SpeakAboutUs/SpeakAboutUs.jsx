@@ -1,12 +1,13 @@
-import Container from "@/components/container/Container"
 import TitleSpeakAbout from "./TitleSpeakAbout/TitleSpeakAbout"
+import VideoSection from "./VideoSection/VideoSection"
 import css from "./SpeakAboutUs.module.css"
 
 const SpeakAboutUs = () => {
   return (
-    <Container>
+    <div className={css.container}>
         <TitleSpeakAbout/>
-    </Container>
+        <VideoSection/>
+    </div>
   )
 }
 

@@ -1,0 +1,7 @@
+.imageContainer {
+    margin: 0 auto;
+}
+
+.speakAboutImage {
+    object-fit: cover;
+}
