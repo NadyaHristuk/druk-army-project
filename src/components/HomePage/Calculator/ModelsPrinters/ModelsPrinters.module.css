@@ -1,0 +1,245 @@
+.secondPart {
+  background-color: var(--accent-color);
+  color: white;
+  padding-bottom: 16px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.secondPart_textContent {
+  padding-left: 6px;
+}
+
+.resultTitle {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.imagesModelsPrinters {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+.modelPrinterFirst_Bambulab,
+.modelPrinterFirst {
+  object-fit: contain;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  z-index: 5;
+}
+
+.modelPrinterFirst_Bambulab {
+  top: -14px;
+  left: 40px;
+}
+
+.modelPrinterSecond {
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: blur(8px);
+}
+
+.modelPrinterSecond_Bambulab {
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  filter: blur(8px);
+}
+
+@media screen and (min-width: 480px) {
+  .secondPart {
+    padding-bottom: 25px;
+    height: 454px;
+  }
+
+  .secondPart_textContent {
+    padding-left: 21px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 480px;
+  }
+
+  .modelPrinterFirst {
+    width: 410px;
+    height: 378px;
+    right: -10px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 360px;
+    height: 318px;
+    top: -10px;
+    left: 50px;
+  }
+
+  .modelPrinterSecond {
+    width: 314.1px;
+    height: 286.2px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 280px;
+    height: 252px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .secondPart {
+    height: 530px;
+    padding-bottom: 28px;
+  }
+
+  .secondPart_textContent {
+    padding-left: 0px;
+    max-width: 491px;
+    margin: 0 auto;
+  }
+
+  .resultTitle {
+    font-size: 64px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .result {
+    font-size: 36px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 768px;
+  }
+
+  .modelPrinterFirst {
+    width: 468px;
+    height: 420px;
+    right: 100px;
+    top: -60px;
+  }
+
+  .modelPrinterSecond {
+    width: 349px;
+    height: 318px;
+    left: 100px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 428px;
+    height: 380px;
+    left: 140px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 309px;
+    height: 288px;
+    right: 100px;
+    top: 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .secondPart {
+    width: 522px;
+    height: 563px;
+    margin-left: -192px;
+    padding-bottom: 4px;
+  }
+
+  .secondPart_textContent {
+    margin-top: 40px;
+  }
+
+  .modelOne,
+  .modelTwo {
+    position: relative;
+    max-width: 468px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 522px;
+  }
+
+  .modelPrinterFirst {
+    right: -20px;
+    top: -48px;
+    z-index: 8;
+    object-position: 38px 12px;
+  }
+
+  .modelPrinterSecond {
+    left: 20px;
+    z-index: 6;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 398px;
+    height: 350px;
+    top: -40px;
+    left: 100px;
+    z-index: 8;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 279px;
+    height: 258px;
+    right: -20px;
+    top: 20px;
+    z-index: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondPart {
+    width: 571px;
+    height: 444px;
+    margin-left: 0;
+    padding-bottom: 33px;
+  }
+
+  .secondPart_textContent {
+    max-width: 500px;
+  }
+
+  .modelPrinterFirst {
+    top: -120px;
+  }
+
+  .modelPrinterSecond {
+    top: -60px;
+    left: -20px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 356px;
+    height: 349px;
+    top: -60px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 267px;
+    height: 263px;
+    top: 0px;
+    right: -60px;
+  }
+
+  .result {
+    letter-spacing: 0.04em;
+  }
+}

@@ -10,6 +10,8 @@
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
   --bg-loader: #5e6a8a;
+  --cards-text: #ffffff;
+  --body-bg: #ffffff;
 }
 [data-theme="dark"] {
   --header-bg: #0f1022;
@@ -21,6 +23,8 @@
   --buttons-text: #0f1022;
   --accent-color: #5169ff;
   --bg-loader: #ffffff;
+  --cards-text: #333333;
+  --body-bg: url(/img/home/darkMood-bg.jpg);
 }
 
 @font-face {
@@ -136,7 +140,7 @@ body {
   font-family: "Montserrat-Medium";
   font-weight: 500;
   font-size: 16px;
-  background: var(--header-bg);
+  background: var(--body-bg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

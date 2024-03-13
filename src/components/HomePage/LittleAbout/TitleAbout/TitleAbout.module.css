@@ -1,0 +1,94 @@
+.mainTitleContainer {
+    border-left: 3px solid var(--paragraph-text);
+    padding-left: 4px;
+    max-width: 280px;
+    margin-bottom: 19px;
+  }
+  
+  .mainTitle {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  
+  .titleAccent {
+    font-family: "Benzin-ExtraBold", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--accent-color);
+  }
+  
+  .mainTitleText {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .mainTitleContainer {
+      max-width: 480px;
+      padding-left: 14px;
+      margin-bottom: 28px;
+    }
+
+    .mainTitle {
+      font-size: 20px;
+    }
+  
+    .titleAccent {
+      font-size: 36px;
+    }
+  
+    .mainTitleText {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mainTitleContainer {
+      max-width: 481px;
+    }
+  
+    .mainTitle {
+      font-size: 32px;
+    }
+  
+    .titleAccent {
+      font-size: 48px;
+    }
+  
+    .mainTitleText {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .mainTitleContainer {
+      max-width: 540px;
+      margin-bottom: 42px;
+    }
+  
+    .titleFirst {
+      font-size: 36px;
+    }
+  
+    .titleAccent {
+      font-size: 64px;
+    }
+  
+    .mainTitleText {
+      max-width: 464px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .mainTitleContainer {
+      max-width: 461px;
+    }
+  }

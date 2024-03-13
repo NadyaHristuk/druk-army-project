@@ -1,0 +1,183 @@
+.mainTitleContainer {
+  border-left: 3px solid var(--paragraph-text);
+  padding-left: 16px;
+  margin-top: 80px;
+}
+
+.mainTitle {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.titleAccent {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.titleAccent span {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0 10px;
+  max-width: 65px;
+  max-height: 30px;
+}
+
+.mainTitleText {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.communityIcon {
+  width: 23px;
+  height: 13px;
+  fill: var(--buttons-text);
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Benzin-Medium", sans-serif;
+  background-color: var(--paragraph-text);
+  color: var(--buttons-text);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  transition: all 400ms ease;
+  width: 274px;
+  height: 43px;
+  border: none;
+  outline: none;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.btnText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--accent-color);
+  display: block;
+  height: 43px;
+  z-index: 1;
+  transition: all 400ms ease;
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  width: 100%;
+}
+
+.links,
+.contactsUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.links {
+    font-weight: 500;
+    font-size: 14px;
+    color: #5e6a8a;
+    row-gap: 12px;
+  }
+
+  @media screen and (min-width: 480px) {
+    .mainTitleContainer {
+      margin-top: 40px;
+    }
+
+    .mainTitle {
+      font-size: 20px;
+    }
+
+    .titleAccent {
+      font-size: 36px;
+    }
+
+    .links, 
+    .mainTitleText {
+      font-size: 16px;
+    }
+
+    .communityIcon {
+      width: 37px;
+      height: 21px;
+    }
+
+    .btn {
+      font-size: 20px;
+      height: 51px;
+    }
+
+    .btn::after {
+      height: 51px;
+    }
+
+    .links {
+      row-gap: 6px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .mainTitle {
+      font-size: 32px;
+    }
+
+    .mainTitleContainer {
+      max-width: 572px;
+      margin: 36px auto 50px auto;
+    }
+
+    .titleAccent {
+      font-size: 48px;
+    }
+
+    .links,
+    .mainTitleText {
+      font-size: 20px;
+    }
+
+    .contactsUs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 23px;
+    }
+
+    .container {
+      padding: 0 114px;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    .mainTitleContainer {
+      margin: 26px 0 0 0;
+      max-width: 612px;
+    }
+
+    .mainTitle {
+      font-size: 36px;
+    }
+
+    .titleAccent {
+      font-size: 64px;
+    }
+  }

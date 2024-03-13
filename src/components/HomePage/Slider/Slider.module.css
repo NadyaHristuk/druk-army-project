@@ -1,0 +1,97 @@
+.slideItem {
+  object-fit: cover;
+  object-position: -30px;
+}
+
+.container {
+  position: relative;
+}
+
+.logoSliderContainer {
+  width: 125px;
+  height: 67.37px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--paragraph-text);
+  bottom: -80px;
+  right: 16px;
+  z-index: 10;
+}
+
+@media screen and (min-width: 480px) {
+  .slideItem {
+    width: 768px;
+    height: 486px;
+  }
+
+  .logoSliderContainer {
+    bottom: -34px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slideItem {
+    width: 100%;
+    object-position: 0;
+  }
+
+  .logoSliderContainer {
+    width: 167px;
+    height: 90px;
+    bottom: -46px;
+  }
+
+  .slideItemContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logoSlider {
+    width: 143px;
+    height: 71px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: 314px;
+    margin-top: 100px;
+    margin-bottom: 84px;
+  }
+
+  .logoSliderContainer {
+    width: 173px;
+    height: 98px;
+    bottom: auto;
+    top: -44px;
+    right: -86px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 48%;
+    max-height: 474px;
+    margin-top: 94px;
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1078px;
+    max-height: 582px;
+  }
+
+  .slideItem {
+    width: 1078px;
+    height: 582px;
+  }
+
+  .logoSliderContainer {
+    top: 30px;
+  }
+}

@@ -11,28 +11,37 @@
 
 .content {
   position: relative;
-
-  width: 892px;
-  min-height: 860px;
-  padding-bottom: 42px;
+  width: 320px;
 
   background-color: var(--main-bg);
 
-  z-index: 1;
+  z-index: 2;
+
+  @media only screen and (min-width: 960px) {
+    width: 610px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 892px;
+  }
 }
 
 .closeButton {
   position: absolute;
-  top: 0;
-  right: -76px;
-
   padding: 10px;
   width: 76px;
   height: 76px;
+  top: -76px;
+  right: 0;
 
   background-color: var(--main-bg);
   border: none;
   cursor: pointer;
+
+  @media only screen and (min-width: 960px) {
+    top: 0;
+    right: -76px;
+  }
 }
 
 .iconClose {
@@ -42,22 +51,64 @@
 }
 
 .info {
+  margin: 20px 0 10px;
+  padding-left: 15px;
   width: fit-content;
-  margin: 40px auto 10px;
+
+  @media only screen and (min-width: 960px) {
+    margin: 25px 0;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    margin: 40px 70px;
+  }
 }
 
 .socials {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 10px;
-  justify-content: flex-end;
-  align-items: center;
+  margin-top: 10px;
+
+  color: var(--title-small);
+
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
-  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    justify-content: flex-end;
+  }
+}
+
+.socials > p {
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--black);
+}
+
+.socials > div {
+  display: flex;
+  gap: 10px;
 }
 
 .icon {
   width: 28px;
   height: 28px;
+}
+
+.facebook {
+  fill: #157dc3;
 }

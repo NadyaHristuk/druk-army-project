@@ -1,0 +1,52 @@
+.sectionPrinters,
+.sectionLittleAbout {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionPrinters,
+  .sectionLittleAbout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sectionLittleAbout {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionHero,
+  .sectionLittleAbout {
+    display: flex;
+    align-items: center;
+  }
+
+  .sectionLittleAbout {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionPrinters,
+  .sectionLittleAbout {
+    max-width: 1400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 0 0 auto;
+  }
+
+  .sectionLittleAbout {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .sectionPrinters,
+  .sectionLittleAbout {
+    max-width: 1756px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

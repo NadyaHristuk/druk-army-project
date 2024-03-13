@@ -1,0 +1,96 @@
+.mainTitleContainer {
+  border-left: 3px solid var(--paragraph-text);
+  padding-left: 16px;
+}
+
+.mainTitle {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+
+.titleAccent {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.mainTitleText {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .mainTitle {
+    font-size: 20px;
+  }
+
+  .titleAccent {
+    font-size: 36px;
+  }
+
+  .mainTitleText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainTitleContainer {
+    max-width: 580px;
+  }
+
+  .mainTitle {
+    font-size: 32px;
+  }
+
+  .titleFirst {
+    padding-right: 190px;
+  }
+
+  .titleAccent {
+    font-size: 48px;
+  }
+
+  .mainTitleText {
+    font-size: 20px;
+    padding-right: 90px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .mainTitleContainer {
+    max-width: 100%;
+    margin-bottom: 63px;
+  }
+
+  .titleFirst {
+    font-size: 36px;
+  }
+
+  .titleAccent {
+    font-size: 64px;
+  }
+
+  .mainTitleText {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mainTitleContainer {
+    margin-left: 130px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainTitleContainer {
+    margin-left: 180px;
+  }
+}

@@ -1,0 +1,363 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.firstPart {
+  background-color: var(--bg-details);
+  color: var(--cards-text);
+  padding: 24px 12px 20px 12px;
+}
+
+.firstPart_textContent {
+  margin-bottom: 69px;
+}
+
+.firstPart_textContent h2 {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.firstPart_textContent h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.firstPart_textContent p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inputContainer {
+  position: relative;
+  max-width: 297px;
+}
+
+.rangeScale[type="range"] {
+  appearance: none;
+  cursor: pointer;
+  width: 298px;
+  background-color: transparent;
+}
+
+.fillRange {
+  position: absolute;
+  height: 26px;
+  background-color: var(--accent-color);
+  top: -10px;
+  left: 0;
+  z-index: 9;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.rangeScale[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 26px;
+  border: 1px solid var(--cards-text);
+}
+
+.rangeScale[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 46px;
+  background-color: var(--cards-text);
+  margin-top: -10px;
+  z-index: 10;
+  position: relative;
+}
+
+/******** Firefox ********/
+.rangeScale[type="range"]::-moz-range-track {
+  background: transparent;
+  height: 26px;
+  border: 1px solid var(--cards-text);
+}
+
+.rangeScale[type="range"]::-moz-range-thumb {
+  appearance: none;
+  width: 5px;
+  height: 46px;
+  background-color: var(--cards-text);
+  border: none;
+  z-index: 10;
+  border-radius: 0;
+}
+
+.scaleContainer {
+    width: 297px;
+    margin-top: 10px;
+}
+
+.scale {
+    object-fit: contain;
+}
+
+/* *********************************************
+       COUNTER MONEY
+***********************************************/
+.counter {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: -22px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+  z-index: 10;
+}
+/* Якщо бігунок доходить до правого краю */
+.counterRightLimit {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: -47px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+  z-index: 10;
+}
+
+.shapeRightLimit {
+  position: absolute;
+  bottom: -14px;
+  left: 47px;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+
+/* Якщо бігунок доходить доь лівого краю */
+.counterLeftLimit {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: 0px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+  z-index: 10;
+}
+
+.shapeLeftLimit {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+/* ****************************************** */
+
+.shape {
+  position: absolute;
+  bottom: -14px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+
+.showResult {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ******************************************** */
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+
+  .firstPart {
+    padding: 24px 20px 22px 20px;
+  }
+
+  .firstPart_textContent h2 {
+    font-size: 36px;
+  }
+
+  .firstPart_textContent h3 {
+    font-size: 20px;
+  }
+
+  .firstPart_textContent p {
+    font-size: 16px;
+  }
+
+  .inputContainer {
+    max-width: 437px;
+  }
+
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 437px;
+  }
+
+  .rangeScale[type="range"]::-moz-range-track, 
+  .rangeScale[type="range"]::-webkit-slider-runnable-track {
+    border: 2px solid white;
+  }
+
+  .rangeScale[type="range"]::-moz-range-thumb,
+  .rangeScale[type="range"]::-webkit-slider-thumb {
+    width: 9px;
+  }
+
+  .scale,
+  .scaleContainer {
+    width: 436px;
+    height: 51px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .firstPart {
+    padding: 24px 20px 33px 20px;
+  }
+
+  .firstPart_textContent {
+    max-width: 537px;
+    margin: 0 auto 68px auto;
+  }
+
+  .firstPart_textContent h2 {
+    font-size: 64px;
+  }
+
+  .firstPart_textContent h3 {
+    font-size: 36px;
+  }
+
+  .firstPart_textContent p {
+    font-size: 20px;
+  }
+
+  .inputContainer {
+    max-width: 723px;
+  }
+
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 723px;
+  }
+
+  .scale,
+  .scaleContainer {
+    width: 723px;
+    height: 55px;
+  }
+
+  .scaleContainer {
+    margin-top: 24px;
+  }
+
+  .scale {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .firstPart {
+    padding: 8px 60px 33px 20px;
+    max-width: 647px;
+    position: relative;
+    max-height: 444px;
+  }
+
+  .firstPart_textContent {
+    max-width: 490px;
+    margin: 0 0 68px 0;
+  }
+
+  .inputContainer {
+    max-width: 570px;
+  }
+
+  .scale,
+  .scaleContainer,
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 570px;
+  }
+
+  .scale {
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .firstPart {
+    padding: 8px 40px 33px 20px;
+  }
+
+  .firstPart_textContent h3,
+  .firstPart_textContent h2 {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+    justify-content: center;
+  }
+
+  .firstPart {
+    width: 731px;
+    max-width: 731px;
+    padding: 60px 20px 33px 46px;
+  }
+
+  .firstPart_textContent {
+    max-width: 100%;
+  }
+
+  .firstPart_textContent p,
+  .firstPart_textContent h3 {
+    letter-spacing: 0.04em;
+  }
+
+  .inputContainer {
+    max-width: 634px;
+  }
+
+  .scale,
+  .scaleContainer,
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 634px;
+  }
+
+  .scale {
+    object-fit: contain;
+  }
+}

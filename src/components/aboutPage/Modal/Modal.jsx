@@ -40,10 +40,27 @@ const Modal = ({ close }) => {
         </button>
         {/* {children} */}
 
-        <img
-          src="/img/about/modal-image.jpg"
-          alt="One person telling something to another person in a natural setting. The scene is set outdoors in a park"
-        />
+        <picture>
+          <source
+            media="(max-width: 959px)"
+            srcSet="/img/about/modal-image-320.jpg"
+          />
+
+          <source
+            media="(max-width: 1919px)"
+            srcSet="/img/about/modal-image-768.jpg"
+          />
+
+          <source
+            media="(min-width: 1920px)"
+            srcSet="/img/about/modal-image-1920.jpg"
+          />
+
+          <img
+            src="/img/about/modal-image-1920.jpg"
+            alt="One person telling something to another person in a natural setting. The scene is set outdoors in a park"
+          />
+        </picture>
 
         <div className={css.info}>
           <InfoBlock
@@ -53,28 +70,33 @@ const Modal = ({ close }) => {
           />
 
           <div className={css.socials}>
-            <span>{t("about:modalShareText")}</span>
-            <ShareButton>
-              <Icon
-                className={`${css.icon} ${css.facebook}`}
-                name="icon-facebook"
-              />
-            </ShareButton>
-            <ShareButton>
-              <Icon
-                className={`${css.icon} ${css.telegram}`}
-                name="icon-telegram"
-              />
-            </ShareButton>
-            <ShareButton>
-              <Icon className={`${css.icon} ${css.viber}`} name="icon-viber" />
-            </ShareButton>
-            <ShareButton>
-              <Icon
-                className={`${css.icon} ${css.watsapp}`}
-                name="icon-watsapp"
-              />
-            </ShareButton>
+            <p>{t("about:modalShareText")}</p>
+            <div>
+              <ShareButton>
+                <Icon
+                  className={`${css.icon} ${css.facebook}`}
+                  name="icon-facebook"
+                />
+              </ShareButton>
+              <ShareButton>
+                <Icon
+                  className={`${css.icon} ${css.telegram}`}
+                  name="icon-telegram"
+                />
+              </ShareButton>
+              <ShareButton>
+                <Icon
+                  className={`${css.icon} ${css.viber}`}
+                  name="icon-viber"
+                />
+              </ShareButton>
+              <ShareButton>
+                <Icon
+                  className={`${css.icon} ${css.watsapp}`}
+                  name="icon-watsapp"
+                />
+              </ShareButton>
+            </div>
           </div>
         </div>
       </div>
