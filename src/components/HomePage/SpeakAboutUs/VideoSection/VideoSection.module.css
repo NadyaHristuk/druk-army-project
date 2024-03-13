@@ -50,26 +50,71 @@
 }
 
 @media screen and (min-width: 768px) {
-    .videoSection {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+  .videoSection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    .videoContainer,
-    .speakAboutImage {
-      width: 359px;
-      height: 202.39px;
-    }
+  .videoContainer,
+  .speakAboutImage {
+    width: 359px;
+    height: 202.39px;
+  }
 
-    .video {
-        transform: scale(0.632);
-        top: -50px;
-        left: -100px;
-    }
+  .video {
+    transform: scale(0.632);
+    top: -50px;
+    left: -100px;
+  }
 
-    .videoContainer:last-of-type {
-        margin: -20px auto 0 auto;
-    }
+  .videoContainer:last-of-type {
+    margin: -20px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .videoSection {
+    gap: 13px;
+  }
+
+  .videoContainer,
+  .speakAboutImage {
+    width: 298px;
+    height: 168px;
+  }
+
+  .videoContainer {
+    margin-bottom: 0px;
+  }
+
+  .video {
+    transform: scale(0.524);
+    top: -80px;
+    left: -129px;
+  }
+
+  .videoContainer:last-of-type {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videoSection {
+    gap: 16px;
+  }
+
+  .videoContainer,
+  .speakAboutImage {
+    width: 377px;
+    height: 212px;
+  }
+
+  
+  .video {
+    transform: scale(0.669);
+    top: -58px;
+    left: -90px;
+  }
 }
