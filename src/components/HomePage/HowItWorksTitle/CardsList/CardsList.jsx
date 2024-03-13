@@ -42,6 +42,7 @@ const CardsList = () => {
                 alt={card.alt}
                 width={300}
                 height={302}
+                priority
                 className={css.imageCard}
               />
             </div>

@@ -10,6 +10,7 @@
   background-color: var(--header-bg);
   margin-bottom: auto;
   height: 100dvh;
+  margin-top: -4px;
 }
 
 .navMenuList {
@@ -51,7 +52,6 @@
     padding-top: 60px;
     padding-bottom: 39px;
     max-height: 243px;
-    margin-top: -2px;
   }
 
   .navMenuList {
