@@ -187,35 +187,134 @@
 
 .vacModalResultImgContainer {
   display: flex;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  @media only screen and (min-width: 960px) {
+    margin-top: 70px;
+    margin-left: 40px;
+  }
 }
 
 .modalImgResult {
-  width: 512px;
-  height: 512px;
+  width: 334px;
+  height: 334px;
+
+  @media only screen and (min-width: 768px) {
+    width: 482px;
+    height: 482px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 512px;
+    height: 512px;
+  }
 }
 
 .vacModalTitleResultContainer {
   margin-top: 30px;
 
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding: 0 12px;
+  margin-left: 12px;
+
+  @media only screen and (min-width: 768px) {
+    margin-left: 80px;
+  }
+
   @media only screen and (min-width: 960px) {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-left: -70px;
+
+    height: 206px;
+  }
+}
+
+.vacModalResultTitle {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.vacModalResultTitle span {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 64px;
+  }
+}
+
+.vacModalResultDescription {
+  width: 229px;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  color: var(--title-small);
+
+  margin-top: -5px;
+  margin-bottom: 10px;
+
+  @media only screen and (min-width: 768px) {
+    width: 460px;
   }
 }
 
 .vacModalResultBtnContainer {
-  @media only screen and (min-width: 960px) {
-    gap: 10px;
+  @media only screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
-.vacModalResultBtn {
-  @media only screen and (min-width: 960px) {
-    width: 200px;
-    height: 35px;
+.vacModalBtnWait {
+  width: 189px;
+  height: 35px;
+  margin-bottom: 10px;
+
+  background: var(--bg-details);
+
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--main-bg);
+  padding: 7px 20px;
+
+  border: none;
+
+  @media only screen and (min-width: 768px) {
+    margin-right: 7px;
+    margin-bottom: 0;
   }
+}
+
+.vacModalBtnShare {
+  width: 245px;
+  height: 35px;
+
+  background: var(--main-bg);
+
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--bg-details);
+  padding: 7px 20px;
+
+  border: 2px solid var(--bg-details);
+}
+
+.vacModalResultBtnSvg {
+  fill: black;
+  width: 18px;
+  height: 15px;
+  margin-right: 3px;
 }
