@@ -1,27 +1,50 @@
 .videoSection {
-    max-width: 320px;
-    margin: 0 auto;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .imageContainer {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .speakAboutImage {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .videoContainer {
-    width: 310px;
-    height: 175px;
-    position: relative;
-    margin-bottom: 14px;
+  width: 310px;
+  height: 175px;
+  position: relative;
+  margin-bottom: 14px;
 }
 
 .video {
-    transform: scale(0.55);
-    object-fit: cover;
-    position: absolute;
-    top: -72px;
-    left: -125px;
+  transform: scale(0.55);
+  object-fit: cover;
+  position: absolute;
+  top: -72px;
+  left: -125px;
+}
+
+@media screen and (min-width: 480px) {
+  .videoSection,
+  .imageContainer {
+    max-width: 100%;
+  }
+
+  .videoContainer,
+  .speakAboutImage {
+    width: 439px;
+    height: 248px;
+  }
+
+  .videoContainer {
+    margin-bottom: 26px;
+  }
+
+  .video {
+    transform: scale(0.78);
+    top: -23px;
+    left: -61px;
+  }
 }
