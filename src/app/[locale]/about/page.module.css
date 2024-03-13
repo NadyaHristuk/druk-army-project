@@ -3,8 +3,6 @@
   width: 320px;
   margin: 0 auto;
 
-  outline: 1px solid green;
-
   @media only screen and (min-width: 480px) {
     width: 480px;
   }

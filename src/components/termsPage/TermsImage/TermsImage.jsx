@@ -35,6 +35,7 @@ const TermsImage = () => {
             : "/img/terms/bg-img.png"
         }
         alt="Макет міської вулиці"
+        priority
         width={
           isMobileStart && isMobileEnd
             ? 690
