@@ -1,7 +1,22 @@
 .imageContainer {
-    margin: 0 auto;
+    margin-bottom: 14px;
 }
 
 .speakAboutImage {
     object-fit: cover;
+}
+
+.videoContainer {
+    width: 310px;
+    height: 175px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.video {
+    transform: scale(0.55);
+    object-fit: cover;
+    position: absolute;
+    top: -72px;
+    left: -125px;
 }
