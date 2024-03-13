@@ -38,5 +38,17 @@
     "turno":"Order queue",
     "printers":"3D printers",
     "peoplePrinters":"Printers",
-    "altImagePrinters":"3D printer model"
+    "altImagePrinters":"3D printer model",
+    "needYour":"we need your",
+    "support":"support",
+    "needSupportText":"Make a donation to produce (3D-print) necessary supplies for Ukrainian defenders. Every contribution matters as you support our heroes and strengthen the defense of our state.",
+    "altMan":"Volunteer with packages",
+    "slide1Title":"Сollection from Oksana",
+    "slide1Text":"Trench candles",
+    "slide2Title":"Сollection from Andriy",
+    "slide2Text":"the cars for UAF",
+    "slide3Title":"Collection from Major Chornobayev",
+    "slide3Text":"3D-printed orthoses",
+    "slide4Title":"Collection from Life Will Prevail",
+    "slide4Text":"Bandages for UAF"
 }

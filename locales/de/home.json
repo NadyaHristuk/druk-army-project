@@ -38,5 +38,17 @@
     "turno":"Bestellwarteschlange",
     "printers":"3D-Drucker",
     "peoplePrinters":"Druckereien",
-    "altImagePrinters":"3D-Drucker Modell"
+    "altImagePrinters":"3D-Drucker Modell",
+    "needYour":"Wir benötigen",
+    "support":"Unterstützung",
+    "needSupportText":"Bitte spenden Sie für die Herstellung (3D-Druck) der notwendigen Ausrüstung für ukrainische Verteidiger. Jeder Beitrag zählt, da Sie unsere Helden unterstützen und die Verteidigung unseres Landes stärken.",
+    "altMan":"Paketzusteller-Freiwilliger",
+    "slide1Title":"Sammeln von Oksana",
+    "slide1Text":"Fossile Kerzen",
+    "slide2Title":"Sammeln von Andriy",
+    "slide2Text":"Fahrzeuge für ZSU",
+    "slide3Title":"Sammeln von Major Tschornobajew",
+    "slide3Text":"3D-gedruckte Orthesen",
+    "slide4Title":"Sammeln von Leben Sieg",
+    "slide4Text":"Bandagen für ZSU"
 }

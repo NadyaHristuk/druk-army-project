@@ -38,5 +38,17 @@
     "turno":"Kolejka zamówień",
     "printers":"3D drukarek",
     "peoplePrinters":"Drukarek",
-    "altImagePrinters":"drukarka 3D modelu"
+    "altImagePrinters":"drukarka 3D modelu",
+    "needYour":"Potrzebujemy twojej",
+    "support":"Wsparcie",
+    "needSupportText":"Dokonaj darowizny na produkcję niezbędnych akcesoriów (druk 3D) dla ukraińskich obrońców. Każda wpłata ma znaczenie, ponieważ wspierasz naszych bohaterów i wzmacniasz obronę naszego państwa.",
+    "altMan":"Wolontariusz z paczkami",
+    "slide1Title":"Darowizna od Oksany",
+    "slide1Text":"Świece do ozdoby grobu",
+    "slide2Title":"Darowizna od Andriya",
+    "slide2Text":"Samochody dla ZSU",
+    "slide3Title":"Darowizna od majora Czarnobajewa",
+    "slide3Text":"Ortodoncje drukowane w 3D",
+    "slide4Title":"Życie zwycięży zbiórkę",
+    "slide4Text":"Opaski na ZSU."
 }
