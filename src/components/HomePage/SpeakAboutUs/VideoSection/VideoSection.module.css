@@ -111,10 +111,29 @@
     height: 212px;
   }
 
-  
   .video {
     transform: scale(0.669);
     top: -58px;
     left: -90px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .videoSection {
+    max-width: 1526px;
+    margin: 20px auto 0 auto;
+    gap: 20px;
+  }
+
+  .videoContainer,
+  .speakAboutImage {
+    width: 493px;
+    height: 278px;
+  }
+
+  .video {
+    transform: scale(0.87);
+    top: -25px;
+    left: -29px;
   }
 }
