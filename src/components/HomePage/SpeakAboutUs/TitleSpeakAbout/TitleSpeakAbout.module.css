@@ -45,6 +45,7 @@
 
     .mainTitle {
       font-size: 20px;
+      margin-bottom: 24px;
     }
   
     .titleAccent {
@@ -58,7 +59,13 @@
   
   @media screen and (min-width: 768px) {
     .mainTitleContainer {
-      max-width: 481px;
+      max-width: 100%;
+    }
+
+    .mainTitle::after {
+      width: 583px;
+      height: 3px;
+      bottom: -10px;
     }
   
     .mainTitle {
@@ -71,7 +78,6 @@
   
     .mainTitleText {
       font-size: 20px;
-      text-align: left;
     }
   }
   

@@ -48,3 +48,28 @@
     left: -61px;
   }
 }
+
+@media screen and (min-width: 768px) {
+    .videoSection {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .videoContainer,
+    .speakAboutImage {
+      width: 359px;
+      height: 202.39px;
+    }
+
+    .video {
+        transform: scale(0.632);
+        top: -50px;
+        left: -100px;
+    }
+
+    .videoContainer:last-of-type {
+        margin: -20px auto 0 auto;
+    }
+}
