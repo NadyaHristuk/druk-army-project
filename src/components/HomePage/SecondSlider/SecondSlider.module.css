@@ -33,12 +33,20 @@
 .titleSlide {
   font-size: 16px;
   font-weight: 500;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .subtitleSlide {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  max-width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .progressBar {

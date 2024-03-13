@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import { useRef } from "react";
 import { nanoid } from "nanoid";
@@ -19,64 +20,65 @@ const SecondSlider = () => {
   const isDesktop1920 = useMediaQuery({minWidth: 1920});
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+  const { t } = useTranslation();
 
   const slides = [
     {
       img: "/img/home/slider2/fire.png",
       id: nanoid(),
-      title: "Збір від Оксани",
-      subtitle: "окопні свічки",
+      title: t("home:slide1Title"),
+      subtitle: t("home:slide1Text"),
       progress: "7%",
     },
     {
       img: "/img/home/slider2/cars.png",
       id: nanoid(),
-      title: "Збір від Андрія",
-      subtitle: "автівки для зсу",
+      title: t("home:slide2Title"),
+      subtitle: t("home:slide2Text"),
       progress: "54%",
     },
     {
       img: "/img/home/slider2/items.png",
       id: nanoid(),
-      title: "Збір від Майора Чорнобаєва",
-      subtitle: "3D-друковані ортези",
+      title: t("home:slide3Title"),
+      subtitle: t("home:slide3Text"),
       progress: "32%",
     },
     {
       img: "/img/home/slider2/boxes.png",
       id: nanoid(),
-      title: "Збір від Життя Переможе",
-      subtitle: "бандажі для зсу",
+      title: t("home:slide4Title"),
+      subtitle: t("home:slide4Text"),
       progress: "68%",
     },
     {
       img: "/img/home/slider2/fire.png",
       id: nanoid(),
-      title: "Збір від Оксани",
-      subtitle: "окопні свічки",
+      title: t("home:slide1Title"),
+      subtitle: t("home:slide1Text"),
       progress: "7%",
     },
     {
       img: "/img/home/slider2/cars.png",
       id: nanoid(),
-      title: "Збір від Андрія",
-      subtitle: "автівки для зсу",
+      title: t("home:slide2Title"),
+      subtitle: t("home:slide2Text"),
       progress: "54%",
     },
     {
       img: "/img/home/slider2/items.png",
       id: nanoid(),
-      title: "Збір від Майора Чорнобаєва",
-      subtitle: "3D-друковані ортези",
+      title: t("home:slide3Title"),
+      subtitle: t("home:slide3Text"),
       progress: "32%",
     },
     {
       img: "/img/home/slider2/boxes.png",
       id: nanoid(),
-      title: "Збір від Життя Переможе",
-      subtitle: "бандажі для зсу",
+      title: t("home:slide4Title"),
+      subtitle: t("home:slide4Text"),
       progress: "68%",
-    },
+    }
   ];
 
 
