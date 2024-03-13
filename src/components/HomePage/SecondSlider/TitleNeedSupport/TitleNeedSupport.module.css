@@ -203,7 +203,6 @@
     padding-bottom: 79px;
     padding-top: 200px;
     margin-top: -100px;
-    position: relative;
    }
 
   .mainTitleContainer {
@@ -225,22 +224,19 @@
   .container {
     width: 1095px;
     padding: 0;
+    position: relative;
   }
 
   .sliderMan {
     position: absolute;
-    bottom: 0;
-    left: 12px;
+    bottom: -79px;
+    left: -107px;
     z-index: 5;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .mainTitleContainer {
-    margin-left: 180px;
-  }
-
-  .container {
-    width: 1920px;
+  .sliderMan {
+    left: -180px;
   }
 }

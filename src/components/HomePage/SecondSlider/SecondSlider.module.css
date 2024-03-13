@@ -131,7 +131,7 @@
 
   .arrowLeftBtn,
   .arrowRightBtn {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--bg-arrows);
     width: 85px;
     height: 243px;
     display: flex;
@@ -152,7 +152,7 @@
   }
 
   .slide {
-    transform: translateX(454px) !important;
+    transform: translateX(-36px) !important;
     max-width: 365px;
   }
 
@@ -219,7 +219,16 @@
 }
 
 @media only screen and (min-width: 1920px) {
-  .container {
+  .container, .mySwiper {
     width: 1920px;
+  }
+
+  .slide {
+    transform: translateX(57px) !important;
+  }
+
+  .arrowLeftBtn,
+  .arrowRightBtn {
+    width: 184px;
   }
 }

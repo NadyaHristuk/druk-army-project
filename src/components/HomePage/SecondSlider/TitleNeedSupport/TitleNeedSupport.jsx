@@ -27,8 +27,7 @@ const TitleNeedSupport = () => {
             </span>
           </button>
         </div>
-      </div>
-      {isDesktop1200 && (
+        {isDesktop1200 && (
         <Image
           src={"/img/home/slider2-man.png"}
           alt="Волонтер з посилками"
@@ -37,6 +36,7 @@ const TitleNeedSupport = () => {
           className={css.sliderMan}
         />
       )}
+      </div>
     </div>
   );
 };
