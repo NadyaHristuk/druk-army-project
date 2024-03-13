@@ -1,3 +1,8 @@
+.videoSection {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
 .imageContainer {
     margin-bottom: 14px;
 }

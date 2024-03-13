@@ -3,7 +3,7 @@ import css from "./VideoSection.module.css";
 
 const VideoSection = () => {
   return (
-    <div>
+    <div className={css.videoSection}>
       <div className={css.imageContainer}>
         <Image
           src={"/img/home/speakAboutImage.png"}
