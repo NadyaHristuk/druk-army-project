@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import css from "./NavMenuFooter.module.css";
 import NavLinkFooter from "./NavLinkFooter/NavLinkFooter";
+import css from "./NavMenuFooter.module.css";
 
 const NavMenuFooter = () => {
   const { t } = useTranslation();
@@ -28,7 +28,7 @@ const NavMenuFooter = () => {
   return (
     <div className={css.list}>
       {linksFooter.map((link) => (
-        <NavLinkFooter item={link} key={link.title} />
+        <NavLinkFooter item={link} key={link.title}/>
       ))}
     </div>
   );
