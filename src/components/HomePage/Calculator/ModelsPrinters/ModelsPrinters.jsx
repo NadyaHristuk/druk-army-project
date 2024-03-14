@@ -30,6 +30,7 @@ const ModelsPrinters = ({ quality }) => {
               width={275}
               height={254}
               className={css.modelPrinterFirst}
+              loading="lazy"
             />
           )}
           {(resultCalc === "one Bambulab" || resultCalc === "two Bambulab") && (
@@ -40,6 +41,7 @@ const ModelsPrinters = ({ quality }) => {
               height={204}
               style={resultCalc === "two Bambulab" && {left: 20}}
               className={css.modelPrinterFirst_Bambulab}
+              loading="lazy"
             />
           )}
         </div>
@@ -53,6 +55,7 @@ const ModelsPrinters = ({ quality }) => {
               width={211}
               height={192}
               className={css.modelPrinterSecond}
+              loading="lazy"
             />
           )}
           {resultCalc === "two Bambulab" && (
@@ -62,6 +65,7 @@ const ModelsPrinters = ({ quality }) => {
               width={151}
               height={132}
               className={css.modelPrinterSecond_Bambulab}
+              loading="lazy"
             />
           )}
         </div>

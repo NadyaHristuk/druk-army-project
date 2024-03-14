@@ -121,6 +121,7 @@ const Calculator = () => {
               width={297}
               height={44}
               className={css.scale}
+              loading="lazy"
             />
           </div>
         </div>

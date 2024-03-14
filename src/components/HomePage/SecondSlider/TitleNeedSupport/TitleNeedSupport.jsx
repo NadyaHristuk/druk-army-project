@@ -36,6 +36,7 @@ const TitleNeedSupport = () => {
           width={606}
           height={922}
           className={css.sliderMan}
+          loading="lazy"
         />
       )}
       </div>

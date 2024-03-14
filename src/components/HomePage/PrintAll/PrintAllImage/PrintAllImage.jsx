@@ -12,6 +12,7 @@ const PrintAllImage = () => {
           width={270}
           height={319}
           className={css.catImage}
+          loading="lazy"
         />
         <Image
           src={"/img/home/tweet.webp"}
@@ -19,6 +20,7 @@ const PrintAllImage = () => {
           width={204.8}
           height={114.3}
           className={css.tweet}
+          loading="lazy"
         />
       </div>
     </div>

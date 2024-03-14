@@ -29,6 +29,7 @@ const VideoSection = () => {
           width={310}
           height={175}
           className={css.speakAboutImage}
+          loading="lazy"
         />
       </div>
       <div className={css.videoContainer}>

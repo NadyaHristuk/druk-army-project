@@ -28,6 +28,7 @@ const LittleAbout = () => {
             width={692}
             height={688}
             className={css.girl}
+            loading="lazy"
             style={
               isTablet &&
               isTabletEnd &&
@@ -40,6 +41,7 @@ const LittleAbout = () => {
             width={287}
             height={366}
             className={css.bg_girl}
+            loading="lazy"
           />}
         </div>
       )}

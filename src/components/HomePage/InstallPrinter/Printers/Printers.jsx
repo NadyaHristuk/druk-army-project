@@ -37,6 +37,7 @@ const Printers = () => {
                 width={236}
                 height={236}
                 className={css.printerImage}
+                loading="lazy"
               />
             </div>
             <h3 className={css.model}>{title}</h3>
@@ -51,6 +52,7 @@ const Printers = () => {
           width={433}
           height={474}
           className={css.imageWorking}
+          loading="lazy"
         />
       </div>
     </div>
