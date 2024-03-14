@@ -1,29 +1,18 @@
 .videoSection {
   max-width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 13px;
 }
 
-.imageContainer {
-  margin-bottom: 14px;
-}
-
-.speakAboutImage {
-  object-fit: cover;
-}
-
-.videoContainer {
-  width: 310px;
-  height: 175px;
-  position: relative;
-  margin-bottom: 14px;
-}
-
-.video {
-  transform: scale(0.55);
-  object-fit: cover;
-  position: absolute;
-  top: -72px;
-  left: -125px;
+.btnModalYoutube {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -32,45 +21,30 @@
     max-width: 100%;
   }
 
+  .btnModalYoutube > img,
+  .btnModalYoutube,
   .videoContainer,
   .speakAboutImage {
     width: 439px;
     height: 248px;
-  }
-
-  .videoContainer {
-    margin-bottom: 26px;
-  }
-
-  .video {
-    transform: scale(0.78);
-    top: -23px;
-    left: -61px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .videoSection {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
   }
 
+  .btnModalYoutube > img,
+  .btnModalYoutube,
   .videoContainer,
   .speakAboutImage {
     width: 359px;
     height: 202.39px;
-  }
-
-  .video {
-    transform: scale(0.632);
-    top: -50px;
-    left: -100px;
-  }
-
-  .videoContainer:last-of-type {
-    margin: -20px auto 0 auto;
   }
 }
 
@@ -79,24 +53,12 @@
     gap: 13px;
   }
 
+  .btnModalYoutube > img,
+  .btnModalYoutube,
   .videoContainer,
   .speakAboutImage {
     width: 298px;
     height: 168px;
-  }
-
-  .videoContainer {
-    margin-bottom: 0px;
-  }
-
-  .video {
-    transform: scale(0.524);
-    top: -80px;
-    left: -129px;
-  }
-
-  .videoContainer:last-of-type {
-    margin: 0px;
   }
 }
 
@@ -105,16 +67,12 @@
     gap: 16px;
   }
 
+  .btnModalYoutube > img,
+  .btnModalYoutube,
   .videoContainer,
   .speakAboutImage {
     width: 377px;
     height: 212px;
-  }
-
-  .video {
-    transform: scale(0.669);
-    top: -58px;
-    left: -90px;
   }
 }
 
@@ -125,15 +83,11 @@
     gap: 20px;
   }
 
+  .btnModalYoutube > img,
+  .btnModalYoutube,
   .videoContainer,
   .speakAboutImage {
     width: 493px;
     height: 278px;
-  }
-
-  .video {
-    transform: scale(0.87);
-    top: -25px;
-    left: -29px;
   }
 }

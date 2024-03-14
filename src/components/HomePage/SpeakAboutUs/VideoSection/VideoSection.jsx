@@ -14,28 +14,24 @@ const VideoSection = () => {
         />
       </div>
       <div className={css.videoContainer}>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/PUv4p9GvwFU?si=gppEaBZNVzNHTJjA&amp;start=13"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          className={css.video}
-        ></iframe>
+        <button type="button" className={css.btnModalYoutube}>
+          <Image
+            src={"/img/home/video-youtube/youtube3.webp"}
+            alt="Новини, де про нас говорять"
+            width={310}
+            height={175}
+          />
+        </button>
       </div>
       <div className={css.videoContainer}>
-        <iframe
-          width="560"
-          height="315"
-          className={css.video}
-          src="https://www.youtube.com/embed/VBEy43hjCRA?si=aj3gU9cBAsjo1pc-&amp;start=7"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <button type="button" className={css.btnModalYoutube}>
+          <Image
+            src={"/img/home/video-youtube/youtube2.webp"}
+            alt="Новини, де про нас говорять"
+            width={310}
+            height={175}
+          />
+        </button>
       </div>
     </div>
   );
