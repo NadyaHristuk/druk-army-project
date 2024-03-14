@@ -15,6 +15,11 @@
   padding: 0;
 }
 
+.video {
+  width: 250px;
+  height: 118px;
+}
+
 @media screen and (min-width: 480px) {
   .videoSection,
   .imageContainer {
@@ -28,6 +33,11 @@
     width: 439px;
     height: 248px;
     margin: 0 auto;
+  }
+
+  .video {
+    width: 400px;
+    height: 211px;
   }
 }
 
@@ -45,6 +55,11 @@
   .speakAboutImage {
     width: 359px;
     height: 202.39px;
+  }
+
+  .video {
+    width: 600px;
+    height: 411px;
   }
 }
 
@@ -74,6 +89,11 @@
     width: 377px;
     height: 212px;
   }
+
+  .video {
+    width: 1000px;
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -89,5 +109,10 @@
   .speakAboutImage {
     width: 493px;
     height: 278px;
+  }
+
+  .video {
+    width: 1452px;
+    height: 816px;
   }
 }
