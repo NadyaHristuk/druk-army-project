@@ -1,6 +1,6 @@
 .mainTitleContainer {
   max-width: 280px;
-  margin-bottom: 19px;
+  margin: 0 auto 19px auto;
   text-align: center;
 }
 
