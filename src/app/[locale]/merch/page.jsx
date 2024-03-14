@@ -4,6 +4,7 @@ import MerchList from "@/components/merch/merchList/merchList";
 import MerchOrder from "@/components/merch/merchOrder/merchOrder";
 import { Suspense } from "react";
 import styles from "./merch.module.css";
+
 const MerchPage = () => {
   return (
     <Container>

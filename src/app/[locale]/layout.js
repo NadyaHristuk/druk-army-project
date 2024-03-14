@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import { Providers } from "@/app/[locale]/providers";
+import { Suspense } from "react";
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 import Header from "@/components/header/Header.jsx";
@@ -41,7 +42,9 @@ export default async function RootLayout({ children, params: { locale } }) {
           >
             <GlobalProvider>
               <Header />
-              <main>{children}</main>
+              <main>
+                <Suspense>{children}</Suspense>
+              </main>
               <Footer />
             </GlobalProvider>
           </TranslationsProvider>
