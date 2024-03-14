@@ -7,14 +7,14 @@ const PrintAllImage = () => {
     <div>
       <div className={css.imagesContainer}>
         <Image
-          src={"/img/home/sticker.png"}
+          src={"/img/home/sticker.webp"}
           alt="Мультяшний кіт військовий"
           width={270}
           height={319}
           className={css.catImage}
         />
         <Image
-          src={"/img/home/tweet.png"}
+          src={"/img/home/tweet.webp"}
           alt="Повідомлення в Tweeter під ніком Майор Чорнобаєв"
           width={204.8}
           height={114.3}

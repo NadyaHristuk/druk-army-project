@@ -31,7 +31,7 @@ const TitleNeedSupport = () => {
         </div>
         {isDesktop1200 && (
         <Image
-          src={"/img/home/slider2-man.png"}
+          src={"/img/home/slider2-man.webp"}
           alt={t("home:altMan")}
           width={606}
           height={922}

@@ -24,7 +24,7 @@ const VideoSection = () => {
     <div className={css.videoSection}>
       <div className={css.imageContainer}>
         <Image
-          src={"/img/home/speakAboutImage.png"}
+          src={"/img/home/speakAboutImage.webp"}
           alt="Військовий і волонтер"
           width={310}
           height={175}

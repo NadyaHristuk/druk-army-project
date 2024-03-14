@@ -21,8 +21,8 @@ const LittleAbout = () => {
           <Image
             src={
               theme === "light"
-                ? "/img/home/girl-light.png"
-                : "/img/home/girl-dark-theme.png"
+                ? "/img/home/girl-light.webp"
+                : "/img/home/girl-dark-theme.webp"
             }
             alt="гарна анімована дівчина"
             width={692}
@@ -35,7 +35,7 @@ const LittleAbout = () => {
             }
           />
           {theme === "dark" && <Image
-            src={"/img/home/bg.png"}
+            src={"/img/home/bg.webp"}
             alt="background layout"
             width={287}
             height={366}

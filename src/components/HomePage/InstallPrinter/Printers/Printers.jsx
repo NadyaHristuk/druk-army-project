@@ -9,17 +9,17 @@ const Printers = () => {
 
   const printers = [
     {
-      image: "/img/home/calculator/printer1.png",
+      image: "/img/home/calculator/printer1.webp",
       title: "ENDER-3 V3 SE",
       quality: `1084 ${t("home:units")}`,
     },
     {
-      image: "/img/home/calculator/printer.png",
+      image: "/img/home/calculator/printer.webp",
       title: "CREALITY ENDER 3 V2",
       quality: `478 ${t("home:units")}`,
     },
     {
-      image: "/img/home/calculator/printer3.png",
+      image: "/img/home/calculator/printer3.webp",
       title: "CREALITY ENDER 3",
       quality: `415 ${t("home:units")}`,
     },
@@ -46,7 +46,7 @@ const Printers = () => {
       </ul>
       <div className={css.imageContainer}>
         <Image
-          src="/img/home/calculator/working.png"
+          src="/img/home/calculator/working.webp"
           alt="як люди працюють"
           width={433}
           height={474}
