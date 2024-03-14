@@ -21,8 +21,8 @@ const ImageNotFound = () => {
       <Image
         src={
           theme === "light"
-            ? "/img/notfound/notfound.png"
-            : "/img/notfound/notfound-dark.png"
+            ? "/img/notfound/notfound.webp"
+            : "/img/notfound/notfound-dark.webp"
         }
         alt="Error 404. This page not found"
         priority
