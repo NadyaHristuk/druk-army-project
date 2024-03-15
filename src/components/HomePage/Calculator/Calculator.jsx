@@ -116,11 +116,12 @@ const Calculator = () => {
           </label>
           <div className={css.scaleContainer}>
             <Image
-              src={"/img/home/calculator/scale.png"}
+              src={"/img/home/calculator/scale.webp"}
               alt="Range scale from 0 to 1000$"
               width={297}
               height={44}
               className={css.scale}
+              loading="lazy"
             />
           </div>
         </div>

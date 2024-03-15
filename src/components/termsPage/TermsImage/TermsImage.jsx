@@ -31,8 +31,8 @@ const TermsImage = () => {
       <Image
         src={
           theme === "light"
-            ? "/img/terms/terms-light.png"
-            : "/img/terms/bg-img.png"
+            ? "/img/terms/terms-light.webp"
+            : "/img/terms/bg-img.webp"
         }
         alt="Макет міської вулиці"
         priority

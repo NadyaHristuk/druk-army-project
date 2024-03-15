@@ -1,10 +1,10 @@
 "use client";
+
 import Icon from "@/components/Icon/Icon";
 import styles from "./cardType2.module.css";
 import Image from "next/image";
 import { useContext, useState, useEffect } from "react";
 import CartContext from "@/context/CartContext";
-import { nanoid } from "nanoid";
 
 
 const products = [

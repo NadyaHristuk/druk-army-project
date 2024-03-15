@@ -54,7 +54,7 @@
   top: 0;
   left: 0;
   width: 0;
-  background-color: #333333;
+  background-color: var(--accent-color);
   display: block;
   height: 38px;
   z-index: 1;
@@ -64,6 +64,7 @@
 .buttonSupport:focus::after,
 .buttonSupport:hover::after {
   width: 100%;
+  border: 2px solid white;
 }
 
 .iconSupportBtn {

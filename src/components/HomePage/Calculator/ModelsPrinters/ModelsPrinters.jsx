@@ -25,21 +25,23 @@ const ModelsPrinters = ({ quality }) => {
         <div className={css.modelOne}>
           {(resultCalc === "one printer" || resultCalc === "two printers") && (
             <Image
-              src={"/img/home/calculator/ender3.png"}
+              src={"/img/home/calculator/ender3.webp"}
               alt={`${t("home:altImagePrinters")} CREALITY ENDER 3`}
               width={275}
               height={254}
               className={css.modelPrinterFirst}
+              loading="lazy"
             />
           )}
           {(resultCalc === "one Bambulab" || resultCalc === "two Bambulab") && (
             <Image
-              src={"/img/home/calculator/Bambu.png"}
+              src={"/img/home/calculator/Bambu.webp"}
               alt={`${t("home:altImagePrinters")} BAMBULAB`}
               width={225}
               height={204}
               style={resultCalc === "two Bambulab" && {left: 20}}
               className={css.modelPrinterFirst_Bambulab}
+              loading="lazy"
             />
           )}
         </div>
@@ -48,20 +50,22 @@ const ModelsPrinters = ({ quality }) => {
         <div className={css.modelTwo}>
           {resultCalc === "two printers" && (
             <Image
-              src={"/img/home/calculator/ender3.png"}
+              src={"/img/home/calculator/ender3.webp"}
               alt={`${t("home:altImagePrinters")} CREALITY ENDER 3`}
               width={211}
               height={192}
               className={css.modelPrinterSecond}
+              loading="lazy"
             />
           )}
           {resultCalc === "two Bambulab" && (
             <Image
-              src={"/img/home/calculator/Bambu.png"}
+              src={"/img/home/calculator/Bambu.webp"}
               alt={`${t("home:altImagePrinters")} BAMBULAB`}
               width={151}
               height={132}
               className={css.modelPrinterSecond_Bambulab}
+              loading="lazy"
             />
           )}
         </div>

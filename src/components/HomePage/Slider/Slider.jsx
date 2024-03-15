@@ -10,9 +10,9 @@ import "swiper/css";
 
 const Slider = () => {
   const slides = [
-    { img: "/img/home/slider/slide1.png", id: nanoid() },
-    { img: "/img/home/slider/slide2.png", id: nanoid() },
-    { img: "/img/home/slider/slide3.png", id: nanoid() },
+    { img: "/img/home/slider/slide1.webp", id: nanoid() },
+    { img: "/img/home/slider/slide2.webp", id: nanoid() },
+    { img: "/img/home/slider/slide3.webp", id: nanoid() },
   ];
 
   return (
@@ -46,7 +46,7 @@ const Slider = () => {
       </Swiper>
       <div className={css.logoSliderContainer}>
           <Image
-            src={"/img/home/sliderLogo.png"}
+            src={"/img/home/sliderLogo.webp"}
             alt="Логотип ДрукАрмії"
             priority
             width={107}

@@ -9,21 +9,21 @@ const CardsList = () => {
 
   const cards = [
     {
-      src: "/img/home/process/solder.png",
+      src: "/img/home/process/solder.webp",
       alt: t("home:orderAlt"),
       number: 1,
       descTitle: t("home:order"),
       descText: t("home:orderText"),
     },
     {
-      src: "/img/home/process/printer.png",
+      src: "/img/home/process/printer.webp",
       alt: t("home:printAlt"),
       number: 2,
       descTitle: t("home:print"),
       descText: t("home:printText"),
     },
     {
-      src: "/img/home/process/volunteer.png",
+      src: "/img/home/process/volunteer.webp",
       alt: t("home:deliveryAlt"),
       number: 3,
       descTitle: t("home:delivery"),

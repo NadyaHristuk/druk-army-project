@@ -1,0 +1,118 @@
+.videoSection {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 13px;
+}
+
+.btnModalYoutube {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.video {
+  width: 250px;
+  height: 118px;
+}
+
+@media screen and (min-width: 480px) {
+  .videoSection,
+  .imageContainer {
+    max-width: 100%;
+  }
+
+  .btnModalYoutube > img,
+  .btnModalYoutube,
+  .videoContainer,
+  .speakAboutImage {
+    width: 439px;
+    height: 248px;
+    margin: 0 auto;
+  }
+
+  .video {
+    width: 400px;
+    height: 211px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .videoSection {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .btnModalYoutube > img,
+  .btnModalYoutube,
+  .videoContainer,
+  .speakAboutImage {
+    width: 359px;
+    height: 202.39px;
+  }
+
+  .video {
+    width: 600px;
+    height: 411px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .videoSection {
+    gap: 13px;
+  }
+
+  .btnModalYoutube > img,
+  .btnModalYoutube,
+  .videoContainer,
+  .speakAboutImage {
+    width: 298px;
+    height: 168px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .videoSection {
+    gap: 16px;
+  }
+
+  .btnModalYoutube > img,
+  .btnModalYoutube,
+  .videoContainer,
+  .speakAboutImage {
+    width: 377px;
+    height: 212px;
+  }
+
+  .video {
+    width: 1000px;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .videoSection {
+    max-width: 1526px;
+    margin: 20px auto 0 auto;
+    gap: 20px;
+  }
+
+  .btnModalYoutube > img,
+  .btnModalYoutube,
+  .videoContainer,
+  .speakAboutImage {
+    width: 493px;
+    height: 278px;
+  }
+
+  .video {
+    width: 1452px;
+    height: 816px;
+  }
+}

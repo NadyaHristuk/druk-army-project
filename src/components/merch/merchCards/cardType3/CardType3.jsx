@@ -1,4 +1,5 @@
 "use client";
+
 import Icon from "@/components/Icon/Icon";
 import styles from "./cardType3.module.css";
 import Image from "next/image";

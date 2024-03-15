@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import css from "./Logo.module.css";
-import logo from "/public/img/logo.png";
+import logo from "/public/img/logo.webp";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react"
