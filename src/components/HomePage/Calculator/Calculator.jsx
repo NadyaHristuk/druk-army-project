@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
+import scaleImg from "/public/img/home/calculator/scale.webp";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
@@ -116,7 +117,7 @@ const Calculator = () => {
           </label>
           <div className={css.scaleContainer}>
             <Image
-              src={"/img/home/calculator/scale.webp"}
+              src={scaleImg}
               alt="Range scale from 0 to 1000$"
               width={297}
               height={44}

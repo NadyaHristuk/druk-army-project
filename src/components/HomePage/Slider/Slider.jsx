@@ -1,18 +1,21 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { nanoid } from "nanoid";
+import sliderLogo from "/public/img/home/sliderLogo.webp";
+import slideOne from "/public/img/home/slider/slide1.webp";
+import slideTwo from "/public/img/home/slider/slide2.webp";
+import slideThree from "/public/img/home/slider/slide3.webp";
 import css from "./Slider.module.css";
-
 import "swiper/css";
 
 const Slider = () => {
   const slides = [
-    { img: "/img/home/slider/slide1.webp", id: nanoid() },
-    { img: "/img/home/slider/slide2.webp", id: nanoid() },
-    { img: "/img/home/slider/slide3.webp", id: nanoid() },
+    { img: slideOne, id: nanoid() },
+    { img: slideTwo, id: nanoid() },
+    { img: slideThree, id: nanoid() },
   ];
 
   return (
@@ -46,7 +49,7 @@ const Slider = () => {
       </Swiper>
       <div className={css.logoSliderContainer}>
           <Image
-            src={"/img/home/sliderLogo.webp"}
+            src={sliderLogo}
             alt="Логотип ДрукАрмії"
             priority
             width={107}

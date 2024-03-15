@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import css from "./ListCards.module.css";
 import Image from "next/image";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import imgSpecialForce from "/public/img/footer-logo/logo-1.webp";
+import imgMirotvorec from "/public/img/footer-logo/logo-2.webp";
+import imgAeroRozvidka from "/public/img/footer-logo/logo-3.webp";
+import css from "./ListCards.module.css";
 
 const ListCards = () => {
   const isTabletStart = useMediaQuery({ minWidth: 768 });
@@ -21,7 +24,7 @@ const ListCards = () => {
           <Link href={"https://sof.mil.gov.ua"} target="_blank">
             <Image
               loading="lazy"
-              src={"/img/footer-logo/logo-2.webp"}
+              src={imgSpecialForce}
               alt="Емблема Сил Спецільних Операцій України"
               width={
                 isTabletStart && isTabletEnd
@@ -51,7 +54,7 @@ const ListCards = () => {
           <Link href={"https://myrotvorets.center"} target="_blank">
             <Image
               loading="lazy"
-              src={"/img/footer-logo/logo-1.webp"}
+              src={imgMirotvorec}
               alt="Емблема Центру Миротворець"
               width={
                 isTabletStart && isTabletEnd
@@ -82,7 +85,7 @@ const ListCards = () => {
           <Link href={"https://aerorozvidka.ngo/uk"} target="_blank">
             <Image
               loading="lazy"
-              src={"/img/footer-logo/logo-3.webp"}
+              src={imgAeroRozvidka}
               alt="Емблема Аеророзвідки України"
               width={
                 isTabletStart && isTabletEnd

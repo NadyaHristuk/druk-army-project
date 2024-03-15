@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Modal from "../Modal/Modal";
+import speakAboutImg from "/public/img/home/speakAboutImage.webp";
+import wrapperYoutubeOne from "/public/img/home/video-youtube/youtube2.webp";
+import wrapperYoutubeTwo from "/public/img/home/video-youtube/youtube3.webp";
 import css from "./VideoSection.module.css";
 
 const VideoSection = () => {
@@ -24,7 +27,7 @@ const VideoSection = () => {
     <div className={css.videoSection}>
       <div className={css.imageContainer}>
         <Image
-          src={"/img/home/speakAboutImage.webp"}
+          src={speakAboutImg}
           alt="Військовий і волонтер"
           width={310}
           height={175}
@@ -39,7 +42,7 @@ const VideoSection = () => {
           onClick={() => setOpenFirstModal(true)}
         >
           <Image
-            src={"/img/home/video-youtube/youtube3.webp"}
+            src={wrapperYoutubeTwo}
             alt="Новини, де про нас говорять"
             width={310}
             height={175}
@@ -52,7 +55,7 @@ const VideoSection = () => {
       >
         <button type="button" className={css.btnModalYoutube}>
           <Image
-            src={"/img/home/video-youtube/youtube2.webp"}
+            src={wrapperYoutubeOne}
             alt="Новини, де про нас говорять"
             width={310}
             height={175}
