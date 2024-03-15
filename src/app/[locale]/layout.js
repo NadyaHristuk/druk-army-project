@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { Providers } from "@/app/[locale]/providers";
 import { Suspense } from "react";
 import initTranslations from "@/app/i18n";
@@ -21,7 +20,6 @@ const i18nNamespaces = [
   "technical-works",
 ];
 
-const font = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -33,7 +31,7 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang="uk">
-      <body className={font.className}>
+      <body>
         <Providers>
           <TranslationsProvider
             namespaces={i18nNamespaces}

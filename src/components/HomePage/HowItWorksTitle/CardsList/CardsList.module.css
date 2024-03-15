@@ -39,6 +39,7 @@
 }
 
 .number {
+  font-family: "Montserrat-Medium";
   background-color: var(--accent-color);
   max-height: 101px;
   padding: 0 16px;
@@ -46,7 +47,7 @@
 
 .number p {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Medium";
   font-weight: 700;
   font-size: 96px;
   text-transform: uppercase;
