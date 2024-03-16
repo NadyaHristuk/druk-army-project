@@ -54,38 +54,24 @@
       width: 480px;
     }
   
-    .arrowLeftBtn,
     .arrowRightBtn,
-    .arrowLeftIcon,
     .arrowRightIcon {
-      width: 46.05px;
-      height: 86.64px;
-    }
-  
-    .arrowRightBtn {
-      top: 150px;
-      right: 0px;
-    }
-  
-    .arrowLeftBtn {
-      display: block;
-      position: absolute;
-      top: 150px;
-      left: 0;
-    }
-  
-    .slide {
-      padding-left: 50px;
-    }
-  
-    .slide > div {
-      margin-left: 16px;
+      display: none;
     }
   
     .slideImage {
-      width: 354px;
-      height: 243px;
+      width: 256px;
+      height: 165px;
     }
+
+    .textContent {
+      max-width: 256px;
+    }
+
+    .slide {
+      margin-left: 20px;
+    }
+  
   }
   
   @media only screen and (min-width: 768px) {

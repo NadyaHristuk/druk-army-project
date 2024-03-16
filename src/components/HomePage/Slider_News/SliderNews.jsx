@@ -16,6 +16,7 @@ import drukImg from "/public/img/home/slider3/druk.webp";
 import css from "./SliderNews.module.css";
 
 const SliderNews = () => {
+  const isMobileBig = useMediaQuery({minWidth: 480});
   const isTablet = useMediaQuery({minWidth: 768});
   const isTabletEnd = useMediaQuery({maxWidth: 959.98});
   const isDesktop = useMediaQuery({minWidth: 960});
@@ -87,7 +88,7 @@ const SliderNews = () => {
       <div className={css.container}>
         <Swiper
           spaceBetween={isTablet && isTabletEnd ? 38 : isDesktop ? 20 : 30}
-          slidesPerView={isTablet && isDesktopEnd ? 2 : isDesktop1920 ? 4 : 1}
+          slidesPerView={isMobileBig && isDesktopEnd ? 2 : isDesktop1920 ? 4 : 1}
           centeredSlides={true}
           autoplay={{
             delay: 2500,
