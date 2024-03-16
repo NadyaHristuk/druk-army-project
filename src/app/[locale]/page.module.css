@@ -48,6 +48,8 @@
     align-items: flex-start;
     justify-content: center;
     column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -57,5 +59,10 @@
     max-width: 1756px;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .pertnersSection {
+    max-width: 1536px;
+    column-gap: 40px;
   }
 }

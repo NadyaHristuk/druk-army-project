@@ -74,3 +74,13 @@
     }
   }
   
+  @media screen and (min-width: 1920px) {
+    .mainTitleContainer {
+      max-width: 702px;
+    }
+  
+    .mainTitle::after {
+      width: 602px;
+      left: 48px;
+    }
+  }

@@ -53,3 +53,17 @@
     height: 46px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .listPartners {
+    gap: 20px 33px;
+    max-height: 492px;
+    overflow-y: hidden;
+  }
+
+  .linkBlur,
+  .linkImage {
+    width: 223px;
+    height: 63px;
+  }
+}

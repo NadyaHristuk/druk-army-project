@@ -1,76 +1,86 @@
 .mainTitleContainer {
-    text-align: center;
+  text-align: center;
+}
+
+.mainTitle {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.mainTitle::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 2px;
+  background-color: var(--paragraph-text);
+  bottom: -4px;
+  left: 55px;
+}
+
+.mainTitleText {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .mainTitleContainer {
+    max-width: 480px;
+    margin-bottom: 28px;
   }
-  
+
   .mainTitle {
-    font-family: "Benzin-ExtraBold", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    position: relative;
+    font-size: 36px;
+    margin-bottom: 24px;
   }
-  
+
   .mainTitle::after {
-    content: "";
-    position: absolute;
     width: 198px;
-    height: 2px;
-    background-color: var(--paragraph-text);
-    bottom: -4px;
-    left: 55px;
+    height: 3px;
+    bottom: -9px;
+    left: 121px;
   }
-  
+
   .mainTitleText {
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 16px;
   }
-  
-  @media screen and (min-width: 480px) {
-    .mainTitleContainer {
-      max-width: 480px;
-      margin-bottom: 28px;
-    }
-  
-    .mainTitle {
-      font-size: 36px;
-      margin-bottom: 24px;
-    }
+}
 
-    .mainTitle::after {
-      width: 198px;
-      height: 3px;
-      bottom: -9px;
-      left: 121px;
-    }
-  
-    .mainTitleText {
-      font-size: 16px;
-    }
+@media screen and (min-width: 768px) {
+  .mainTitleContainer {
+    max-width: 544px;
+    margin: 0 auto 28px auto;
   }
-  
-  @media screen and (min-width: 768px) {
-    .mainTitleContainer {
-      max-width: 544px;
-      margin: 0 auto 28px auto;
-    }
-  
-    .mainTitle::after {
-      width: 514px;
-      height: 4px;
-      bottom: -4px;
-      left: 19px;
-    }
-  
-    .mainTitle {
-      font-size: 64px;
-      margin-bottom: 16px;
-    }
 
-    .mainTitleText {
-      font-size: 20px;
-    }
+  .mainTitle::after {
+    width: 514px;
+    height: 4px;
+    bottom: -4px;
+    left: 19px;
   }
-  
+
+  .mainTitle {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+
+  .mainTitleText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainTitleContainer {
+    max-width: 702px;
+  }
+
+  .mainTitle::after {
+    width: 602px;
+    left: 48px;
+  }
+}
