@@ -34,6 +34,7 @@
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   row-gap: 10px;
 }
 
@@ -161,12 +162,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .mySwiper,
   .container {
-    width: 1200px;
-    margin-top: 80px;
-  }
-
-  .mySwiper {
     width: 1200px;
   }
 
