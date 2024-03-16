@@ -25,3 +25,16 @@
     height: 58px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .linkBlur,
+  .linkImage {
+    width: 205px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .listPartners {
+    gap: 23px 33px;
+  }
+}

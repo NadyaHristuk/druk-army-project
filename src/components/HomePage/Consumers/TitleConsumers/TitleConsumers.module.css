@@ -53,36 +53,24 @@
   
   @media screen and (min-width: 768px) {
     .mainTitleContainer {
-      max-width: 100%;
+      max-width: 544px;
+      margin: 0 auto 28px auto;
     }
   
     .mainTitle::after {
-      width: 583px;
-      height: 3px;
-      bottom: -10px;
-    }
-  
-    .mainTitle {
-      font-size: 48px;
-    }
-
-    .mainTitleText {
-      font-size: 20px;
-    }
-  }
-  
-  @media screen and (min-width: 960px) {
-    .mainTitle::after {
-      width: 681px;
+      width: 514px;
+      height: 4px;
+      bottom: -4px;
+      left: 19px;
     }
   
     .mainTitle {
       font-size: 64px;
+      margin-bottom: 16px;
     }
-  
+
     .mainTitleText {
-      max-width: 689px;
-      margin: 0 auto !important;
+      font-size: 20px;
     }
   }
   

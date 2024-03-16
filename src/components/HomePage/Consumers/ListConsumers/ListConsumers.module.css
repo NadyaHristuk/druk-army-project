@@ -25,3 +25,10 @@
     height: 97px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .linkBlur,
+  .linkImage {
+    width: 97px;
+  }
+}
