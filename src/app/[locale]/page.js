@@ -42,10 +42,10 @@ export default function Home() {
           <SpeakAboutUs/>
           <SliderNews/>
         </Section>
-        <Section>
+        <section className={css.pertnersSection}>
           <Consumers/>
           <Partners/>
-        </Section>
+        </section>
     </>
   );
 }

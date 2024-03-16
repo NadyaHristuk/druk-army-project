@@ -32,3 +32,11 @@
     width: 97px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .linkBlur,
+  .linkImage {
+    width: 78px;
+    height: 78px;
+  }
+}

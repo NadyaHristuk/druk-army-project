@@ -38,3 +38,18 @@
     gap: 23px 33px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .listPartners {
+    gap: 16px 33px;
+    margin-top: 22px;
+    max-height: 372px;
+    overflow-y: hidden;
+  }
+
+  .linkBlur,
+  .linkImage {
+    width: 162px;
+    height: 46px;
+  }
+}
