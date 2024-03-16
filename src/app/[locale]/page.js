@@ -38,8 +38,6 @@ export default function Home() {
         </Section>
         <Section>
           <SpeakAboutUs/>
-        </Section>
-        <Section>
           <SliderNews/>
         </Section>
     </>

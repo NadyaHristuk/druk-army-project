@@ -2,7 +2,7 @@
   width: 320px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0 auto;
+  margin: 60px auto 0 auto;
 }
 
 .arrowLeftBtn,
@@ -190,7 +190,7 @@
   .mySwiper {
     width: 1920px;
   }
-
+  
   .slide {
     transform: translateX(57px) !important;
   }
