@@ -1,0 +1,83 @@
+.mainTitleContainer {
+    max-width: 280px;
+    margin: -20px auto 19px auto;
+    text-align: center;
+  }
+  
+  .mainTitle {
+    font-family: "Benzin-ExtraBold", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .mainTitle::after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 2px;
+    background-color: var(--paragraph-text);
+    bottom: -4px;
+    left: 35px;
+  }
+  
+  .mainTitleText {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .mainTitleContainer {
+      max-width: 480px;
+      margin-bottom: 28px;
+    }
+  
+    .mainTitle {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+  
+    .mainTitleText {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mainTitleContainer {
+      max-width: 100%;
+    }
+  
+    .mainTitle::after {
+      width: 583px;
+      height: 3px;
+      bottom: -10px;
+    }
+  
+    .mainTitle {
+      font-size: 48px;
+    }
+
+    .mainTitleText {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .mainTitle::after {
+      width: 681px;
+    }
+  
+    .mainTitle {
+      font-size: 64px;
+    }
+  
+    .mainTitleText {
+      max-width: 689px;
+      margin: 0 auto !important;
+    }
+  }
+  
