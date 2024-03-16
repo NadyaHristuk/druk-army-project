@@ -8,6 +8,7 @@ import Calculator from "@/components/HomePage/Calculator/Calculator";
 import LittleAbout from "@/components/HomePage/LittleAbout/LittleAbout";
 import SecondSlider from "@/components/HomePage/SecondSlider/SecondSlider";
 import SpeakAboutUs from "@/components/HomePage/SpeakAboutUs/SpeakAboutUs";
+import SliderNews from "@/components/HomePage/Slider_News/SliderNews";
 import css from "./page.module.css"
 
 export default function Home() {
@@ -37,6 +38,9 @@ export default function Home() {
         </Section>
         <Section>
           <SpeakAboutUs/>
+        </Section>
+        <Section>
+          <SliderNews/>
         </Section>
     </>
   );

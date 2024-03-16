@@ -16,6 +16,14 @@ import drukImg from "/public/img/home/slider3/druk.webp";
 import css from "./SliderNews.module.css";
 
 const SliderNews = () => {
+  const isTablet = useMediaQuery({minWidth: 768});
+  const isTabletEnd = useMediaQuery({maxWidth: 959.98});
+  const isDesktop = useMediaQuery({minWidth: 960});
+  const isDesktopEnd = useMediaQuery({maxWidth: 1919.98});
+  const isDesktop1920 = useMediaQuery({minWidth: 1920});
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
+
   const slidesNews = [
     {
       img: economistImg,
@@ -98,7 +106,7 @@ const SliderNews = () => {
           }}
           className={css.mySwiper}
         >
-          {slides.map(({ img, id, date, title, text }) => (
+          {slidesNews.map(({ img, id, date, title, text }) => (
             <SwiperSlide key={id} className={css.slide}>
               <Image
                 alt="photo"
@@ -108,6 +116,11 @@ const SliderNews = () => {
                 priority
                 className={css.slideImage}
               />
+              <div className={css.textContent}>
+                <p className={css.date}>{date}</p>
+                <p className={css.titleSlide}>{title}</p>
+                <p className={css.textSlide}>{text}</p>
+              </div>
             </SwiperSlide>
           ))}
           <div ref={navigationPrevRef} className={css.arrowLeftBtn}>

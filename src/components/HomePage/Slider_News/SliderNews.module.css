@@ -26,8 +26,27 @@
   
   .arrowRightBtn {
     position: absolute;
-    top: 120px;
+    top: 54px;
     right: 19px;
+  }
+
+  .textContent {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .textSlide,
+  .date {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .titleSlide {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
   }
   
   @media screen and (min-width: 480px) {
