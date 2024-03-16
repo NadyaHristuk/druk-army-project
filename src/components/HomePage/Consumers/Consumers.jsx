@@ -1,13 +1,13 @@
-import Container from "@/components/container/Container";
 import TitleConsumers from "./TitleConsumers/TitleConsumers";
 import ListConsumers from "./ListConsumers/ListConsumers";
+import css from "./Consumers.module.css"
 
 const Consumers = () => {
   return (
-      <Container>
+      <div className={css.container}>
         <TitleConsumers />
         <ListConsumers/>
-      </Container>
+      </div>
   );
 };
 

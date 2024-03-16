@@ -1,6 +1,4 @@
 .mainTitleContainer {
-    max-width: 280px;
-    margin: -20px auto 19px auto;
     text-align: center;
   }
   
@@ -21,7 +19,7 @@
     height: 2px;
     background-color: var(--paragraph-text);
     bottom: -4px;
-    left: 35px;
+    left: 48px;
   }
   
   .mainTitleText {
@@ -39,6 +37,13 @@
     .mainTitle {
       font-size: 36px;
       margin-bottom: 24px;
+    }
+
+    .mainTitle::after {
+      width: 198px;
+      height: 3px;
+      bottom: -9px;
+      left: 121px;
     }
   
     .mainTitleText {

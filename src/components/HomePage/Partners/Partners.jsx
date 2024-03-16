@@ -1,11 +1,13 @@
-import Container from "@/components/container/Container";
 import TitlePartners from "./TitlePartners/TitlePartners";
+import ListPartners from "./ListPartners/ListPartners";
+import css from "./Partners.module.css"
 
 const Partners = () => {
   return (
-    <Container>
+    <div className={css.container}>
       <TitlePartners />
-    </Container>
+      <ListPartners/>
+    </div>
   );
 };
 
