@@ -52,6 +52,8 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .arrowRightBtn,
@@ -70,8 +72,8 @@
   }
 
   .slide {
-    margin-left: 28px;
-    transform: translate(48px);
+    margin-left: 17px;
+    transform: translateX(-150px)!important;
   }
 
   .titleSlide,
@@ -86,33 +88,26 @@
     width: 768px;
   }
 
+  .slideImage {
+    width: 354px;
+    height: 237px;
+  }
+
+  .slide,
+  .textContent {
+    max-width: 354px;
+    width: 354px;
+  }
+
   .slide {
-    padding-left: 0px;
-    transform: translateX(-196px) !important;
-  }
-
-  .arrowLeftIcon,
-  .arrowRightIcon {
-    width: 56.05px;
-    height: 96.64px;
-  }
-
-  .arrowLeftBtn,
-  .arrowRightBtn {
-    background-color: var(--bg-arrows);
-    width: 85px;
-    height: 243px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 87px;
+    margin: 0px;
+    transform: translateX(-80px)!important;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;
-    padding: 0;
   }
 
   .mySwiper {
