@@ -125,7 +125,7 @@
   .arrowLeftBtn,
   .arrowRightBtn {
     width: 88px;
-    height: 456px;
+    height: 490px;
     background-color: var(--bg-arrows);
     display: flex;
     align-items: center;
