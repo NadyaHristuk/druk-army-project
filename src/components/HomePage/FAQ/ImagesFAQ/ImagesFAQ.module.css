@@ -156,3 +156,26 @@
     max-width: 276px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .listCards {
+    max-width: 750px;
+    column-gap: 20px;
+  }
+
+  .textContainer,
+  .textContainerActive {
+    width: 365px;
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .card:not(:first-of-type) > .textContainerActive,
+  .card:not(:first-of-type) > .textContainer {
+    margin-top: -40px;
+  }
+
+  .card {
+    max-width: 365px;
+  }
+}

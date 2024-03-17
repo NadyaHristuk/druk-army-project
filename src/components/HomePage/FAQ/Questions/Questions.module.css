@@ -97,3 +97,18 @@
         max-width: 583.9px;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .containerAnswers {
+        max-width: 750px;
+        margin-top: 12%;
+    }
+
+    .containerAnswers > ul {
+        width: 750px;
+    }
+
+    .question {
+        max-width: 610px;
+    }
+}

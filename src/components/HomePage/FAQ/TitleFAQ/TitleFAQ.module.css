@@ -94,6 +94,12 @@
 
   @media screen and (min-width: 1920px) {
     .mainTitleContainer {
-      max-width: 461px;
+      max-width: 672px;
+      left: 51%;
+      top: 0px;
+    }
+
+    .mainTitleText {
+      max-width: 596px;
     }
   }
