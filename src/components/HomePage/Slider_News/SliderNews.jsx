@@ -16,79 +16,82 @@ import drukImg from "/public/img/home/slider3/druk.webp";
 import css from "./SliderNews.module.css";
 
 const SliderNews = () => {
-  const isMobileBig = useMediaQuery({minWidth: 480});
-  const isTablet = useMediaQuery({minWidth: 768});
-  const isTabletEnd = useMediaQuery({maxWidth: 959.98});
-  const isDesktop = useMediaQuery({minWidth: 960});
-  const isDesktopEnd = useMediaQuery({maxWidth: 1919.98});
-  const isDesktop1920 = useMediaQuery({minWidth: 1920});
+  const isMobileBig = useMediaQuery({ minWidth: 480 });
+  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isTabletEnd = useMediaQuery({ maxWidth: 959.98 });
+  const isDesktop = useMediaQuery({ minWidth: 960 });
+  const isDesktopEnd = useMediaQuery({ maxWidth: 1919.98 });
+  const isDesktop1920 = useMediaQuery({ minWidth: 1920 });
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+  const { t } = useTranslation();
 
   const slidesNews = [
     {
       img: economistImg,
       id: nanoid(),
       date: "08.05.2023",
-      title:"як українці модифікують цивільні дрони для військового використання",
-      text: "У лютому 2022 року, через чотири дні після вторгнення Росії в Україну, чоловік під псевдонімом «Сват», який живе в Києві, увімкнув у своєму гаражі 3D-принтер і почав виготовляти пластикові лаби.",
+      title: t("home:newsFirstTitle"),
+      text: t("home:newsFirstText"),
     },
     {
       img: dwImg,
       id: nanoid(),
       date: "23.10.2023",
-      title: "армія друкарі: як Україна застосовує 3D-технології у війні",
-      text: "Через рік Swat [що українською означає «посередник»] допомогає керувати мережею під назвою Druk («Друкарська») армія, яка координує виробництво понад 300 3D-принтерів по всій країні.",
+      title: t("home:newsSecondTitle"),
+      text: t("home:newsSecondText"),
     },
     {
       img: drukImg,
       id: nanoid(),
       date: "11.09.2023",
-      title: "друкармія: коли маленькі речі мають значення",
-      text: "PrintArmy - це спільнота українців, які друкують на 3D-принтерах все, що є життєво необхідним для українських воїнів, враховуючи їхні потреби.",
+      title: t("home:newsThirdTitle"),
+      text: t("home:newsThirdText"),
     },
     {
       img: economistImgTwo,
       id: nanoid(),
       date: "02.08.2023",
-      title: "новітня зброя України у війні з росією: бомби, надруковані на 3D-принтері",
-      text: "Ручні гранати призначені для метання, тому вони легкі. Але коли їх скидають з дронів, це може бути недоліком. З типовою вагою лише 300 грамів, гранати не мають «вбивчої сили».",
+      title: t("home:newsFourthTitle"),
+      text: t("home:newsFourthText"),
     },
     {
       img: economistImg,
       id: nanoid(),
       date: "08.05.2023",
-      title:"як українці модифікують цивільні дрони для військового використання",
-      text: "У лютому 2022 року, через чотири дні після вторгнення Росії в Україну, чоловік під псевдонімом «Сват», який живе в Києві, увімкнув у своєму гаражі 3D-принтер і почав виготовляти пластикові лаби. ",
+      title: t("home:newsFirstTitle"),
+      text: t("home:newsFirstText"),
     },
     {
       img: dwImg,
       id: nanoid(),
       date: "23.10.2023",
-      title: "армія друкарі: як Україна застосовує 3D-технології у війні",
-      text: "Через рік Swat [що українською означає «посередник»] допомогає керувати мережею під назвою Druk («Друкарська») армія, яка координує виробництво понад 300 3D-принтерів по всій країні.",
+      title: t("home:newsSecondTitle"),
+      text: t("home:newsSecondText"),
     },
     {
       img: drukImg,
       id: nanoid(),
       date: "11.09.2023",
-      title: "друкармія: коли маленькі речі мають значення",
-      text: "PrintArmy - це спільнота українців, які друкують на 3D-принтерах все, що є життєво необхідним для українських воїнів, враховуючи їхні потреби.",
+      title: t("home:newsThirdTitle"),
+      text: t("home:newsThirdText"),
     },
     {
       img: economistImgTwo,
       id: nanoid(),
       date: "02.08.2023",
-      title: "новітня зброя України у війні з росією: бомби, надруковані на 3D-принтері",
-      text: "Ручні гранати призначені для метання, тому вони легкі. Але коли їх скидають з дронів, це може бути недоліком. З типовою вагою лише 300 грамів, гранати не мають «вбивчої сили».",
-    }
+      title: t("home:newsFourthTitle"),
+      text: t("home:newsFourthText"),
+    },
   ];
   return (
     <>
       <div className={css.container}>
         <Swiper
           spaceBetween={isTablet && isTabletEnd ? 14 : isDesktop ? 20 : 30}
-          slidesPerView={isMobileBig && isDesktopEnd ? 2 : isDesktop1920 ? 4 : 1}
+          slidesPerView={
+            isMobileBig && isDesktopEnd ? 2 : isDesktop1920 ? 4 : 1
+          }
           centeredSlides={true}
           autoplay={{
             delay: 2500,

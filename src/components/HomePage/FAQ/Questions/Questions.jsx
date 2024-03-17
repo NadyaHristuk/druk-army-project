@@ -1,51 +1,50 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Icon from "@/components/Icon/Icon";
 import css from "./Questions.module.css";
 
-const texts = [
-  {
-    firstQuestion: "Реально безкоштовно?",
-    firstAnswerOne:
-      "Так. Ми робимо все можливе, щоб військовому не доводилося витрачати власні кошти на вироби, необхідні для захисту України. Кожен українець особисто зацікавлений в ефективній роботі ЗСУ, тому сьогодні цивільні мають подбати про військових.",
-    firstAnswerTwo:
-      "Авжеж, будь-що має свою собівартість, і друкармійці докладають максимум зусиль, або знизити її та забезпечити максимальну ефективність роботи донорських коштів: купують обладнання, застосовують свої професійні навички, зв'язки, тощо.",
-    secondQuestion: "Як швидко я отримаю замовлення?",
-    secondAnswerOne: "У нашому каталозі представлені як готові вироби, так і ті, які треба надрукувати. Термін доставки залежить від наявності виробів на складі або часу потрібного на друк. На всіх виробах вказана наявність, орієнтуйтеся на неї.",
-    thirdQuerstion: "Лист-запит є обов'язковим?",
-    thirdAnswerOne: "Друкарям не потрібні жодні листи. Проте виробникам, які надають свою продукцію безкоштовно або за собівартістю, необхідні документи для звітності. В описі кожного виробу вказано, чи потрібен лист при замовленні."
-  },
-  {
-    firstQuestion: "Я хочу друкувати, але не маю принтера. Що мені робити?",
-    firstAnswerOne:
-      "Ми пояснимо, яке обладнання краще вибрати на ваш бюджет, та навчимо якісно друкувати.",
-    secondQuestion: "Мені самому купувати пластик чи ви надаєте?",
-    secondAnswerOne: "Друкарі, які можуть це собі дозволити, друкують з власного пластику, вони донейтять не лише свій час, але й гроші. Якщо ви можете друкувати, але вам потрібен пластик — ви можете залучити своїх друзів, або підписників у соц.мережах щоб вони допомогли з придбанням філаменту.",
-    thirdQuerstion: "Як стати нормальним друкарем?",
-    thirdAnswerOne: "Друкувати дедалі більше та поступово опановувати більш складні вироби. Практика, досвід та поради дружньої спільноти стануть у нагоді — і ми завжди готові вам допомогти."
-  },
-  {
-    firstQuestion: "Куди донейтити?",
-    firstAnswerOne: "Ми вдячні за всі донати та закликаємо долучатися самим і залучати знайомих до підтримки нашого проекту.",
-    secondQuestion: "Маєте мерч?",
-    secondAnswerOne: "Вже найближчим часом ви зможете придбати ексклюзивні та лімітовані сувеніри від наших друкарів.",
-    thirdQuerstion: "Я хочу розказати про вас!",
-    thirdAnswerOne: "Тут знаходиться наш прес-реліз та промо-контент. Ми готові до інтерв'ю та колаборацій.",
-    fourthQuestion: "Я маю пластик або інші ресурси, які можуть бути у нагоді.",
-    fourthAnswerOne: "Напишіть нам на пошту 3d@drukarmy.org.ua, і ми з задоволенням з вами поспілкуємось."
-  },
-  {
-    firstQuestion: "Я виготовляю продукцію для ЗСУ. Як ви можете мені допомогти?",
-    firstAnswerOne: "Ми можемо надрукувати необхідні компоненти для ваших виробів (корпуси або інші деталі), щоб допомогти вам постачати Збройним Силам більше ваших виробів.",
-    secondQuestion: "Як мені додати свій виріб до вашого каталогу?",
-    secondAnswerOne: "Зареєструйтеся на нашому сайті як виробник та розкажіть нам про ваші вироби. Після верифікаціє ви отримаєте змогу додати свій виріб до каталогу ДрукАрмії. Ми надаємо зручний іструмент для роботи з замовленнями, допомагаємо відстежити процес друку та забезпечуємо зворотній зв'язок від військових.",
-    thirdQuerstion: "Чи потрібен мені лист-запит від командира частини?",
-    thirdAnswerOne: "Автоматизація — це головна перевага нашої системи. Раніше ви мусили витрачати час на однакові операції. Тепер ви маєте змогу займатися саме виробництвом, а все інше, зокрема генерацію зразків листів-запитів візьме на себе автоматизована система ДрукАрмії.",
-  }
-];
-
 const Questions = ({ role }) => {
+  const { t } = useTranslation();
+  const texts = [
+    {
+      firstQuestion: t("home:quest1First"),
+      firstAnswerOne: t("home:answer1First"),
+      firstAnswerTwo: t("home:answer1Second"),
+      secondQuestion: t("home:quest1Second"),
+      secondAnswerOne: t("home:answer1Two"),
+      thirdQuerstion: t("home:quest1Third"),
+      thirdAnswerOne: t("home:answer1Three")
+    },
+    {
+      firstQuestion: t("home:quest2First"),
+      firstAnswerOne: t("home:answer2First"),
+      secondQuestion: t("home:quest2Second"),
+      secondAnswerOne: t("home:answer2Second"),
+      thirdQuerstion: t("home:quest2Third"),
+      thirdAnswerOne: t("home:answer2Third")
+    },
+    {
+      firstQuestion: t("home:quest3First"),
+      firstAnswerOne: t("home:answer3First"),
+      secondQuestion: t("home:quest3Second"),
+      secondAnswerOne: t("home:answer3Second"),
+      thirdQuerstion: t("home:quest3Third"),
+      thirdAnswerOne: t("home:answer3Third"),
+      fourthQuestion: t("home:quest3Fourth"),
+      fourthAnswerOne: t("home:answer3Fourth")
+    },
+    {
+      firstQuestion: t("home:quest4First"),
+      firstAnswerOne: t("home:answer4First"),
+      secondQuestion: t("home:quest4Second"),
+      secondAnswerOne: t("home:answer4Second"),
+      thirdQuerstion: t("home:quest4Third"),
+      thirdAnswerOne: t("home:answer4Third")
+    }
+  ];
+
   const [isShowFirst, setIsShowFirst] = useState(false);
   const [isShowSecond, setIsShowSecond] = useState(false);
   const [isShowThird, setIsShowThird] = useState(false);
