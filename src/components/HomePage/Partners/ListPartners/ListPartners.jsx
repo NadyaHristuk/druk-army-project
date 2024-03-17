@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { nanoid } from "nanoid";
 import partner1 from "/public/img/home/partners/partner1.webp";
 import partner2 from "/public/img/home/partners/partner2.webp";
 import partner3 from "/public/img/home/partners/partner3.webp";
@@ -89,10 +90,10 @@ const partners = [
 ];
 
 const blurImages = [
-  { blurImg: blurImg1 },
-  { blurImg: blurImg2 },
-  { blurImg: blurImg1 },
-  { blurImg: blurImg2 },
+  { blurImg: blurImg1, id: nanoid() },
+  { blurImg: blurImg2, id: nanoid() },
+  { blurImg: blurImg1, id: nanoid() },
+  { blurImg: blurImg2, id: nanoid() },
 ];
 
 const ListPartners = () => {
@@ -113,7 +114,7 @@ const ListPartners = () => {
           </li>
         ))}
         {blurImages.map((item) => (
-          <li key={item.blurImg}>
+          <li key={item.id}>
             <Image
               src={item.blurImg}
               alt="місце для майбутніх партнерів"

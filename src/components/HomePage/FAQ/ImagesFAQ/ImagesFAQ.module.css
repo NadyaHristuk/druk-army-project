@@ -1,0 +1,64 @@
+.listCards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.textContainer {
+  position: relative;
+  width: 145px;
+  height: 33px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--cards-text);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  mix-blend-mode: luminosity;
+}
+
+.textContainerActive {
+    position: relative;
+    width: 145px;
+    height: 33px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--accent-color);
+    color: var(--cards-text);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    mix-blend-mode: normal;
+}
+
+.cardImg {
+  mix-blend-mode: luminosity;
+  transition: all 400ms ease;
+}
+
+.cardImgActive {
+    mix-blend-mode: normal;
+}
+
+.card:not(:first-of-type) > .textContainerActive,
+.card:not(:first-of-type) > .textContainer {
+  margin-top: -16px;
+}
+
+.card {
+  max-width: 145px;
+  cursor: pointer;
+}
+
+.card:hover > .textContainer,
+.card:focus > .textContainer {
+  mix-blend-mode: normal;
+}

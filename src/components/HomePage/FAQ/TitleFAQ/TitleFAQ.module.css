@@ -1,6 +1,6 @@
 .mainTitleContainer {
     border-left: 3px solid var(--paragraph-text);
-    padding-left: 4px;
+    padding-left: 10px;
     max-width: 280px;
     margin-bottom: 19px;
   }
