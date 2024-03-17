@@ -1,3 +1,6 @@
+"use client";
+
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import soldierImg from "/public/img/home/faq/soldier.webp";
 import donorImg from "/public/img/home/faq/donor.webp";
@@ -6,6 +9,8 @@ import creatorImg from "/public/img/home/faq/producer.webp";
 import css from "./ImagesFAQ.module.css";
 
 const ImagesFAQ = ({setRole, role}) => {
+  const media480 = useMediaQuery({minWidth: 480});
+  const media767 = useMediaQuery({maxWidth: 767.98});
   
 const handleClick = (e) => {
   let roleChoosen = e.currentTarget.id;
@@ -19,8 +24,8 @@ const handleClick = (e) => {
           <Image
             src={soldierImg}
             alt="український військовий"
-            width={148.87}
-            height={110.82}
+            width={media480 && media767 ? 210.61 : 148.87}
+            height={media480 && media767 ? 156.79 : 110.82}
             className={role === "soldier" ? css.cardImgActive : css.cardImg}
           />
           <div className={role === "soldier" ? css.textContainerActive : css.textContainer}>
@@ -31,8 +36,8 @@ const handleClick = (e) => {
           <Image
             src={donorImg}
             alt="спонсор"
-            width={145.14}
-            height={126.95}
+            width={media480 && media767 ? 205.35 : 145.14}
+            height={media480 && media767 ? 179.61 : 126.95}
             className={role === "donor" ? css.cardImgActive : css.cardImg}
           />
           <div  className={role === "donor" ? css.textContainerActive : css.textContainer}>
@@ -43,8 +48,8 @@ const handleClick = (e) => {
           <Image
             src={printerImg}
             alt="друкар, що виробляє 3D-вироби"
-            width={138.11}
-            height={132.32}
+            width={media480 && media767 ? 195.4 : 138.11}
+            height={media480 && media767 ? 187.21 : 132.32}
             className={role === "printer" ? css.cardImgActive : css.cardImg}
           />
           <div  className={role === "printer" ? css.textContainerActive : css.textContainer}>
@@ -55,8 +60,8 @@ const handleClick = (e) => {
           <Image
             src={creatorImg}
             alt="виробник"
-            width={138.94}
-            height={133.15}
+            width={media480 && media767 ? 196.57 : 138.94}
+            height={media480 && media767 ? 188.38 : 133.15}
             className={role === "producer" ? css.cardImgActive : css.cardImg}
           />
           <div className={role === "producer" ? css.textContainerActive : css.textContainer}>

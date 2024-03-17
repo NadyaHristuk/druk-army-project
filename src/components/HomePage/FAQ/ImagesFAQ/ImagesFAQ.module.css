@@ -1,6 +1,7 @@
 .listCards {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4px 10px;
   max-width: 320px;
@@ -24,19 +25,19 @@
 }
 
 .textContainerActive {
-    position: relative;
-    width: 145px;
-    height: 33px;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: var(--accent-color);
-    color: var(--cards-text);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    mix-blend-mode: normal;
+  position: relative;
+  width: 145px;
+  height: 33px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  color: var(--cards-text);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  mix-blend-mode: normal;
 }
 
 .cardImg {
@@ -45,7 +46,7 @@
 }
 
 .cardImgActive {
-    mix-blend-mode: normal;
+  mix-blend-mode: normal;
 }
 
 .card:not(:first-of-type) > .textContainerActive,
@@ -61,4 +62,26 @@
 .card:hover > .textContainer,
 .card:focus > .textContainer {
   mix-blend-mode: normal;
+}
+
+@media screen and (min-width: 480px) {
+  .listCards {
+    max-width: 480px;
+  }
+
+  .textContainer,
+  .textContainerActive {
+    width: 213.54px;
+    height: 46.8px;
+    font-size: 20px;
+  }
+
+  .card:not(:first-of-type) > .textContainerActive,
+  .card:not(:first-of-type) > .textContainer {
+    margin-top: -24px;
+  }
+
+  .card {
+    max-width: 213.54px;
+  }
 }

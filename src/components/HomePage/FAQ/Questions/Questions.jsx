@@ -74,7 +74,7 @@ const Questions = ({ role }) => {
               onClick={() => setIsShowFirst((prev) => !prev)}
             >
               {isShowFirst ? (
-                <Icon name={"icon-minus"} className={css.btnIcon} />
+                <Icon name={"icon-minus"} className={css.btnIconMinus} />
               ) : (
                 <Icon name={"icon-plus"} className={css.btnIcon} />
               )}
@@ -96,7 +96,7 @@ const Questions = ({ role }) => {
               onClick={() => setIsShowSecond((prev) => !prev)}
             >
               {isShowSecond ? (
-                <Icon name={"icon-minus"} className={css.btnIcon} />
+                <Icon name={"icon-minus"} className={css.btnIconMinus} />
               ) : (
                 <Icon name={"icon-plus"} className={css.btnIcon} />
               )}
@@ -113,7 +113,7 @@ const Questions = ({ role }) => {
             <h3 className={css.question}>{text.thirdQuerstion}</h3>
             <button type="button" className={css.btn}  onClick={() => setIsShowThird((prev) => !prev)}>
             {isShowThird ? (
-                <Icon name={"icon-minus"} className={css.btnIcon} />
+                <Icon name={"icon-minus"} className={css.btnIconMinus} />
               ) : (
                 <Icon name={"icon-plus"} className={css.btnIcon} />
               )}
@@ -130,7 +130,7 @@ const Questions = ({ role }) => {
             <h3 className={css.question}>{text.fourthQuestion}</h3>
             <button type="button" className={css.btn}  onClick={() => setIsShowFourth((prev) => !prev)}>
             {isShowFourth ? (
-                <Icon name={"icon-minus"} className={css.btnIcon} />
+                <Icon name={"icon-minus"} className={css.btnIconMinus} />
               ) : (
                 <Icon name={"icon-plus"} className={css.btnIcon} />
               )}

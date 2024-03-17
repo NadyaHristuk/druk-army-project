@@ -23,9 +23,11 @@
     background-color: transparent;
 }
 
+.btnIconMinus,
 .btnIcon {
     width: 30px;
     height: 30px;
+    fill: var(--paragraph-text);
 }
 
 .question {
@@ -43,4 +45,26 @@
 
 .textContent > p:first-of-type {
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+    .btnIconMinus,
+    .btnIcon {
+        stroke-width: 2px;
+        stroke: var(--paragraph-text);
+    }
+
+    .btnIconMinus {
+        stroke-width: 30px;
+    }
+
+    .question {
+        font-size: 24px;
+        font-weight: 700;
+        max-width: 356px;
+    }
+
+    .textContent {
+        font-size: 16px;
+    }
 }
