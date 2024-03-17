@@ -2,12 +2,13 @@
 
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
 import Icon from "@/components/Icon/Icon";
 import css from "./PrintAllTitle.module.css";
 
 const PrintAllTitle = () => {
   const minFixLanguage = useMediaQuery({ minWidth: 960 });
-  const maxFixLanguage = useMediaQuery({maxWidth: 1440});
+  const maxFixLanguage = useMediaQuery({ maxWidth: 1440 });
   const { t, i18n } = useTranslation();
   const currentLocale = i18n.language;
 
@@ -25,8 +26,9 @@ const PrintAllTitle = () => {
       </h2>
       <p className={css.mainTitleText}>{t("home:printAllTextOne")}</p>
       <p className={css.mainTitleText}>{t("home:printAllTextTwo")}</p>
-      <button
-        type="button"
+      <Link
+        href={"https://app.drukarmy.org.ua"}
+        target="_blank"
         aria-label={t("home:participate")}
         className={css.btn}
       >
@@ -34,7 +36,7 @@ const PrintAllTitle = () => {
           <Icon className={css.communityIcon} name={"icon-people"} />
           {t("home:participate")}
         </span>
-      </button>
+      </Link>
     </div>
   );
 };

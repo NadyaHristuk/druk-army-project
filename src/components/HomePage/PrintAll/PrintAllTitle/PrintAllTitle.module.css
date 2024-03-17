@@ -43,9 +43,10 @@
   transition: all 400ms ease;
   width: 274px;
   height: 43px;
-  border: none;
-  outline: none;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 9px;
 }
 
