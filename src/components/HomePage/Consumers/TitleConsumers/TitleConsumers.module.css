@@ -65,7 +65,7 @@
   }
 
   .mainTitle {
-    font-size: 48px;
+    font-size: 64px;
     margin-bottom: 16px;
   }
 
@@ -74,19 +74,9 @@
   }
 }
 
-@media screen and (min-width: 960px) {
-  .mainTitle {
-    font-size: 52px;
-  }
-}
-
 @media screen and (min-width: 1920px) {
   .mainTitleContainer {
     max-width: 702px;
-  }
-
-  .mainTitle {
-    font-size: 64px;
   }
 
   .mainTitle::after {
