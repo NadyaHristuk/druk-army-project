@@ -76,18 +76,13 @@
     .mainTitleContainer {
       max-width: 540px;
       margin-bottom: 42px;
-    }
-  
-    .titleFirst {
-      font-size: 36px;
-    }
-  
-    .titleAccent {
-      font-size: 64px;
+      position: absolute;
+      top: 32px;
+      left: 37%;
     }
   
     .mainTitleText {
-      max-width: 464px;
+      max-width: 516px;
     }
   }
 

@@ -107,3 +107,26 @@
     max-width: 174.83px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .listCards {
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 293px;
+    margin: 0px;
+  }
+
+  .textContainer,
+  .textContainerActive {
+    width: 293px;
+    height: 64.22px;
+    font-size: 24px;
+  }
+
+  .card {
+    max-width: 293px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
