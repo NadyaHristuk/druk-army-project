@@ -14,7 +14,10 @@ const Faq = () => {
       <TitleFAQ />
       <div className={css.imagesAnswers}>
         <ImagesFAQ setRole={setRole} role={role} />
-        <Questions role={role} />
+         {role === "soldier" && <Questions role={role} />}
+         {role === "donor" && <Questions role={role} />}
+         {role === "printer" && <Questions role={role} />}
+         {role === "producer" && <Questions role={role} />}
       </div>
     </div>
   );
