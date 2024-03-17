@@ -130,3 +130,29 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .listCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    row-gap: 4px;
+    max-width: 568px;
+  }
+
+  .textContainer,
+  .textContainerActive {
+    width: 275.94px;
+    height: 60.48px;
+    font-size: 32px;
+  }
+
+  .card:not(:first-of-type) > .textContainerActive,
+  .card:not(:first-of-type) > .textContainer {
+    margin-top: -28px;
+  }
+
+  .card {
+    max-width: 276px;
+  }
+}

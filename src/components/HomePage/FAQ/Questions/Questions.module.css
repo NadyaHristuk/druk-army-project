@@ -90,3 +90,10 @@
         max-width: 530px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .containerAnswers {
+        margin-top: 22%;
+        max-width: 583.9px;
+    }
+}

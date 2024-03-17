@@ -86,6 +86,12 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    .mainTitleContainer {
+      left: 49.5%;
+    }
+  }
+
   @media screen and (min-width: 1920px) {
     .mainTitleContainer {
       max-width: 461px;
