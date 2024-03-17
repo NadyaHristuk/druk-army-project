@@ -52,20 +52,23 @@
   
   @media screen and (min-width: 768px) {
     .mainTitleContainer {
-      max-width: 481px;
+      max-width: 663px;
     }
   
     .mainTitle {
-      font-size: 32px;
+      font-size: 36px;
     }
   
     .titleAccent {
-      font-size: 48px;
+      font-size: 64px;
+      line-height: 1;
+      margin-top: -8px;
     }
   
     .mainTitleText {
       font-size: 20px;
       text-align: left;
+      max-width: 542px;
     }
   }
   

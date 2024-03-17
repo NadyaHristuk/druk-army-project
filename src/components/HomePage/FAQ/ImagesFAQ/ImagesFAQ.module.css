@@ -85,3 +85,25 @@
     max-width: 213.54px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .listCards {
+    max-width: 768px;
+    flex-wrap: nowrap;
+  }
+
+  .textContainer,
+  .textContainerActive {
+    width: 174px;
+    height: 38px;
+  }
+
+  .card:not(:first-of-type) > .textContainerActive,
+  .card:not(:first-of-type) > .textContainer {
+    margin-top: -18px;
+  }
+
+  .card {
+    max-width: 174.83px;
+  }
+}
