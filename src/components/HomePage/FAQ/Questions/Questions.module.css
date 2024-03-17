@@ -1,0 +1,32 @@
+.listItem {
+  margin-bottom: 20px;
+}
+
+.questionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+    margin-bottom: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.btnIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.question {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 222px;
+}

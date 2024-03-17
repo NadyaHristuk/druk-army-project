@@ -147,6 +147,13 @@
             <path d="m2.549.447 15.737 15.737-2.518 2.518L.031 2.965 2.549.447z"/>
             <path d="M18.286 16.184 2.549 31.921.031 29.403l15.737-15.737 2.518 2.518z"/>
         </symbol>
+        <symbol id="icon-minus" viewBox="0 0 480 32">
+            <path d="M0 0h480v32H0V0z"/>
+        </symbol>
+        <symbol id="icon-plus" viewBox="0 0 32 32">
+            <path d="M0 13.867h32V16H0v-2.133z"/>
+            <path d="M18.133 0v32H16V0h2.133z"/>
+        </symbol>
     </defs>
 </svg>
 

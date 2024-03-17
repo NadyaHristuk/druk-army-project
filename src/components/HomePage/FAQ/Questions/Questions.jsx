@@ -23,23 +23,32 @@ const Questions = ({ role }) => {
   return (
     <div>
       <ul>
-        <li>
-            <div>
-                <h3>{text.firstQuestion}</h3>
+        <li className={css.listItem}>
+            <div className={css.questionContainer}>
+                <h3 className={css.question}>{text.firstQuestion}</h3>
+                <button type="button" className={css.btn}>
+                   <Icon name={'icon-plus'} className={css.btnIcon}/>
+                </button>
             </div>
             <p>{text.firstAnswerOne}</p>
             <p>{text.firstAnswerTwo}</p>
         </li>
-        <li>
-            <div>
-                <h3>{text.secondQuestionQuestion}</h3>
+        <li className={css.listItem}>
+            <div className={css.questionContainer}>
+                <h3 className={css.question}>{text.secondQuestion}</h3>
+                <button type="button" className={css.btn}>
+                   <Icon name={'icon-plus'} className={css.btnIcon}/>
+                </button>
             </div>
             {/* <p>{text.secondAnswerOne}</p>
             <p>{text.secondAnswerTwo}</p> */}
         </li>
-        <li>
-            <div>
-                <h3>{text.thirdQuerstionQuestion}</h3>
+        <li className={css.listItem}>
+            <div className={css.questionContainer}>
+                <h3 className={css.question}>{text.thirdQuerstion}</h3>
+                <button type="button" className={css.btn}>
+                   <Icon name={'icon-plus'} className={css.btnIcon}/>
+                </button>
             </div>
             {/* <p>{text.thirdAnswerOne}</p>
             <p>{text.thirdAnswerTwo}</p> */}
