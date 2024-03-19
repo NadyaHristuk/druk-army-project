@@ -1,0 +1,417 @@
+.container {
+  width: 320px;
+  padding-top: 42px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 1920px;
+    padding-left: 328px;
+  }
+
+  outline: 1px solid green;
+}
+
+.topBlock {
+  padding: 0 7px;
+
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 960px) {
+    justify-content: center;
+    gap: 55px;
+  }
+}
+
+.monobankImg {
+  width: 309px;
+  height: auto;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 960px) {
+    margin-top: 132px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 554px;
+  }
+}
+
+.supportBlock {
+  @media only screen and (min-width: 960px) {
+    width: 590px;
+    margin-right: 20px;
+  }
+}
+
+.supportInfo,
+.donateInfo {
+  margin-left: 7px;
+  margin-bottom: 10px;
+  padding-left: 14px;
+  border-left: 4px solid var(--title-small);
+}
+
+.supportList {
+  list-style: disc;
+  list-style-position: outside;
+  /* text-indent: 20px; */
+  padding-left: 20px;
+}
+
+.firstTitle {
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 36px;
+  }
+}
+
+.secondTitle {
+  margin-bottom: 5px;
+  font-family: "Benzin-ExtraBold";
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 64px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  }
+}
+
+.description {
+  font-size: 16px;
+
+  @media only screen and (min-width: 960px) {
+    width: 450px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+  }
+}
+
+.donation {
+  padding: 20px 14px;
+  margin-bottom: 20px;
+
+  background-color: var(--accent-color);
+
+  @media only screen and (min-width: 960px) {
+    width: 100%;
+    padding: 21px 54px 30px;
+  }
+}
+
+.title {
+  margin-bottom: 14px;
+
+  font-family: "Benzin-ExtraBold";
+  font-size: 36px;
+  text-transform: uppercase;
+  color: var(--cards-text);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 64px;
+  }
+}
+
+.radioWrapper {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+  }
+}
+
+.radioInput {
+  display: none;
+}
+
+.oneTime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 215px;
+  height: 40px;
+  margin-bottom: 5px;
+
+  border: 2px solid var(--main-bg);
+  background-color: var(--main-bg);
+  color: var(--accent-color);
+
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 137px;
+  height: 40px;
+  margin-bottom: 14px;
+
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 2px solid var(--main-bg);
+  background-color: var(--accent-color);
+  color: var(--main-bg);
+}
+
+.contribution {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 14px;
+
+  @media only screen and (min-width: 960px) {
+    justify-content: start;
+  }
+}
+
+.contributionAmount {
+  flex: 1;
+  height: 60px;
+  width: 100%;
+
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  border: transparent;
+}
+
+.contributionCurrency {
+  height: 60px;
+
+  border: transparent;
+
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+
+  background-color: var(--accent-color);
+  color: var(--main-bg);
+  border: 2px solid var(--main-bg);
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 960px) {
+    font-size: 20px;
+  }
+}
+
+.icon {
+  width: 27px;
+  height: 18px;
+  fill: var(--buttons-text);
+}
+
+.submitText {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-bg);
+  font-family: "Montserrat-Medium";
+
+  @media only screen and (min-width: 960px) {
+    font-size: 20px;
+  }
+}
+
+.cancelText {
+  margin-bottom: 51px;
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--bg-loader);
+
+  @media only screen and (min-width: 960px) {
+    margin: 0 50px;
+  }
+}
+
+.donateList {
+  padding-left: 20px;
+}
+
+.donateItem {
+  list-style: disc;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  @media only screen and (min-width: 1920px) {
+    justify-content: start;
+    gap: 23px;
+  }
+}
+
+.flex {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    margin-top: 98px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    gap: 80px;
+  }
+}
+
+.flexItem {
+  @media only screen and (min-width: 960px) {
+    width: 50%;
+  }
+}
+
+.accountsList {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.requisitesItem {
+  padding: 0 7px;
+  margin-bottom: 12px;
+}
+
+.requisiteName {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--paragraph-text);
+  font-family: "Montserrat-Regular";
+
+  @media only screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+}
+
+.requisiteValue {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--paragraph-text);
+  font-weight: 700;
+  font-family: "Montserrat-Medium";
+
+  @media only screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+}
+
+.copyBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accountCurrency {
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.accountIBAN {
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black);
+
+  @media only screen and (min-width: 1920px) {
+    font-size: 20px;
+  }
+}
+
+.accountsItem {
+  margin-bottom: 36px;
+}
+
+.accountsItem:last-child {
+  margin-bottom: 56px;
+}
+
+.crypto {
+  padding-top: 29px;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-bottom: 49px;
+  background-color: var(--bg-details);
+  color: var(--cards-text);
+
+  @media only screen and (min-width: 1920px) {
+    padding: 80px 128px;
+  }
+}
+
+.whiteText {
+  color: var(--cards-text);
+}
+
+.cryptoInfo {
+  padding-left: 9px;
+  margin-right: 33px;
+  margin-top: 29px;
+  margin-bottom: 22px;
+
+  border-left: 2px solid var(--cards-text);
+}
+
+.cryptoInfoDescription {
+  font-size: 14px;
+}
+
+.cryptoItem {
+  margin-bottom: 36px;
+}
+
+.cryptoCurrency {
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.cryptoAccount {
+  word-wrap: break-word;
+}
+

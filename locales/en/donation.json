@@ -1,0 +1,46 @@
+{
+  "supportBlock": {
+    "firstTitle": "Support",
+    "secondTitle": "DrukArmy",
+    "description": "We are currently printing 2,500 kg of plastic per month, so any support is appreciated."
+  },
+
+  "donation": {
+    "title": "contribution",
+    "oneTime": "One time contribution",
+    "subscription": "Subscription"
+  },
+
+  "contribution": {
+    "button": "Support",
+    "submitText": "By clicking the pay button, you agree that the donation is non-refundable.",
+    "cancelText": "*You can cancel your subscription in your personal account on the website"
+  },
+
+  "donateInfo": {
+    "firstTitle": "All 100%",
+    "secondTitle": "of donations",
+    "description": "directed to the implementation of the project goals, namely:",
+    "donateItem-1": "purchase of consumables (plastic, resin), which are required for the functioning of the DrukArmy",
+    "donateItem-2": "purchase of components for complex products (springs, bolts, etc.)",
+    "report": "Reports are published monthly on the reports page:"
+  },
+  "requisites": {
+    "requisiteName-1": "Bank card:",
+    "requisiteValue-1": "4246 0010 3038 3222",
+    "requisiteName-2": "Name of the organization",
+    "requisiteValue-2": "БО БФ ВIЛЬНI.НЕСКОРЕНI. НЕБАЙДУЖI",
+    "requisiteName-3": "Name of bank:",
+    "requisiteValue-3": "JSC \"PRIVATBANK\"",
+    "requisiteName-4": "Recipient code:",
+    "requisiteValue-4": "44858295"
+  },
+  "cryptoInfo": {
+    "firstTitle": "All donations",
+    "secondTitle": "in a crypt",
+    "description": "converted into USDT and sent once a month to the official account UA313052990000026000040810747, transactions on which are transparent."
+  },
+
+  "copyButton": "copied",
+  "button": "Monobank of DrukArmy"
+}
