@@ -1,0 +1,50 @@
+.listConsumers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.linkBlur,
+.linkImage {
+  mix-blend-mode: luminosity;
+  transition: all 400ms ease;
+}
+
+.linkImage:hover,
+.linkImage:focus {
+  mix-blend-mode: normal;
+}
+
+@media screen and (min-width: 480px) {
+  .linkBlur,
+  .linkImage {
+    width: 93px;
+    height: 97px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .linkBlur,
+  .linkImage {
+    width: 97px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .linkBlur,
+  .linkImage {
+    width: 78px;
+    height: 78px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .linkBlur,
+  .linkImage {
+    width: 108px;
+    height: 108px;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+    width: 320px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+  @media only screen and (min-width: 960px) {
+    .container {
+      width: 960px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
+  @media only screen and (min-width: 1920px) {
+      .container {
+        width: 1920px;
+      }
+    }
+  

@@ -1,12 +1,14 @@
 .sectionPrinters,
-.sectionLittleAbout {
+.sectionLittleAbout,
+.pertnersSection {
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
 @media only screen and (min-width: 768px) {
   .sectionPrinters,
-  .sectionLittleAbout {
+  .sectionLittleAbout,
+  .pertnersSection {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -40,6 +42,15 @@
   .sectionLittleAbout {
     margin: 0 auto;
   }
+
+  .pertnersSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -48,5 +59,10 @@
     max-width: 1756px;
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .pertnersSection {
+    max-width: 1536px;
+    column-gap: 40px;
   }
 }

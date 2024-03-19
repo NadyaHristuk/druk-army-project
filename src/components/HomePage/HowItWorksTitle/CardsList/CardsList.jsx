@@ -2,6 +2,9 @@
 
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
+import solderImg from "/public/img/home/process/solder.webp";
+import printerImg from "/public/img/home/process/printer.webp";
+import volunteerImg from "/public/img/home/process/volunteer.webp";
 import css from "./CardsList.module.css";
 
 const CardsList = () => {
@@ -9,21 +12,21 @@ const CardsList = () => {
 
   const cards = [
     {
-      src: "/img/home/process/solder.webp",
+      src: solderImg,
       alt: t("home:orderAlt"),
       number: 1,
       descTitle: t("home:order"),
       descText: t("home:orderText"),
     },
     {
-      src: "/img/home/process/printer.webp",
+      src: printerImg,
       alt: t("home:printAlt"),
       number: 2,
       descTitle: t("home:print"),
       descText: t("home:printText"),
     },
     {
-      src: "/img/home/process/volunteer.webp",
+      src: volunteerImg,
       alt: t("home:deliveryAlt"),
       number: 3,
       descTitle: t("home:delivery"),
@@ -40,8 +43,6 @@ const CardsList = () => {
               <Image
                 src={card.src}
                 alt={card.alt}
-                width={300}
-                height={302}
                 priority
                 className={css.imageCard}
               />

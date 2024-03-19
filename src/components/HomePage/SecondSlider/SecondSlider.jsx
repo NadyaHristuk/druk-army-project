@@ -10,6 +10,10 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import TitleNeedSupport from "./TitleNeedSupport/TitleNeedSupport";
+import fireImg from "/public/img/home/slider2/fire.webp";
+import carsImg from "/public/img/home/slider2/cars.webp";
+import itemsImg from "/public/img/home/slider2/items.webp";
+import boxesImg from "/public/img/home/slider2/boxes.webp";
 import css from "./SecondSlider.module.css";
 
 const SecondSlider = () => {
@@ -24,56 +28,56 @@ const SecondSlider = () => {
 
   const slides = [
     {
-      img: "/img/home/slider2/fire.webp",
+      img: fireImg,
       id: nanoid(),
       title: t("home:slide1Title"),
       subtitle: t("home:slide1Text"),
       progress: "7%",
     },
     {
-      img: "/img/home/slider2/cars.webp",
+      img: carsImg,
       id: nanoid(),
       title: t("home:slide2Title"),
       subtitle: t("home:slide2Text"),
       progress: "54%",
     },
     {
-      img: "/img/home/slider2/items.webp",
+      img: itemsImg,
       id: nanoid(),
       title: t("home:slide3Title"),
       subtitle: t("home:slide3Text"),
       progress: "32%",
     },
     {
-      img: "/img/home/slider2/boxes.webp",
+      img: boxesImg,
       id: nanoid(),
       title: t("home:slide4Title"),
       subtitle: t("home:slide4Text"),
       progress: "68%",
     },
     {
-      img: "/img/home/slider2/fire.webp",
+      img: fireImg,
       id: nanoid(),
       title: t("home:slide1Title"),
       subtitle: t("home:slide1Text"),
       progress: "7%",
     },
     {
-      img: "/img/home/slider2/cars.webp",
+      img: carsImg,
       id: nanoid(),
       title: t("home:slide2Title"),
       subtitle: t("home:slide2Text"),
       progress: "54%",
     },
     {
-      img: "/img/home/slider2/items.webp",
+      img: itemsImg,
       id: nanoid(),
       title: t("home:slide3Title"),
       subtitle: t("home:slide3Text"),
       progress: "32%",
     },
     {
-      img: "/img/home/slider2/boxes.webp",
+      img: boxesImg,
       id: nanoid(),
       title: t("home:slide4Title"),
       subtitle: t("home:slide4Text"),

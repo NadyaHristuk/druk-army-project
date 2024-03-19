@@ -1,5 +1,6 @@
 import Image from "next/image";
-import React from "react";
+import tweetImg from "/public/img/home/tweet.webp";
+import stickerImg from "/public/img/home/sticker.webp";
 import css from "./PrintAllImage.module.css"
 
 const PrintAllImage = () => {
@@ -7,7 +8,7 @@ const PrintAllImage = () => {
     <div>
       <div className={css.imagesContainer}>
         <Image
-          src={"/img/home/sticker.webp"}
+          src={stickerImg}
           alt="Мультяшний кіт військовий"
           width={270}
           height={319}
@@ -15,7 +16,7 @@ const PrintAllImage = () => {
           loading="lazy"
         />
         <Image
-          src={"/img/home/tweet.webp"}
+          src={tweetImg}
           alt="Повідомлення в Tweeter під ніком Майор Чорнобаєв"
           width={204.8}
           height={114.3}

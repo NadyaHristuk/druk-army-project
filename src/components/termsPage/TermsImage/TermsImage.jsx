@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
+import lightImage from "/public/img/terms/terms-light.webp";
+import darkImage from "/public/img/terms/bg-img.webp";
 import css from "./TermsImage.module.css";
 
 const TermsImage = () => {
@@ -31,8 +33,8 @@ const TermsImage = () => {
       <Image
         src={
           theme === "light"
-            ? "/img/terms/terms-light.webp"
-            : "/img/terms/bg-img.webp"
+            ? lightImage
+            : darkImage
         }
         alt="Макет міської вулиці"
         priority

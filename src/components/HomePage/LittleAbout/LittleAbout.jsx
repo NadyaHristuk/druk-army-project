@@ -5,6 +5,9 @@ import { useTheme } from "next-themes";
 import TitleAbout from "./TitleAbout/TitleAbout";
 import Info from "./Info/Info";
 import Image from "next/image";
+import bgImg from "/public/img/home/bg.webp";
+import girlImg from "/public/img/home/girl-light.webp";
+import girlDarkImg from "/public/img/home/girl-dark-theme.webp";
 import css from "./LittleAbout.module.css";
 
 const LittleAbout = () => {
@@ -21,8 +24,8 @@ const LittleAbout = () => {
           <Image
             src={
               theme === "light"
-                ? "/img/home/girl-light.webp"
-                : "/img/home/girl-dark-theme.webp"
+                ? girlImg
+                : girlDarkImg
             }
             alt="гарна анімована дівчина"
             width={692}
@@ -36,7 +39,7 @@ const LittleAbout = () => {
             }
           />
           {theme === "dark" && <Image
-            src={"/img/home/bg.webp"}
+            src={bgImg}
             alt="background layout"
             width={287}
             height={366}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Icon from "@/components/Icon/Icon";
+import imageSliderMan from "/public/img/home/slider2-man.webp";
 import css from "./TitleNeedSupport.module.css";
 
 const TitleNeedSupport = () => {
@@ -31,10 +32,8 @@ const TitleNeedSupport = () => {
         </div>
         {isDesktop1200 && (
         <Image
-          src={"/img/home/slider2-man.webp"}
+          src={imageSliderMan}
           alt={t("home:altMan")}
-          width={606}
-          height={922}
           className={css.sliderMan}
           loading="lazy"
         />
