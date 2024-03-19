@@ -4,5 +4,7 @@
     "toHowItWorks":"How it works",
     "toDonate":"Donate",
     "toNews":"News",
-    "toEnter":"Enter"
+    "toEnter":"Enter",
+    "loading":"Loading",
+    "loadText":"Loading a truck with CSS and JS files"
 }

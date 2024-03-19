@@ -4,5 +4,7 @@
     "toHowItWorks":"Як це працює",
     "toDonate":"Задонатити",
     "toNews":"Новини",
-    "toEnter":"Вхід"
+    "toEnter":"Вхід",
+    "loading":"Завантаження",
+    "loadText":"Завантажуємо фуру с файлами css js"
 }

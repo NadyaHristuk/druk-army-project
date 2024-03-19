@@ -4,5 +4,7 @@
     "toHowItWorks":"Jak to działa",
     "toDonate":"Zasponsorować",
     "toNews":"Wiadomości",
-    "toEnter":"Logowanie"
+    "toEnter":"Logowanie",
+    "loading":"Ładowanie",
+    "loadText":"Ładujemy ciężarówkę z plikami css i js"
 }

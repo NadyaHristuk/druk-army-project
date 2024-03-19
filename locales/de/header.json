@@ -4,5 +4,7 @@
     "toHowItWorks":"Wie funktioniert das",
     "toDonate":"Spenden",
     "toNews":"Nachrichten",
-    "toEnter":"Einloggen"
+    "toEnter":"Einloggen",
+    "loading":"Laden",
+    "loadText":"Wir laden einen LKW mit CSS und JS Dateien herunter"
 }
