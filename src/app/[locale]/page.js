@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Slider from "@/components/HomePage/Slider/Slider.jsx";
 import TitleHomePage from "@/components/HomePage/TitleHomePage/TitleHomePage";
 import Section from "@/components/Section/Section";
@@ -12,44 +13,65 @@ import SliderNews from "@/components/HomePage/Slider_News/SliderNews";
 import Consumers from "@/components/HomePage/Consumers/Consumers";
 import Partners from "@/components/HomePage/Partners/Partners";
 import Faq from "@/components/HomePage/FAQ/Faq";
-import css from "./page.module.css"
+import Loading from "./loading";
+import css from "./page.module.css";
 
 export default function Home() {
   return (
     <>
+      <Suspense fallback={<Loading />}>
         <section className={css.sectionHero}>
           <Slider />
           <TitleHomePage />
         </section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <HowItWorks/>
+          <HowItWorks />
         </Section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <PrintAll/>
+          <PrintAll />
         </Section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <section className={css.sectionPrinters}>
-          <InstallPrinter/>
+          <InstallPrinter />
         </section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <Calculator/>
+          <Calculator />
         </Section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <section className={css.sectionLittleAbout}>
-          <LittleAbout/>
+          <LittleAbout />
         </section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <SecondSlider/>
+          <SecondSlider />
         </Section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <SpeakAboutUs/>
-          <SliderNews/>
+          <SpeakAboutUs />
+          <SliderNews />
         </Section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <section className={css.pertnersSection}>
-          <Consumers/>
-          <Partners/>
+          <Consumers />
+          <Partners />
         </section>
+      </Suspense>
+      <Suspense fallback={<Loading />}>
         <Section>
-          <Faq/>
+          <Faq />
         </Section>
+      </Suspense>
     </>
   );
 }

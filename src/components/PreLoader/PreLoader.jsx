@@ -10,7 +10,7 @@ const PreLoader = () => {
       if (progress < 100) {
         setProgress(progress + 1);
       }
-    }, 100);
+    }, 1);
 
     return () => clearInterval(interval);
   }, [progress]);
