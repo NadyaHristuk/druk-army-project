@@ -6,9 +6,29 @@ import Button from "../Button/Button";
 import Icon from "@/components/Icon/Icon";
 import CopyButton from "../CopyButton/CopyButton";
 import css from "./ContentDonationPage.module.css";
+import { useState } from "react";
 
 const ContentDonationPage = () => {
   const { t } = useTranslation();
+  const [contributionType, setContributionType] = useState("one-time");
+  const [amount, setAmount] = useState("");
+  const [currency, setCurrency] = useState("UAH");
+
+  const handleContributionTypeChange = (event) => {
+    setContributionType(event.target.value);
+  };
+
+  const handleAmountChange = (event) => {
+    setAmount(event.target.value);
+  };
+
+  const handleCurrencyChange = (event) => {
+    setCurrency(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <div className={css.container}>
@@ -54,9 +74,7 @@ const ContentDonationPage = () => {
 
           <div className={css.donation}>
             <h1 className={css.title}>{t("donation:donation.title")}</h1>
-            <form
-            // onSubmit={handleSubmit}
-            >
+            <form onSubmit={handleSubmit}>
               <div className={css.radioWrapper}>
                 <div className={css.oneTime}>
                   <input
@@ -64,10 +82,10 @@ const ContentDonationPage = () => {
                     type="radio"
                     id="one-time"
                     value="one-time"
-                    // checked={contributionType === "one-time"}
-                    // onChange={handleContributionTypeChange}
+                    checked={contributionType === "one-time"}
+                    onChange={handleContributionTypeChange}
                   />
-                  <label htmlFor="one-time">
+                  <label htmlFor="one-time" className={css.label}>
                     {t("donation:donation.oneTime")}
                   </label>
                 </div>
@@ -77,10 +95,10 @@ const ContentDonationPage = () => {
                     type="radio"
                     id="subscription"
                     value="subscription"
-                    // checked={contributionType === "subscription"}
-                    // onChange={handleContributionTypeChange}
+                    checked={contributionType === "subscription"}
+                    onChange={handleContributionTypeChange}
                   />
-                  <label htmlFor="subscription">
+                  <label htmlFor="subscription" className={css.label}>
                     {t("donation:donation.subscription")}
                   </label>
                 </div>
@@ -92,8 +110,8 @@ const ContentDonationPage = () => {
                     className={css.contributionAmount}
                     type="number"
                     id="amount"
-                    // value={amount}
-                    // onChange={handleAmountChange}
+                    value={amount}
+                    onChange={handleAmountChange}
                     required
                   />
                 </div>
@@ -101,8 +119,8 @@ const ContentDonationPage = () => {
                   <select
                     className={css.contributionCurrency}
                     id="currency"
-                    // value={currency}
-                    // onChange={handleCurrencyChange}
+                    value={currency}
+                    onChange={handleCurrencyChange}
                   >
                     <option value="UAH">UAH</option>
                     <option value="USD">USD</option>

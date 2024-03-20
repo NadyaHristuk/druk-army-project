@@ -13,8 +13,6 @@
     width: 1920px;
     padding-left: 328px;
   }
-
-  outline: 1px solid green;
 }
 
 .topBlock {
@@ -159,6 +157,8 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+
+  cursor: pointer;
 }
 
 .subscription {
@@ -177,7 +177,23 @@
   border: 2px solid var(--main-bg);
   background-color: var(--accent-color);
   color: var(--main-bg);
+
+  cursor: pointer;
 }
+
+.label {
+  cursor: pointer;
+}
+
+/* .oneTime input[type="radio"]:checked + label {
+  background-color: var(--accent-color);
+  color: var(--main-bg);
+}
+
+.subscription input[type="radio"]:checked + label {
+  background-color: var(--main-bg);
+  color: var(--accent-color);
+} */
 
 .contribution {
   display: flex;
@@ -281,7 +297,7 @@
   justify-content: space-between;
   margin-bottom: 12px;
 
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (min-width: 960px) {
     justify-content: start;
     gap: 23px;
   }
@@ -414,4 +430,3 @@
 .cryptoAccount {
   word-wrap: break-word;
 }
-
