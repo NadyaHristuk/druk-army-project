@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Link from "next/link";
 import ModalCreators from "../ModalCreators/ModalCreators";
+import ContentModal from "../ContentModal/ContentModal";
 import css from "./ContactsFooter.module.css";
 
 const ContactsFooter = () => {
@@ -40,7 +41,9 @@ const ContactsFooter = () => {
         </div>
       </div>
       {isShowCreators && (
-        <ModalCreators setIsShowCreators={setIsShowCreators} />
+        <ModalCreators setIsShowCreators={setIsShowCreators}>
+         <ContentModal/>
+        </ModalCreators>
       )}
     </>
   );
