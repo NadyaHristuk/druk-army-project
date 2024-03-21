@@ -1,4 +1,5 @@
 import NewsListItem from '../NewsListItem/NewsListItem';
+import Paginator from '../Paginator/Paginator';
 import s from './NewsList.module.css';
 
 const newsList = [
@@ -94,11 +95,14 @@ const newsList = [
 
 const NewsList = () => {
   return (
-    <ul className={s.list}>
-      {newsList.map((el) => (
-        <NewsListItem key={el.id} {...el} />
-      ))}
-    </ul>
+    <div className={s.newsWrapper}>
+      <ul className={s.list}>
+        {newsList.map((el) => (
+          <NewsListItem key={el.id} {...el} />
+        ))}
+      </ul>
+      <Paginator />
+    </div>
   );
 };
 

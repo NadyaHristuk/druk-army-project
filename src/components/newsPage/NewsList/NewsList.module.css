@@ -1,0 +1,37 @@
+.newsWrapper {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  row-gap: 26px;
+  margin: 0;
+}
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  .newsWrapper {
+    width: 479px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .newsWrapper {
+    width: 568px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsWrapper {
+    width: 688px;
+  }
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .newsWrapper {
+    width: 1135px;
+  }
+}

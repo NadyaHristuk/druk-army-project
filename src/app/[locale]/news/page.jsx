@@ -1,13 +1,19 @@
 import React from 'react';
-import { NeedSupportArticle, NewsList, Paginator } from '@/components/newsPage';
+import {
+  NeedSupportArticle,
+  NewsList,
+  PageWrapper,
+} from '@/components/newsPage';
+import Container from '@/components/container/Container';
 
 const News = () => {
   return (
-    <div className="pageWrapper">
-      <NewsList />
-      <NeedSupportArticle />
-      <Paginator />
-    </div>
+    <Container>
+      <PageWrapper>
+        <NewsList />
+        <NeedSupportArticle />
+      </PageWrapper>
+    </Container>
   );
 };
 

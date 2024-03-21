@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -12,9 +12,10 @@
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 960px) {
   .wrapper {
-    width: 365px;
+    width: 335px;
     height: 607px;
+    margin-right: -3px;
   }
 }
