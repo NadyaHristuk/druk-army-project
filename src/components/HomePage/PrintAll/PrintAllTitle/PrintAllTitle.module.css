@@ -18,10 +18,6 @@
   font-weight: 400;
   font-size: 24px;
   color: var(--accent-color);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 560px;
 }
 
 .mainTitleText {
@@ -47,9 +43,10 @@
   transition: all 400ms ease;
   width: 274px;
   height: 43px;
-  border: none;
-  outline: none;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 9px;
 }
 
@@ -160,7 +157,6 @@
 
 @media screen and (min-width: 1200px) {
   .mainTitleContainer {
-    margin-left: 60px;
     margin-bottom: 0;
   }
 

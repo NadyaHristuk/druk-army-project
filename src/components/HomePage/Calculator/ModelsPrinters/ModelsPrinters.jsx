@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import ender3Img from "/public/img/home/calculator/ender3.webp";
+import bambuImg from "/public/img/home/calculator/Bambu.webp";
 import css from "./ModelsPrinters.module.css";
 
 const printers = ["BAMBULAB", "CREALITY ENDER 3"];
@@ -25,21 +27,23 @@ const ModelsPrinters = ({ quality }) => {
         <div className={css.modelOne}>
           {(resultCalc === "one printer" || resultCalc === "two printers") && (
             <Image
-              src={"/img/home/calculator/ender3.png"}
+              src={ender3Img}
               alt={`${t("home:altImagePrinters")} CREALITY ENDER 3`}
               width={275}
               height={254}
               className={css.modelPrinterFirst}
+              priority
             />
           )}
           {(resultCalc === "one Bambulab" || resultCalc === "two Bambulab") && (
             <Image
-              src={"/img/home/calculator/Bambu.png"}
+              src={bambuImg}
               alt={`${t("home:altImagePrinters")} BAMBULAB`}
               width={225}
               height={204}
               style={resultCalc === "two Bambulab" && {left: 20}}
               className={css.modelPrinterFirst_Bambulab}
+              priority
             />
           )}
         </div>
@@ -48,20 +52,22 @@ const ModelsPrinters = ({ quality }) => {
         <div className={css.modelTwo}>
           {resultCalc === "two printers" && (
             <Image
-              src={"/img/home/calculator/ender3.png"}
+              src={ender3Img}
               alt={`${t("home:altImagePrinters")} CREALITY ENDER 3`}
               width={211}
               height={192}
               className={css.modelPrinterSecond}
+              priority
             />
           )}
           {resultCalc === "two Bambulab" && (
             <Image
-              src={"/img/home/calculator/Bambu.png"}
+              src={bambuImg}
               alt={`${t("home:altImagePrinters")} BAMBULAB`}
               width={151}
               height={132}
               className={css.modelPrinterSecond_Bambulab}
+              priority
             />
           )}
         </div>

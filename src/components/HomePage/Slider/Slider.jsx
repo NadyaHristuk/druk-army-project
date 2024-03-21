@@ -1,18 +1,21 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { nanoid } from "nanoid";
+import sliderLogo from "/public/img/home/sliderLogo.webp";
+import slideOne from "/public/img/home/slider/slide1.webp";
+import slideTwo from "/public/img/home/slider/slide2.webp";
+import slideThree from "/public/img/home/slider/slide3.webp";
 import css from "./Slider.module.css";
-
 import "swiper/css";
 
 const Slider = () => {
   const slides = [
-    { img: "/img/home/slider/slide1.png", id: nanoid() },
-    { img: "/img/home/slider/slide2.png", id: nanoid() },
-    { img: "/img/home/slider/slide3.png", id: nanoid() },
+    { img: slideOne, id: nanoid() },
+    { img: slideTwo, id: nanoid() },
+    { img: slideThree, id: nanoid() },
   ];
 
   return (
@@ -27,8 +30,8 @@ const Slider = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        navigation={false}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
         {slides.map(({ img, id }) => (
@@ -38,6 +41,7 @@ const Slider = () => {
               src={img}
               width={520}
               height={330}
+              priority
               className={css.slideItem}
             />
           </SwiperSlide>
@@ -45,8 +49,9 @@ const Slider = () => {
       </Swiper>
       <div className={css.logoSliderContainer}>
           <Image
-            src={"/img/home/sliderLogo.png"}
+            src={sliderLogo}
             alt="Логотип ДрукАрмії"
+            priority
             width={107}
             height={53}
             className={css.logoSlider}

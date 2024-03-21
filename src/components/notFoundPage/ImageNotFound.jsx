@@ -1,9 +1,11 @@
 "use client";
 
-import css from "./ImageNotFound.module.css";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import { useTheme } from "next-themes";
+import notFoundImg from "/public/img/notfound/notfound.webp";
+import darkNotFoundImg from "/public/img/notfound/notfound-dark.webp";
+import css from "./ImageNotFound.module.css";
 
 const ImageNotFound = () => {
   const isMobileStart = useMediaQuery({ minWidth: 480 });
@@ -21,10 +23,11 @@ const ImageNotFound = () => {
       <Image
         src={
           theme === "light"
-            ? "/img/notfound/notfound.png"
-            : "/img/notfound/notfound-dark.png"
+            ? notFoundImg
+            : darkNotFoundImg
         }
         alt="Error 404. This page not found"
+        priority
         width={
           isMobileStart && isMobileEnd
             ? 442

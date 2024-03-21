@@ -1,0 +1,61 @@
+.container {
+  width: 320px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .imagesAnswers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .imagesAnswers,
+  .container {
+    width: 1200px;
+  }
+
+  .imagesAnswers {
+    column-gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .imagesAnswers,
+  .container {
+    width: 1920px;
+  }
+
+  .imagesAnswers {
+    justify-content: center;
+    column-gap: 32px;
+  }
+}

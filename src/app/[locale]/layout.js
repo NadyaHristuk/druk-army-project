@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
 import { Providers } from "@/app/[locale]/providers";
+import { Suspense } from "react";
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 import Header from "@/components/header/Header.jsx";
@@ -8,9 +8,18 @@ import Footer from "@/components/footer/Footer.jsx";
 import "../globals.css";
 import { GlobalProvider } from "@/app/GlobalProvider";
 
-const i18nNamespaces = ["header", "footer", "home", "terms", "notfound", "about", "vacancies", "how-it-works"];
+const i18nNamespaces = [
+  "header",
+  "footer",
+  "terms",
+  "notfound",
+  "about",
+  "home",
+  "vacancies",
+  "how-it-works",
+  "technical-works",
+];
 
-const font = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -22,7 +31,7 @@ export default async function RootLayout({ children, params: { locale } }) {
 
   return (
     <html lang="uk">
-      <body className={font.className}>
+      <body>
         <Providers>
           <TranslationsProvider
             namespaces={i18nNamespaces}
@@ -31,7 +40,9 @@ export default async function RootLayout({ children, params: { locale } }) {
           >
             <GlobalProvider>
               <Header />
-              <main>{children}</main>
+              <main>
+                <Suspense>{children}</Suspense>
+              </main>
               <Footer />
             </GlobalProvider>
           </TranslationsProvider>

@@ -12,6 +12,7 @@
   --bg-loader: #5e6a8a;
   --cards-text: #ffffff;
   --body-bg: #ffffff;
+  --bg-arrows: rgba(255, 255, 255, 0.5);
 }
 [data-theme="dark"] {
   --header-bg: #0f1022;
@@ -24,7 +25,8 @@
   --accent-color: #5169ff;
   --bg-loader: #ffffff;
   --cards-text: #333333;
-  --body-bg: url(/img/home/darkMood-bg.jpg);
+  --bg-arrows: rgba(0, 0, 0, 0.5);
+  --body-bg: url(/img/home/darkMood-bg.webp);
 }
 
 @font-face {

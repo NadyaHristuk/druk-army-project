@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
-import Icon from "@/components/Icon/Icon";
 import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
+import scaleImg from "/public/img/home/calculator/scale.webp";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
@@ -72,6 +72,7 @@ const Calculator = () => {
     setWidthValue(Math.round(value));
   };
 
+
   return (
     <div className={css.container}>
       <div className={css.firstPart}>
@@ -85,22 +86,17 @@ const Calculator = () => {
 
         <div>
           <label htmlFor="money" className={css.inputContainer}>
-            {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
             <span
               className={quality <= minQuality ? css.counterLeftLimit : quality >= maxQuality ? css.counterRightLimit : css.counter}
-              style={{ marginLeft: widthValue - 12 }}
-            >
-              <Icon
-                className={
-                  (quality <= minQuality)
-                    ? css.shapeLeftLimit
-                    :
-                      (quality >= maxQuality)
-                    ? css.shapeRightLimit
-                    : css.shape
-                }
-                name={"icon-modal"}
-              />
+              style={{ marginLeft: widthValue - 12}}
+            ><span  className={
+              (quality <= minQuality)
+                ? css.triangleLeftLimit
+                :
+                  (quality >= maxQuality)
+                ? css.triangleRightLimit
+                : css.triangle
+            }></span>
               <p className={css.showResult}>
                 {quality <= 100 ? 100 : quality}$
               </p>
@@ -116,16 +112,17 @@ const Calculator = () => {
             />
             <span
               className={css.fillRange}
-              style={{ width: widthValue }}
+              style={{ width: widthValue + 2 }}
             ></span>
           </label>
           <div className={css.scaleContainer}>
             <Image
-              src={"/img/home/calculator/scale.png"}
+              src={scaleImg}
               alt="Range scale from 0 to 1000$"
               width={297}
               height={44}
               className={css.scale}
+              loading="lazy"
             />
           </div>
         </div>

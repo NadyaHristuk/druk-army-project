@@ -2,6 +2,7 @@ import { VacanciesModal } from "@/components/modals/VacanciesModal/VacanciesModa
 import Image from "next/image";
 import modalImg from "../../../../public/img/vacancies/after-apply-modal.png";
 import styles from "./VacanciesModal.module.css";
+import Icon from "@/components/Icon/Icon";
 
 export const VacanciesFeedbackResultModal = ({
   isModalOpen,
@@ -19,19 +20,24 @@ export const VacanciesFeedbackResultModal = ({
           />
         </div>
         <div className={styles.vacModalTitleResultContainer}>
-          <div className={styles.vacModalTitleContainer}>
-            <h2 className={styles.vacModalTitle}>
-              Дякуємо за <span>Відгук</span>
+          <div>
+            <h2 className={styles.vacModalResultTitle}>
+              Дякуємо за <br />
+              <span>Відгук</span>
             </h2>
-            <p className={styles.vacModalDescription}>
+            <p className={styles.vacModalResultDescription}>
               Найближчим часом ми з вами разом будемо різати русню.
             </p>
           </div>
           <div className={styles.vacModalResultBtnContainer}>
-            <button className={styles.vacModalResultBtn} type="button">
+            <button className={styles.vacModalBtnWait} type="button">
               Очікувати
             </button>
-            <button className={styles.vacModalResultBtn} type="button">
+            <button className={styles.vacModalBtnShare} type="button">
+              <Icon
+                name="icon-crossed-arrows-modal"
+                className={styles.vacModalResultBtnSvg}
+              />
               Поділитися
             </button>
           </div>
