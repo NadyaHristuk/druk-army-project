@@ -1,64 +1,92 @@
 .slideImage {
-    object-fit: cover;
+  object-fit: cover;
+  object-position: 0px 0px;
+  filter: grayscale(100%);
+  transition: all 400ms ease;
+}
+
+.slideImageActive {
+  object-fit: cover;
+  object-position: 0px 0px;
+  filter: grayscale(0%);
+  transition: all 400ms ease;
 }
 
 .container {
-    width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: -60px auto 0 auto;
-    position: relative;
-    z-index: 1;
-  }
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: -60px auto 0 auto;
+  position: relative;
+  z-index: 1;
+}
 
-  .textContent {
-    width: 286px;
-    height: 39px;
-    color: white;
-    background-color: var(--accent-color);
-    font-size: 24px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.textContent {
+  width: 286px;
+  height: 39px;
+  color: white;
+  background-color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+}
 
-  .slide {
-    cursor: pointer;
-  }
+.textContentActive {
+  width: 286px;
+  height: 39px;
+  color: white;
+  background-color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(0);
+}
 
-  @media screen and (min-width: 480px) {
-    .container {
-      width: 480px;
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+.slide {
+  cursor: pointer;
+}
+
+.slide:hover > .slideImage,
+.slide:focus > .slideImage {
+  filter: grayscale(0%);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  
-  @media only screen and (min-width: 768px) {
-    .container {
-      width: 768px;
-    }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
-  
-  @media only screen and (min-width: 960px) {
-    .mySwiper,
-    .container {
-      width: 960px;
-    }
+}
+
+@media only screen and (min-width: 960px) {
+  .mySwiper,
+  .container {
+    width: 960px;
   }
-  
-  @media only screen and (min-width: 1200px) {
-    .mySwiper,
-    .container {
-      width: 1200px;
-    }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mySwiper,
+  .container {
+    width: 1200px;
   }
-  
-  @media only screen and (min-width: 1920px) {
-    .container,
-    .mySwiper {
-      width: 1920px;
-    }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container,
+  .mySwiper {
+    width: 1920px;
   }
-  
+}

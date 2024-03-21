@@ -1,0 +1,53 @@
+.allImages {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.mainContainerInfo {
+    max-width: 536px;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 261px;
+  margin-bottom: 16px;
+}
+
+.imgContainer > img {
+  object-fit: cover;
+}
+
+.role {
+  font-family: "Benzin-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+.name {
+  text-transform: uppercase;
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--paragraph-text);
+}
+
+.nameAndLink {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 16px;
+}
+
+.linkedinIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--paragraph-text);
+  text-align: left;
+}

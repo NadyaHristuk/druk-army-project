@@ -14,10 +14,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
-  background-color: white;
+  background-color: var(--header-bg);
   min-width: 100px;
   min-height: 100px;
   padding: 0px;
+}
+
+.bgModal1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bgModal2 {
+  position: absolute;
+  bottom: 324px;
+  left: 0;
+  z-index: -1;
 }
 
 .closeBtn {

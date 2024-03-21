@@ -12,7 +12,7 @@ const ContentModal = () => {
 
   return (
     <div>
-      <div>
+      <div className={css.upperPart}>
         <Image
           src={mapImg}
           alt="карта України"
@@ -22,7 +22,7 @@ const ContentModal = () => {
         />
         <InfoCreator creator={creator}/>
       </div>
-      <SliderCards setCreator={setCreator} />
+      <SliderCards setCreator={setCreator} creator={creator}/>
     </div>
   );
 };

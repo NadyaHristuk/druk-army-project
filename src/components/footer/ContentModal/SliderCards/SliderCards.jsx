@@ -4,20 +4,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
-import frontVlad from "/public/img/createdBy/frontend/front1.jpg";
+import teamLead from "/public/img/createdBy/teamlead/teamlead.jpg"
+import frontVlad from "/public/img/createdBy/frontend/front1.webp";
+import frontVugar from "/public/img/createdBy/frontend/front2.jpg";
+import frontDarina from "/public/img/createdBy/frontend/front3.jpg";
+import testKatya from "/public/img/createdBy/testPeople/test1.jpg";
+import testOlena from "/public/img/createdBy/testPeople/test2.jpg";
 import designerImg from "/public/img/createdBy/designer/designer3.jpg";
 import css from "./SliderCards.module.css";
 
 const creators = [
   {
-    img: frontVlad,
-    role: "Frontend",
-    id: "frontVlad",
-  },
-  {
-    img: designerImg,
-    role: "Web design",
-    id: "webDesign",
+    img: teamLead,
+    role: "Team Lead",
+    id: "teamLead",
   },
   {
     img: frontVlad,
@@ -25,24 +25,24 @@ const creators = [
     id: "frontVlad",
   },
   {
-    img: designerImg,
-    role: "Web design",
-    id: "webDesign",
-  },
-  {
-    img: frontVlad,
+    img: frontVugar,
     role: "Frontend",
-    id: "frontVlad",
+    id: "frontVugar",
   },
   {
-    img: designerImg,
-    role: "Web design",
-    id: "webDesign",
-  },
-  {
-    img: frontVlad,
+    img: frontDarina,
     role: "Frontend",
-    id: "frontVlad",
+    id: "frontDarina",
+  },
+  {
+    img: testKatya,
+    role: "QA Engineer",
+    id: "testerKatya",
+  },
+  {
+    img: testOlena,
+    role: "QA Engineer",
+    id: "testerOlena",
   },
   {
     img: designerImg,
@@ -51,7 +51,7 @@ const creators = [
   },
 ];
 
-const SliderCards = ({setCreator}) => {
+const SliderCards = ({setCreator, creator}) => {
   return (
     <>
       <div className={css.container}>
@@ -62,6 +62,7 @@ const SliderCards = ({setCreator}) => {
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
+            reverseDirection: true
           }}
           loop={true}
           modules={[Autoplay]}
@@ -73,10 +74,10 @@ const SliderCards = ({setCreator}) => {
                 alt="photo"
                 src={img}
                 width={286}
-                height={225}
-                className={css.slideImage}
+                height={286}
+                className={creator === id ? css.slideImageActive : css.slideImage}
               />
-              <div className={css.textContent}>
+              <div className={creator === id ? css.textContentActive : css.textContent} >
                 <p className={css.role}>{role}</p>
               </div>
             </SwiperSlide>

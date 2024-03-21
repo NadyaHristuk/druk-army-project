@@ -4,3 +4,9 @@
     position: relative;
     z-index: 2;
 }
+
+.upperPart {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
