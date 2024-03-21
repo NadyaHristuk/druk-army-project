@@ -6,9 +6,108 @@
   .wrapper {
     display: flex;
     flex-wrap: wrap;
-
     width: 229px;
     height: 548px;
+  }
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  .title span {
+    font-family: 'Benzin-ExtraBold', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .subTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .collectingList,
+  .infoList {
+    margin: 0;
+    padding: 0;
+  }
+
+  .collectingList {
+    margin-bottom: 20px;
+  }
+
+  .collectingItem:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .infoItem:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  .infoItem {
+    width: 229px;
+    height: 64px;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  .blue {
+    background-color: #5169ff;
+  }
+  .black {
+    background-color: #333333;
+  }
+
+  .infoIcon {
+    margin-right: 12px;
+  }
+
+  .blue .infoIcon {
+    width: 53px;
+    height: 42px;
+  }
+  .black .infoIcon {
+    width: 47px;
+    height: 37px;
+  }
+
+  .infoTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .infoSubTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .infoSubTitle span {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -17,5 +116,69 @@
     width: 335px;
     height: 607px;
     margin-right: -3px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    row-gap: 10px;
+  }
+
+  .title span {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .collectingList {
+    margin-bottom: 26px;
+  }
+
+  .collectingItem:not(:last-child) {
+    margin-bottom: 21px;
+  }
+
+  .infoItem:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .infoItem {
+    width: fit-content;
+    height: 80px;
+    padding-left: 17px;
+    padding-right: 24px;
+  }
+
+  .infoIcon {
+    margin-right: 21px;
+  }
+
+  .blue .infoIcon {
+    width: 61px;
+    height: 48px;
+  }
+  .black .infoIcon {
+    width: 61px;
+    height: 49px;
+  }
+
+  .infoTitle {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .infoSubTitle {
+    font-size: 34px;
+    line-height: 1;
+  }
+  .infoSubTitle span {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
