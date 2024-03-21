@@ -30,7 +30,7 @@
 .bgModal2 {
   position: absolute;
   bottom: 324px;
-  left: 0;
+  left: -2px;
   z-index: -1;
 }
 

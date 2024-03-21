@@ -2,15 +2,15 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import Image from "next/image";
-import teamLead from "/public/img/createdBy/teamlead/teamlead.jpg"
+import teamLead from "/public/img/createdBy/teamlead/teamlead.webp"
 import frontVlad from "/public/img/createdBy/frontend/front1.webp";
-import frontVugar from "/public/img/createdBy/frontend/front2.jpg";
-import frontDarina from "/public/img/createdBy/frontend/front3.jpg";
-import testKatya from "/public/img/createdBy/testPeople/test1.jpg";
-import testOlena from "/public/img/createdBy/testPeople/test2.jpg";
-import designerImg from "/public/img/createdBy/designer/designer3.jpg";
+import frontVugar from "/public/img/createdBy/frontend/front2.webp";
+import frontDarina from "/public/img/createdBy/frontend/front3.webp";
+import testKatya from "/public/img/createdBy/testPeople/test1.webp";
+import testOlena from "/public/img/createdBy/testPeople/test2.webp";
+import designerImg from "/public/img/createdBy/designer/designer3.webp";
+import "swiper/css";
 import css from "./SliderCards.module.css";
 
 const creators = [
