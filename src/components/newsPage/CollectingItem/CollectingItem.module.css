@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 4px;
   }
 
   .image {
@@ -21,7 +22,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #333333;
+    color: var(--title-small);
     margin-bottom: 7px;
   }
 
@@ -31,8 +32,13 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #333333;
+    color: var(--title-small);
     margin-bottom: 5px;
+  }
+
+  .title,
+  .subTitle {
+    margin-left: 11px;
   }
 
   .progressBar {
@@ -40,7 +46,7 @@
     width: 206px;
     height: 14px;
     margin: 0 auto;
-    background-color: #333333;
+    background-color: var(--title-small);
     color: #ffffff;
   }
   .progress {
@@ -49,7 +55,7 @@
     left: 0;
     height: 100%;
     padding-left: 2px;
-    background-color: #5169ff;
+    background-color: var(--accent-color);
     font-size: 12px;
     line-height: 14px;
   }
@@ -65,5 +71,11 @@
 
   .imageWrapper {
     width: 98px;
+    margin-bottom: 0;
+  }
+
+  .title,
+  .subTitle {
+    margin-left: 0;
   }
 }

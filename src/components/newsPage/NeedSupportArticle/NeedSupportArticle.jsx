@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import s from './NeedSupportArticle.module.css';
 import CollectingItem from '../CollectingItem/CollectingItem';
+import * as Icon from '../Icon/Icon';
 
 const NeedSupportArticle = () => {
   return (
@@ -39,26 +40,14 @@ const NeedSupportArticle = () => {
 
       <ul className={s.infoList}>
         <li className={`${s.infoItem} ${s.blue}`}>
-          <Image
-            className={s.infoIcon}
-            width={53}
-            height={42}
-            src={'/img/news-item/icons/box.svg'}
-            alt="box icon"
-          />
+          <Icon.Box className={s.infoIcon} />
           <div className={s.infoTextWrapper}>
             <h3 className={s.infoTitle}>Черга замовлень</h3>
             <p className={s.infoSubTitle}>123</p>
           </div>
         </li>
         <li className={`${s.infoItem} ${s.black}`}>
-          <Image
-            className={s.infoIcon}
-            width={53}
-            height={42}
-            src={'/img/news-item/icons/cart.svg'}
-            alt="cart icon"
-          />
+          <Icon.Cart className={s.infoIcon} />
           <div className={s.infoTextWrapper}>
             <h3 className={s.infoTitle}>Необхідно</h3>
             <p className={s.infoSubTitle}>

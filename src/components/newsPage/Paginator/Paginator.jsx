@@ -4,8 +4,8 @@ import { useMediaQuery } from 'react-responsive';
 import * as Icon from '../Icon/Icon';
 import s from './Paginator.module.css';
 
-const Paginator = ({ activePage, pageAmount, onChangePage }) => {
-  const [curPage, setCurPage] = useState(activePage);
+const Paginator = ({ startPage, pageAmount, onChangePage }) => {
+  const [curPage, setCurPage] = useState(startPage);
   const isMobile = useMediaQuery({ query: '(max-width: 479.98px)' });
 
   const curPageRef = useRef(curPage);
