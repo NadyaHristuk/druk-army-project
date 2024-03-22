@@ -104,7 +104,11 @@ const NewsList = () => {
         ))}
       </ul>
       {pageAmount > 1 && (
-        <Paginator activePage={activePage} pageAmount={pageAmount} />
+        <Paginator
+          activePage={activePage}
+          pageAmount={pageAmount}
+          onChangePage={null}
+        />
       )}
     </div>
   );
