@@ -49,6 +49,8 @@
 
 .slide {
   cursor: pointer;
+  max-width: 286px;
+  overflow: hidden;
 }
 
 .slide:hover > .slideImage,
@@ -88,5 +90,9 @@
   .container,
   .mySwiper {
     width: 1920px;
+  }
+
+  .slide {
+    transform: translate(240px)!important;
   }
 }

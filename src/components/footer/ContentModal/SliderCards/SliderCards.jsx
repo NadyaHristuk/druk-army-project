@@ -56,13 +56,13 @@ const SliderCards = ({setCreator, creator}) => {
     <>
       <div className={css.container}>
         <Swiper
-          spaceBetween={0}
+          spaceBetween={4}
           slidesPerView={6.6}
           centeredSlides={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
-            reverseDirection: true
+            reverseDirection: false
           }}
           loop={true}
           modules={[Autoplay]}

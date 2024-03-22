@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon/Icon";
-import designerImg2 from "/public/img/createdBy/designer/designer1.webp";
-import designerImg1 from "/public/img/createdBy/designer/designer2.webp";
 import designerImg3 from "/public/img/createdBy/designer/designer3.webp";
 import front1Img from "/public/img/createdBy/frontend/front1.webp";
 import front2Img from "/public/img/createdBy/frontend/front2.webp";
@@ -20,9 +18,7 @@ const creatorsInfo = [
     link: "https://www.linkedin.com/in/bogdan-shypika-821988217/?originalSubdomain=ua",
     website: "https://shypika-bogdan.com/",
     text: "Народився 12 травня 2001 року у місті Луганськ. Через російське вторгнення в 2014 році переїхав до Старобільська і в 2015 році був змушений переселитися до Києва через бойові дії в Луганській області. У 2019 почав вивчати графічний дизайн та  програмування.",
-    img: designerImg1,
-    img2: designerImg2,
-    img3: designerImg3
+    img: designerImg3,
   },
   {
     id: "frontVlad",
@@ -97,10 +93,9 @@ const InfoCreator = ({ creator }) => {
       <p className={css.role}>{activeInfo.role}</p>
       <div className={css.nameAndLink}>
         <p className={css.name}>{activeInfo.name}</p>
-        <Link href={activeInfo.link} target="_blank" className={css.linkedin}>
+        {creator === "webDesign" ? ( <Link href={activeInfo.website} target="_blank" className={css.website}>сайт</Link>) : (  <Link href={activeInfo.link} target="_blank" className={css.linkedin}>
           <Icon name={"icon-linkedin"} className={css.linkedinIcon} />
-        </Link>
-        {creator === "webDesign" && ( <Link href={activeInfo.website} target="_blank" className={css.website}>сайт</Link>)}
+        </Link>)}
       </div>
       <p className={css.text}>{activeInfo.text}</p>
     </div>
