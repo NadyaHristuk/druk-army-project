@@ -5,13 +5,13 @@ import {
   ImagesCouple,
   ItemsList,
   LetSupport,
-  NeedSupportArticle,
   NewsStats,
   Paragraph,
   Quote,
   SingleImage,
   Title,
 } from '@/components/newsItemPage';
+import { NeedSupportArticle } from '@/components/newsPage';
 import s from './page.module.css';
 
 const NewsItemPage = ({ params: { newsId } }) => {
