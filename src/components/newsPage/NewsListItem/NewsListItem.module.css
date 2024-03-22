@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: #5e6a8a;
+  color: var(--newsitem-info-text);
 }
 
 .author,
@@ -64,7 +64,7 @@
   font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #333333;
+  color: var(--title-small);
 }
 .descr {
   width: 100%;
@@ -75,7 +75,7 @@
   font-size: 15px;
   line-height: 18px;
   text-align: justify;
-  color: #333333;
+  color: var(--paragraph-text);
 }
 .moreBtn {
   /* button */
@@ -88,7 +88,7 @@
   width: 176px;
   height: 32px;
   padding-top: 3px;
-  background-color: #5e6a8a;
+  background-color: var(--newsitem-morebtn-bg);
   /* text */
   font-family: 'Benzin-Medium', sans-serif;
   font-weight: 400;
@@ -100,11 +100,8 @@
 }
 .date {
   align-self: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #5e6a8a;
 }
 
 @media screen and (min-width: 480px) {

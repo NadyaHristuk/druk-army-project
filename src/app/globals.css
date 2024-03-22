@@ -14,6 +14,9 @@
   --body-bg: #ffffff;
   --bg-arrows: rgba(255, 255, 255, 0.5);
   --paginator-btn-bg: #333333;
+  --newsitem-info-text: #5e6a8a;
+  --newsitem-morebtn-bg: #5e6a8a;
+  --newsitem-morebtn-text: #ffffff;
 }
 [data-theme='dark'] {
   --header-bg: #0f1022;
@@ -29,6 +32,9 @@
   --bg-arrows: rgba(0, 0, 0, 0.5);
   --body-bg: url(/img/home/darkMood-bg.webp);
   --paginator-btn-bg: #5e6a8a;
+  --newsitem-info-text: #5e6a8a;
+  --newsitem-morebtn-bg: #5e6a8a;
+  --newsitem-morebtn-text: #0f1022;
 }
 
 @font-face {
