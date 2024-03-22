@@ -1,3 +1,4 @@
+'use client';
 import NewsListItem from '../NewsListItem/NewsListItem';
 import Paginator from '../Paginator/Paginator';
 import s from './NewsList.module.css';
@@ -95,7 +96,8 @@ const newsList = [
 
 const NewsList = () => {
   const pageAmount = 25;
-  const activePage = 2;
+  const startPage = 2;
+
   return (
     <div className={s.newsWrapper}>
       <ul className={s.list}>
@@ -105,9 +107,9 @@ const NewsList = () => {
       </ul>
       {pageAmount > 1 && (
         <Paginator
-          activePage={activePage}
+          startPage={startPage}
           pageAmount={pageAmount}
-          onChangePage={null}
+          onChangePage={(page) => console.log(page)}
         />
       )}
     </div>
