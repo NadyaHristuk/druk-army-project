@@ -1,12 +1,70 @@
 .map {
-    margin-top: 88px;
-    margin-left: 39px;
-    position: relative;
-    z-index: 2;
+  margin-top: 88px;
+  margin-left: 39px;
+  position: relative;
+  z-index: 2;
 }
 
 .upperPart {
-    display: flex;
-    align-items: center;
-    column-gap: 48px;
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+.locationIconKyiv {
+  position: absolute;
+  top: 18%;
+  left: 28%;
+  width: 82px;
+  height: 82px;
+  fill: var(--paragraph-text);
+  z-index: 3;
+  animation: pulsar 1000ms infinite;
+}
+
+.locationIconOdesa {
+    position: absolute;
+    top: 51%;
+    left: 29%;
+    width: 82px;
+    height: 82px;
+    fill: var(--paragraph-text);
+    z-index: 3;
+    animation: pulsar 1000ms infinite;
+}
+
+.locationIconDnipro {
+    position: absolute;
+    top: 36%;
+    left: 43%;
+    width: 82px;
+    height: 82px;
+    fill: var(--paragraph-text);
+    z-index: 3;
+    animation: pulsar 1000ms infinite;
+}
+
+.locationIconFenevichi {
+    position: absolute;
+    top: 15%;
+    left: 26.65%;
+    width: 82px;
+    height: 82px;
+    fill: var(--paragraph-text);
+    z-index: 3;
+    animation: pulsar 1000ms infinite;
+}
+
+@keyframes pulsar {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

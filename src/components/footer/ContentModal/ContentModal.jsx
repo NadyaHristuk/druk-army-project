@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Icon from "@/components/Icon/Icon";
 import SliderCards from "./SliderCards/SliderCards";
 import InfoCreator from "./InfoCreator/InfoCreator";
 import mapImg from "/public/img/createdBy/Map.webp";
@@ -13,6 +14,7 @@ const ContentModal = () => {
   return (
     <div>
       <div className={css.upperPart}>
+        <Icon name={'icon-location'} className={creator === "frontVlad" ? css.locationIconOdesa : (creator === "testerOlena" ? css.locationIconDnipro : (creator === "frontDarina" ? css.locationIconFenevichi : css.locationIconKyiv))}/>
         <Image
           src={mapImg}
           alt="карта України"
