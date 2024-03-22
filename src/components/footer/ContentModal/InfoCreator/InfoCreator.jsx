@@ -17,7 +17,8 @@ const creatorsInfo = [
     id: "webDesign",
     name: "Шипика Богдан",
     role: "Web design",
-    link: "",
+    link: "https://www.linkedin.com/in/bogdan-shypika-821988217/?originalSubdomain=ua",
+    website: "https://shypika-bogdan.com/",
     text: "Народився 12 травня 2001 року у місті Луганськ. Через російське вторгнення в 2014 році переїхав до Старобільська і в 2015 році був змушений переселитися до Києва через бойові дії в Луганській області. У 2019 почав вивчати графічний дизайн та  програмування.",
     img: designerImg1,
     img2: designerImg2,
@@ -92,22 +93,6 @@ const InfoCreator = ({ creator }) => {
             height={261}
           />
         </div>
-        <div className={css.imgContainer}>
-          <Image
-            src={activeInfo.img3 || activeInfo.img}
-            alt={activeInfo.name}
-            width={181}
-            height={261}
-          />
-        </div>
-        <div className={css.imgContainer}>
-          <Image
-            src={activeInfo.img2 || activeInfo.img}
-            alt={activeInfo.name}
-            width={181}
-            height={261}
-          />
-        </div>
       </div>
       <p className={css.role}>{activeInfo.role}</p>
       <div className={css.nameAndLink}>
@@ -115,6 +100,7 @@ const InfoCreator = ({ creator }) => {
         <Link href={activeInfo.link} target="_blank" className={css.linkedin}>
           <Icon name={"icon-linkedin"} className={css.linkedinIcon} />
         </Link>
+        {creator === "webDesign" && ( <Link href={activeInfo.website} target="_blank" className={css.website}>сайт</Link>)}
       </div>
       <p className={css.text}>{activeInfo.text}</p>
     </div>

@@ -45,6 +45,17 @@
   height: 32px;
 }
 
+.website {
+  text-transform: uppercase;
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--cards-text);
+  background-color: var(--paragraph-text);
+  padding: 4px;
+}
+
 .text {
   font-size: 20px;
   font-weight: 500;
