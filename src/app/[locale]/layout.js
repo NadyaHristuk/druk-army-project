@@ -18,8 +18,8 @@ const i18nNamespaces = [
   "vacancies",
   "how-it-works",
   "technical-works",
+  "donation",
 ];
-
 
 export const metadata = {
   title: "Create Next App",

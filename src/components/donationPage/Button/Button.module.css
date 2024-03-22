@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 13px;
+
+  font-family: "Benzin-Medium";
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--buttons-text);
+  background-color: var(--accent-color);
+  border: none;
+
+  @media only screen and (min-width: 960px) {
+    padding: 15px 20px;
+    width: 249px;
+    height: 73px;
+
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.icon {
+  width: 27px;
+  height: 18px;
+  fill: var(--buttons-text);
+}

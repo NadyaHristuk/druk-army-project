@@ -1,9 +1,8 @@
-import React from 'react'
+import ContentDonationPage from '@/components/donationPage/ContentDonationPage/ContentDonationPage';
 
 const Donations = () => {
-  return (
-    <div>donations</div>
-  )
+  return <ContentDonationPage />;
+
 }
 
 export default Donations
