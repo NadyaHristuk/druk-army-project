@@ -1,0 +1,64 @@
+.wrapper {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 34px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  padding: 0;
+
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #333333;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn.accent {
+  background-color: #5169ff;
+}
+.notNumber {
+  height: fit-content;
+}
+
+.chevron {
+  width: 16px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.chevronIcon {
+  width: 100%;
+  height: 100%;
+  fill: #333333;
+}
+
+.chevron:disabled .chevronIcon {
+  opacity: 0.5;
+}
+
+.chevron:first-child {
+  margin-right: 5px;
+}
+.chevron:last-child {
+  margin-left: 5px;
+}
+
+.dotsIcon {
+  width: 6px;
+  height: 6px;
+  fill: #ffffff;
+}

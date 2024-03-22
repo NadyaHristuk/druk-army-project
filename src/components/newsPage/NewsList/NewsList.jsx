@@ -94,6 +94,8 @@ const newsList = [
 ];
 
 const NewsList = () => {
+  const pageAmount = 25;
+  const activePage = 2;
   return (
     <div className={s.newsWrapper}>
       <ul className={s.list}>
@@ -101,7 +103,9 @@ const NewsList = () => {
           <NewsListItem key={el.id} {...el} />
         ))}
       </ul>
-      <Paginator />
+      {pageAmount > 1 && (
+        <Paginator activePage={activePage} pageAmount={pageAmount} />
+      )}
     </div>
   );
 };
