@@ -1,4 +1,4 @@
-@import 'modern-normalize/modern-normalize.css';
+@import "modern-normalize/modern-normalize.css";
 
 :root {
   --header-bg: #ffffff;
@@ -18,7 +18,7 @@
   --newsitem-morebtn-bg: #5e6a8a;
   --newsitem-morebtn-text: #ffffff;
 }
-[data-theme='dark'] {
+[data-theme="dark"] {
   --header-bg: #0f1022;
   --bg-details: #ffffff;
   --title-small: #ffffff;
@@ -38,15 +38,15 @@
 }
 
 @font-face {
-  font-family: 'Montserrat-Light';
-  src: url('../../public/fonts/Montserrat-Light.ttf');
+  font-family: "Montserrat-Light";
+  src: url("../../public/fonts/Montserrat-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../../public/fonts/Montserrat-Regular.ttf');
+  font-family: "Montserrat-Regular";
+  src: url("../../public/fonts/Montserrat-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -59,50 +59,50 @@
 }
 
 @font-face {
-  font-family: 'Montserrat-Semibold';
-  src: url('../../public/fonts/Montserrat-SemiBold.ttf');
+  font-family: "Montserrat-Semibold";
+  src: url("../../public/fonts/Montserrat-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('../../public/fonts/Montserrat-Bold.ttf');
+  font-family: "Montserrat-Bold";
+  src: url("../../public/fonts/Montserrat-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat-Black';
-  src: url('../../public/fonts/Montserrat-Black.ttf');
+  font-family: "Montserrat-Black";
+  src: url("../../public/fonts/Montserrat-Black.ttf");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Benzin-Regular';
-  src: url('../../public/fonts/Benzin-Regular.ttf');
+  font-family: "Benzin-Regular";
+  src: url("../../public/fonts/Benzin-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Benzin-Medium';
-  src: url('../../public/fonts/Benzin-Medium.ttf');
+  font-family: "Benzin-Medium";
+  src: url("../../public/fonts/Benzin-Medium.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Benzin-Bold';
-  src: url('../../public/fonts/Benzin-Bold.ttf');
+  font-family: "Benzin-Bold";
+  src: url("../../public/fonts/Benzin-Bold.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Benzin-ExtraBold';
-  src: url('../../public/fonts/Benzin-ExtraBold.ttf');
+  font-family: "Benzin-ExtraBold";
+  src: url("../../public/fonts/Benzin-ExtraBold.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -147,7 +147,7 @@ button {
 }
 
 body {
-  font-family: 'Montserrat-Medium';
+  font-family: "Montserrat-Medium";
   font-weight: 500;
   font-size: 16px;
   background: var(--body-bg);
