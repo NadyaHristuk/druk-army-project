@@ -16,7 +16,7 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #333333;
+    color: var(--title-small);
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -36,7 +36,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    color: #333333;
+    color: var(--title-small);
 
     margin: 0;
     margin-bottom: 20px;
@@ -69,10 +69,10 @@
   }
 
   .blue {
-    background-color: #5169ff;
+    background-color: var(--accent-color);
   }
   .black {
-    background-color: #333333;
+    background-color: var(--title-small);
   }
 
   .infoIcon {
@@ -82,10 +82,12 @@
   .blue .infoIcon {
     width: 53px;
     height: 42px;
+    fill: #ffffff;
   }
   .black .infoIcon {
     width: 47px;
     height: 37px;
+    fill: var(--cards-text);
   }
 
   .infoTitle {
@@ -96,6 +98,10 @@
     color: #ffffff;
     margin-bottom: 5px;
   }
+  .black .infoTitle {
+    color: var(--cards-text);
+  }
+
   .infoSubTitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -103,6 +109,10 @@
     line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
+  }
+
+  .black .infoSubTitle {
+    color: var(--cards-text);
   }
 
   .infoSubTitle span {
