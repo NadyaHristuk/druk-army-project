@@ -1,0 +1,46 @@
+{
+  "supportBlock": {
+    "firstTitle": "",
+    "secondTitle": "",
+    "description": ""
+  },
+
+  "donation": {
+    "title": "",
+    "oneTime": "",
+    "subscription": ""
+  },
+
+  "contribution": {
+    "button": "",
+    "submitText": "",
+    "cancelText": ""
+  },
+
+  "donateInfo": {
+    "firstTitle": "",
+    "secondTitle": "",
+    "description": "",
+    "donateItem-1": " ",
+    "donateItem-2": "",
+    "report": ""
+  },
+  "requisites": {
+    "requisiteName-1": "",
+    "requisiteValue-1": "",
+    "requisiteName-2": "",
+    "requisiteValue-2": "",
+    "requisiteName-3": "",
+    "requisiteValue-3": "",
+    "requisiteName-4": "",
+    "requisiteValue-4": ""
+  },
+  "cryptoInfo": {
+    "firstTitle": "",
+    "secondTitle": "",
+    "description": ""
+  },
+
+  "copyButton": "",
+  "button": ""
+}
