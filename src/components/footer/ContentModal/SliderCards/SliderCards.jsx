@@ -54,7 +54,9 @@ const creators = [
 
 const SliderCards = ({ setCreator, creator }) => {
   const media320 = useMediaQuery({ minWidth: 320 });
-  const media767 = useMediaQuery({ maxResolution: 767 });
+  const media479 = useMediaQuery({maxWidth: 479.98});
+  const media480 = useMediaQuery({minWidth: 480});
+  const media767 = useMediaQuery({ maxWidth: 767 });
   const media768 = useMediaQuery({ minWidth: 768 });
   const media959 = useMediaQuery({ maxWidth: 959.98 });
   const media960 = useMediaQuery({ minWidth: 960 });
@@ -66,23 +68,25 @@ const SliderCards = ({ setCreator, creator }) => {
     <>
       <div className={css.container}>
         <Swiper
-          spaceBetween={4}
+          spaceBetween={media479 ? 0 : 4}
           slidesPerView={
             media1200 && media1919
               ? 5
-              : media960 && media1199
+              : (media960 && media1199
               ? 3
-              : media768 && media959
+              : (media768 && media959
               ? 4
-              : media320 && media767
+              : (media320 && media479
               ? 1
-              : 6.6
+              : (media480 && media768
+              ? 2
+              : 6.6))))
           }
-          centeredSlides={true}
+          centeredSlides={media1919 ? true : false}
           autoplay={{
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
-            reverseDirection: media1199 ? true : false,
+            reverseDirection: media767 ? false : true,
           }}
           loop={true}
           modules={[Autoplay]}

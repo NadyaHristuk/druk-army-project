@@ -6,12 +6,6 @@
   margin: 20px auto 0 auto;
 }
 
-@media screen and (max-width: 767.98px) {
-  .imgContainer {
-    display: none;
-  }
-}
-
 .imgContainer > img {
   object-fit: cover;
 }
@@ -55,7 +49,7 @@
 }
 
 .text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--paragraph-text);
   text-align: left;
@@ -75,16 +69,13 @@
     height: 261px;
     margin-bottom: 16px;
   }
-
-  .text {
-    font-size: 16px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .mainContainerInfo {
     max-width: 420px;
     flex-direction: column;
+    row-gap: 6px;
     margin: 0;
   }
 

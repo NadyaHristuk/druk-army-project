@@ -11,6 +11,17 @@ const ContactsFooter = () => {
   const { t } = useTranslation();
   const [isShowCreators, setIsShowCreators] = useState(false);
 
+  const operateScroll = () => {
+    if (typeof window !== "undefined") {
+      if(isShowCreators) {
+        window.document.body.style.overflow = 'hidden';
+      } else {
+        window.document.body.style.overflow = 'auto';
+      }
+    }
+  }
+  operateScroll();
+
   return (
     <>
       <div className={css.container}>

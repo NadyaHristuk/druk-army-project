@@ -16,13 +16,24 @@
   margin-top: 0;
 }
 
+.modalGeneralContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .modalGeneralContainer {
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modalGeneralContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     height: 100%;
+    margin-top: 0;
   }
 
   .map {

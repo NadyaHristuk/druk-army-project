@@ -10,7 +10,7 @@ import mapImg from "/public/img/createdBy/Map.webp";
 import css from "./ContentModal.module.css";
 
 const ContentModal = () => {
-  const [creator, setCreator] = useState("webDesign");
+  const [creator, setCreator] = useState("teamLead");
   const media1200 = useMediaQuery({minWidth: 1200});
 
   return (
