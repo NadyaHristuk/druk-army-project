@@ -14,7 +14,7 @@ const NavMenuFooter = () => {
     },
     {
       title: t("footer:toOrder"),
-      path: "/reservations",
+      path: "/merch",
     },
     {
       title: t("footer:toVacancies"),
