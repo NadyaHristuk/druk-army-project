@@ -68,6 +68,15 @@
   z-index: 3;
 }
 
+.btnTextGermany {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+
 .btn::after {
   content: "";
   position: absolute;
@@ -146,6 +155,10 @@
 
     .links {
       row-gap: 6px;
+    }
+
+    .btnTextGermany {
+      font-size: 15px;
     }
   }
 

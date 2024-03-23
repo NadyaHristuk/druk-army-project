@@ -7,7 +7,9 @@ import Icon from "@/components/Icon/Icon";
 import css from "./TitleHomePage.module.css";
 
 const TitleHomePage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLocale = i18n.language;
+
   return (
     <>
       <Container className={css.container}>
@@ -28,7 +30,7 @@ const TitleHomePage = () => {
               target='_blank'
               className={css.btn}
             >
-              <span className={css.btnText}>
+              <span className={currentLocale === "de" ? css.btnTextGermany : css.btnText}>
                 <Icon className={css.communityIcon} name={"icon-people"} />
                 {t("home:participate")}
               </span>
