@@ -7,5 +7,20 @@
     "telephone": "Telefon",
     "mail": "Poczta",
     "printVictory": "drukuj zwycięstwo",
-    "createdBy": "Stworzone przez Ukraińców"
+    "createdBy": "Stworzone przez Ukraińców",
+    "vladyslav":"Vagin Vladyslav",
+    "infoVlad":"Urodzony 10 marca 1991 roku w Odessie. Po ukończeniu Akademii Morskiej w 2014 roku pracował na rejsach od kadeta do trzeciego oficera. Od początku 2023 roku aktywnie studiuje rozwój Fullstack i bierze udział w różnych projektach IT. Poświęca cały wolny czas na naukę nowych technologii i doskonalenie istniejących umiejętności.",
+    "designerBogdan":"Shypika Bogdan",
+    "infoBogdan":"Urodzony 12 maja 2001 roku w mieście Ługańsk, w 2014 roku przeniósł się do Starobielska z powodu inwazji rosyjskiej. W 2015 roku zmuszony był przenieść się do Kijowa z powodu działań wojskowych na terenie Ługańska. W 2019 roku rozpoczął studia z zakresu grafiki komputerowej i programowania.",
+    "vugar":"Gasimov Vugar",
+    "infoVugar":"Cześć, nazywam się Vugar, pochodzę z Azerbejdżanu, jestem programistą interfejsów z pasją do technologii od sześciu lat. Obecnie pracuję nad ekscytującym projektem, posługuję się czterema językami i mam umiejętności w pełnym stosie technologii. Moje pragnienie nauki i rozwoju napędza mnie do przodu, a dzięki wielu zainteresowaniom nigdy się nie nudzę. Patrząc w przyszłość, moje ambicje to zostanie sukcesywnym przedsiębiorcą i programistą. Wierzę, że z poświęceniem, ciągłym uczeniem się i ciekawym podejściem wszystko jest możliwe.",
+    "darina":"Shevchenko Daryna",
+    "infoDarina":"Cześć, jestem Daryna. Kiedyś pracowałam jako tłumaczka hiszpańskiego. Obecnie zagłębiam się w świat pełnego stosu programistycznego. Oprócz życia przed ekranem, lubię tenis, medytację, psychologię i wolontariat. Zawsze jestem gotowa pomagać i rozwijać się zarówno zawodowo, jak i osobowo.",
+    "nadiya":"Nadya Hristuk",
+    "infoNadiya":"Jestem z Kijowa. Pracuję jako specjalista IT w GoIT od 2016 roku, ucząc i mentorując w zakresie FrontEnd i Web BackEnd development. Dodatkowo pracuję jako Frontend React JS Developer, posiadając doświadczenie w React development w różnych firmach. Mam psa Husky o imieniu Agata. Oprócz programowania lubię rysować, haftować i szyć dla mojej córki. Moje ambicje skupiają się na dalszym rozwoju w dziedzinie IT i realizacji innowacyjnych projektów.",
+    "testKaterina":"Samoilyk Kateryna",
+    "infoKaterina":"Kobieta z Kijowa przeprowadziła się do Turcji w 2014 roku z dwójką dzieci. W czerwcu 2023 roku rozpoczęła naukę zawodu inżyniera QA. Wzięła udział w konkursie IT DEV Challenge XX, została finalistką i zajęła 3. miejsce w kategorii.",
+    "testOlena":"Olena Salii",
+    "infoOlena":"Urodziłam się w Dnieprze. W 2022 roku przeprowadziłam się z rodziną do Polski. W 2023 roku postanowiłam zdobyć umiejętności jako inżynier QA.",
+    "site":"website"
 }

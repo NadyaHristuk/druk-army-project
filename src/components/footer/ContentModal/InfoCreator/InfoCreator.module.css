@@ -75,8 +75,12 @@
   .mainContainerInfo {
     max-width: 420px;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 0px;
     margin: 0;
+  }
+
+  .nameAndLink {
+    margin-bottom: 0;
   }
 
   .name {
@@ -84,7 +88,7 @@
   }
 
   .text {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 

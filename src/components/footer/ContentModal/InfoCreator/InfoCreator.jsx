@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon/Icon";
@@ -10,67 +13,69 @@ import test1Img from "/public/img/createdBy/testPeople/test1.webp";
 import test2Img from "/public/img/createdBy/testPeople/test2.webp";
 import css from "./InfoCreator.module.css";
 
-const creatorsInfo = [
+const InfoCreator = ({ creator }) => {
+ const { t } = useTranslation();
+
+ const creatorsInfo = [
   {
     id: "webDesign",
-    name: "Шипика Богдан",
+    name: t("footer:designerBogdan"),
     role: "Web design",
     link: "https://www.linkedin.com/in/bogdan-shypika-821988217/?originalSubdomain=ua",
     website: "https://shypika-bogdan.com/",
-    text: "Народився 12 травня 2001 року у місті Луганськ. Через російське вторгнення в 2014 році переїхав до Старобільська і в 2015 році був змушений переселитися до Києва через бойові дії в Луганській області. У 2019 почав вивчати графічний дизайн та  програмування.",
+    text: t("footer:infoBogdan"),
     img: designerImg3,
   },
   {
     id: "frontVlad",
-    name: "Вагін Владислав",
+    name: t("footer:vladyslav"),
     role: "Frontend",
     link: "http://linkedin.com/in/vladyslav-vagin-devfrontend",
-    text: "Народився 10 березня 1991 року в Одесі. Все життя прожив в Одесі. В 2014 році, закінчивши Морську Академію, ходив в рейси, починаючи від кадета до третього помічника капітана. З початку 2023 року активно вивчаю Fullstack розробку та приймаю участь у різноманітних цікавих IT-проектах.",
+    text: t("footer:infoVlad"),
     img: front1Img,
   },
   {
     id: "frontVugar",
-    name: "Гасімов Вугар",
+    name: t("footer:vugar"),
     role: "Frontend",
     link: "https://www.linkedin.com/in/vugar5gasimov",
-    text: "Привіт, мене звати Вугар, я з Азербайджана, розробник інтерфейсу, який захоплюється технологіями вже шість років.  Наразі я роблю внесок у захоплюючий проект, а також вільно володію чотирма мовами та маю навички повної розробки.  Моє бажання вчитися та розвиватися рухає мною, і з безліччю захоплень я ніколи не нудьгую.  Забігаючи на майбутнє, мої амбіції - стати успішним бізнесменом і програмістом.  Я вірю, що за наявності відданості, постійного навчання та цікавого мислення можливо все.",
+    text: t("footer:infoVugar"),
     img: front2Img,
   },
   {
     id: "frontDarina",
-    name: "Шевченко Дарина",
+    name: t("footer:darina"),
     role: "Frontend",
     link: "https://www.linkedin.com/in/daryna-shevchenkoo/",
-    text: "Привіт, я Дарина. В минулому перекладач іспанської. Зараз активно поглиблююсь у світ фулстак розробки. Поза екранним [кодовим] життям, захоплююсь тенісом, медитацією, психологією та волонтерством. Завжди готова допомагати та рости як професіонал і як особистість.",
+    text: t("footer:infoDarina"),
     img: front3Img,
   },
   {
     id: "teamLead",
-    name: "Христюк Надія",
+    name: t("footer:nadiya"),
     role: "Team Lead",
     link: "https://www.linkedin.com/in/nadya-hristuk",
-    text: "Киянка, живу в Києві. Я — IT спеціаліст, з 2016 року працюю в GoIT як викладач та ментор з FrontEnd і Web BackEnd розробки. Також я працюю як Frontend React JS Developer, маю досвід у розробці на React у різних компаніях. В мене є собака породи - Хаскі, її звати - Агата. Крім кодінгу - люблю малювати, вишивати, і шити для моєї доньки. Мої амбіції спрямовані на подальший розвиток у сфері IT та реалізацію інноваційних проектів.",
+    text: t("footer:infoNadiya"),
     img: teamLead,
   },
   {
     id: "testerKatya",
-    name: "Самойлик Катерина",
+    name: t("footer:testKaterina"),
     role: "QA Engineer",
     link: "https://www.linkedin.com/in/kate-samoilyk",
-    text: "Киянка. 2014 року з двома дітьми переїхала до Туреччини. У червні 2023 почала опановувати фах QA engineer. Брала участь у ІТ змаганні DEV Challenge XX - стала фіналістом та отримала 3 місце у категорії.",
+    text: t("footer:infoKaterina"),
     img: test1Img,
   },
   {
     id: "testerOlena",
-    name: "Салій Олена",
+    name: t("footer:testOlena"),
     role: "QA Engineer",
     link: "http://www.linkedin.com/in/olena-salii",
-    text: "Народилась в Дніпрі. В 2022 році переїхала з сім'єю до Польщі. В 2023 році вирішила опанувати фах QA Engineer.",
+    text: t("footer:infoOlena"),
     img: test2Img,
   },
 ];
 
-const InfoCreator = ({ creator }) => {
   let activeInfo = {};
   creatorsInfo.map((info) => {
     if (info.id === creator) {
@@ -98,7 +103,7 @@ const InfoCreator = ({ creator }) => {
               target="_blank"
               className={css.website}
             >
-              сайт
+              {t("footer:site")}
             </Link>
           ) : (
             <Link

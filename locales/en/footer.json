@@ -7,5 +7,20 @@
     "telephone": "Phone",
     "mail": "Email",
     "printVictory": "print victory",
-    "createdBy": "Created by Ukrainians"
+    "createdBy": "Created by Ukrainians",
+    "vladyslav":"Vagin Vladyslav",
+    "infoVlad":"Born on March 10, 1991, in Odesa. In 2014, after graduating from the Maritime Academy, worked on voyages from cadet to third mate. Since the beginning of 2023, actively studying Fullstack development and participating in various IT projects. Devotes all free time to learning new technologies and improving existing skills.",
+    "designerBogdan":"Shypika Bogdan",
+    "infoBogdan":"Born on May 12, 2001, in the city of Luhansk, he moved to Starobilsk in 2014 due to the Russian invasion. In 2015, he was forced to relocate to Kyiv because of the military actions in the Luhansk region. In 2019, he started studying graphic design and programming.",
+    "vugar":"Gasimov Vugar",
+    "infoVugar":"Hello, my name is Vugar, I am from Azerbaijan, an interface developer passionate about technology for six years. Currently, I am contributing to an exciting project, proficient in four languages, and skilled in full-stack development. My desire to learn and grow propels me forward, and with a multitude of interests, I never get bored. Looking ahead, my ambitions are to become a successful entrepreneur and programmer. I believe that with dedication, continuous learning, and an interesting mindset, anything is possible.",
+    "darina":"Shevchenko Daryna",
+    "infoDarina":"Hello, I'm Daryna. I used to work as a Spanish translator. Currently, I am diving deep into the world of full-stack development. Apart from my screen [coding] life, I enjoy tennis, meditation, psychology, and volunteering. I am always ready to help and grow both professionally and personally.",
+    "nadiya":"Nadya Hristuk",
+    "infoNadiya":"I am from Kyiv. I work as an IT specialist at GoIT since 2016, teaching and mentoring in FrontEnd and Web BackEnd development. Additionally, I work as a Frontend React JS Developer, with experience in React development in various companies. I have a Husky dog named Agata. Apart from coding, I enjoy drawing, embroidery, and sewing for my daughter. My ambitions are focused on further development in the IT field and implementing innovative projects.",
+    "testKaterina":"Samoilyk Kateryna",
+    "infoKaterina":"A woman from Kyiv moved to Turkey in 2014 with her two children. In June 2023, she started learning the profession of QA engineer. She participated in the IT competition DEV Challenge XX, became a finalist, and achieved 3rd place in the category.",
+    "testOlena":"Olena Salii",
+    "infoOlena":"Born in Dnipro. In 2022, moved to Poland with family. In 2023, decided to master the profession of QA Engineer.",
+    "site":"website"
 }
