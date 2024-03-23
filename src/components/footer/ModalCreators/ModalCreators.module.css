@@ -108,14 +108,4 @@
     width: 1920px;
     height: 1080px;
   }
-  
-  .bgModal1 {
-    top: 0;
-    right: 0;
-  }
-  
-  .bgModal2 {
-    bottom: 324px;
-    left: -2px;
-  }
 }

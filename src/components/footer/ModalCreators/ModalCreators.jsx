@@ -44,7 +44,6 @@ const ModalCreators = ({ children, setIsShowCreators }) => {
       <div className={css.modal} ref={modalRef}>
         {media1200 && (
           <>
-            {" "}
             <Image
               src={bgImg1}
               alt="background"

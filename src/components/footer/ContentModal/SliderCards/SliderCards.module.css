@@ -1,15 +1,16 @@
+.slideImageActive,
 .slideImage {
   object-fit: cover;
   object-position: 0px 0px;
-  filter: grayscale(100%);
   transition: all 400ms ease;
 }
 
+.slideImage {
+  filter: grayscale(100%);
+}
+
 .slideImageActive {
-  object-fit: cover;
-  object-position: 0px 0px;
   filter: grayscale(0%);
-  transition: all 400ms ease;
 }
 
 .container {
@@ -21,6 +22,7 @@
   z-index: 1;
 }
 
+.textContentActive,
 .textContent {
   width: 286px;
   height: 39px;
@@ -31,19 +33,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.textContent {
   filter: grayscale(100%);
 }
 
 .textContentActive {
-  width: 286px;
-  height: 39px;
-  color: white;
-  background-color: var(--accent-color);
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   filter: grayscale(0);
 }
 
@@ -69,12 +65,60 @@
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 768px;
+  }
+
+  .slide {
+    cursor: pointer;
+    max-width: 220px;
+    width: 220px;
+    overflow: hidden;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 220px;
+    height: 224px;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 190px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 960px) {
   .container {
-    width: 960px;
+    width: 768px;
+    margin: 16px auto 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 768px;
+  }
+
+  .slide {
+    cursor: pointer;
+    max-width: 170px;
+    width: 170px;
+    overflow: hidden;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 170px;
+    height: 224px;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 170px;
+    font-size: 20px;
   }
 }
 
@@ -101,30 +145,10 @@
     height: 224px;
   }
 
+  .textContentActive,
   .textContent {
     width: 224px;
-    height: 39px;
-    color: white;
-    background-color: var(--accent-color);
     font-size: 24px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: grayscale(100%);
-  }
-
-  .textContentActive {
-    width: 224px;
-    height: 39px;
-    color: white;
-    background-color: var(--accent-color);
-    font-size: 24px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: grayscale(0);
   }
 }
 

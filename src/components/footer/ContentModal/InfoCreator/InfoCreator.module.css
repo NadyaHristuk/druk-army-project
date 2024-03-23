@@ -1,9 +1,11 @@
 .mainContainerInfo {
-    max-width: 536px;
+  max-width: 90%;
+  display: flex;
+  column-gap: 20px;
+  margin: 40px 0 0 40px;
 }
 
 .imgContainer {
-  width: 100%;
   height: 261px;
   margin-bottom: 16px;
 }
@@ -57,9 +59,24 @@
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .mainContainerInfo {
+    max-width: 90%;
+    display: flex;
+    column-gap: 20px;
+    margin: 40px 0 0 40px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mainContainerInfo {
     max-width: 420px;
+    flex-direction: column;
+    margin: 0;
   }
 
   .name {
