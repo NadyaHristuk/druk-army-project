@@ -15,7 +15,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
   background-color: var(--header-bg);
-  min-width: 100px;
+  min-width: 300px;
   min-height: 100px;
   padding: 0px;
 }

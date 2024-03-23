@@ -13,11 +13,13 @@
   filter: grayscale(0%);
 }
 
+.mySwiper {
+  width: 300px;
+}
+
 .container {
-  width: 320px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: -60px auto 0 auto;
+  width: 300px;
+  margin: 0 auto 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -46,6 +48,7 @@
 .slide {
   cursor: pointer;
   max-width: 286px;
+  max-height: 120px;
   overflow: hidden;
 }
 
