@@ -2,6 +2,7 @@
   border-left: 3px solid var(--paragraph-text);
   padding-left: 16px;
   margin-top: 80px;
+  animation: appearTitle 1500ms ease 1;
 }
 
 .mainTitle {
@@ -97,6 +98,18 @@
     font-size: 14px;
     color: #5e6a8a;
     row-gap: 12px;
+  }
+
+  @keyframes appearTitle {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   @media screen and (min-width: 480px) {

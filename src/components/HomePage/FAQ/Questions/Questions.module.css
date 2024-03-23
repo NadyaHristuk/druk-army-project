@@ -28,6 +28,7 @@
     width: 30px;
     height: 30px;
     fill: var(--paragraph-text);
+    animation: appearQuestions 1500ms ease 1;
 }
 
 .question {
@@ -35,6 +36,7 @@
     font-weight: 700;
     text-transform: uppercase;
     max-width: 222px;
+    animation: appearQuestions 1500ms ease 1;
 }
 
 .textContent {
@@ -45,6 +47,33 @@
 
 .textContent > p:first-of-type {
     margin-bottom: 16px;
+    animation: moveFromRight 700ms ease 1;
+}
+
+.textContent > p:last-of-type {
+    animation: moveFromRight 1000ms ease 1;
+}
+
+@keyframes appearQuestions {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 @media screen and (min-width: 480px) {

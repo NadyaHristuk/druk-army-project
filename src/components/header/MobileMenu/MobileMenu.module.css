@@ -11,6 +11,7 @@
   margin-bottom: auto;
   height: 100dvh;
   margin-top: -4px;
+  animation: moveFromUp 400ms ease 1;
 }
 
 .navMenuList {
@@ -27,6 +28,16 @@
   justify-content: center;
   column-gap: 21px;
   margin-top: 38px;
+}
+
+@keyframes moveFromUp {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -62,6 +73,7 @@
 @media screen and (min-width: 960px) {
   .navMenuList {
     max-width: 100%;
+    margin-top: 40px;
   }
 }
 

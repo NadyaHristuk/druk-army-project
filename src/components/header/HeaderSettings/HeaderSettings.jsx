@@ -33,7 +33,7 @@ const HeaderSettings = () => {
       >
         <Icon className={css.iconSettings} name={"icon-settings"} />
       </button>
-      {isShowSettings && <MenuSettings />}
+      {isShowSettings && <MenuSettings setIsShowSettings={setIsShowSettings}/>}
     </div>
   );
 };

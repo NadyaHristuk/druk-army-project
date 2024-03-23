@@ -14,7 +14,18 @@ const ContentModal = () => {
   return (
     <div>
       <div className={css.upperPart}>
-        <Icon name={'icon-location'} className={creator === "frontVlad" ? css.locationIconOdesa : (creator === "testerOlena" ? css.locationIconDnipro : (creator === "frontDarina" ? css.locationIconFenevichi : css.locationIconKyiv))}/>
+        <Icon
+          name={"icon-location"}
+          className={
+            creator === "frontVlad"
+              ? css.locationIconOdesa
+              : creator === "testerOlena"
+              ? css.locationIconDnipro
+              : creator === "frontDarina"
+              ? css.locationIconFenevichi
+              : css.locationIconKyiv
+          }
+        />
         <Image
           src={mapImg}
           alt="карта України"
@@ -22,9 +33,9 @@ const ContentModal = () => {
           height={778}
           className={css.map}
         />
-        <InfoCreator creator={creator}/>
+        <InfoCreator creator={creator} />
       </div>
-      <SliderCards setCreator={setCreator} creator={creator}/>
+      <SliderCards setCreator={setCreator} creator={creator} />
     </div>
   );
 };
