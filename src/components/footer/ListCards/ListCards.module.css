@@ -25,6 +25,18 @@
   margin-top: 8px;
 }
 
+.firstCard {
+  order: -1;
+}
+
+.secondCard {
+  order: 2;
+}
+
+.thirdCard {
+  order: 3;
+}
+
 @media screen and (min-width: 480px) {
   .cardsList {
     column-gap: 18px;

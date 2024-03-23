@@ -8,7 +8,7 @@ const LoginBtn = () => {
   const { t } = useTranslation();
 
   return (
-    <Link href={'/login'} className={css.loginBtn}>{t("header:toEnter")}</Link>
+    <Link href={'https://app.drukarmy.org.ua'} className={css.loginBtn} target="_blank">{t("header:toEnter")}</Link>
   )
 }
 

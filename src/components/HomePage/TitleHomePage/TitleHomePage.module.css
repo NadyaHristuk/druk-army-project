@@ -48,14 +48,14 @@
   color: var(--buttons-text);
   font-weight: 400;
   font-size: 15px;
-  text-align: center;
   transition: all 400ms ease;
   width: 274px;
   height: 43px;
-  border: none;
-  outline: none;
   position: relative;
   margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnText {
