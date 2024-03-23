@@ -80,24 +80,38 @@ const InfoCreator = ({ creator }) => {
 
   return (
     <div className={css.mainContainerInfo}>
-      <div className={css.allImages}>
-        <div className={css.imgContainer}>
-          <Image
-            src={activeInfo.img}
-            alt={activeInfo.name}
-            width={181}
-            height={261}
-          />
+      <div className={css.imgContainer}>
+        <Image
+          src={activeInfo.img}
+          alt={activeInfo.name}
+          width={181}
+          height={261}
+        />
+      </div>
+      <div>
+        <p className={css.role}>{activeInfo.role}</p>
+        <div className={css.nameAndLink}>
+          <p className={css.name}>{activeInfo.name}</p>
+          {creator === "webDesign" ? (
+            <Link
+              href={activeInfo.website}
+              target="_blank"
+              className={css.website}
+            >
+              сайт
+            </Link>
+          ) : (
+            <Link
+              href={activeInfo.link}
+              target="_blank"
+              className={css.linkedin}
+            >
+              <Icon name={"icon-linkedin"} className={css.linkedinIcon} />
+            </Link>
+          )}
         </div>
+        <p className={css.text}>{activeInfo.text}</p>
       </div>
-      <p className={css.role}>{activeInfo.role}</p>
-      <div className={css.nameAndLink}>
-        <p className={css.name}>{activeInfo.name}</p>
-        {creator === "webDesign" ? ( <Link href={activeInfo.website} target="_blank" className={css.website}>сайт</Link>) : (  <Link href={activeInfo.link} target="_blank" className={css.linkedin}>
-          <Icon name={"icon-linkedin"} className={css.linkedinIcon} />
-        </Link>)}
-      </div>
-      <p className={css.text}>{activeInfo.text}</p>
     </div>
   );
 };

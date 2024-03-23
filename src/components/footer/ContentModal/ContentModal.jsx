@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import SliderCards from "./SliderCards/SliderCards";
@@ -10,11 +11,12 @@ import css from "./ContentModal.module.css";
 
 const ContentModal = () => {
   const [creator, setCreator] = useState("webDesign");
+  const media1200 = useMediaQuery({minWidth: 1200});
 
   return (
     <div className={css.modalGeneralContainer}>
       <div className={css.upperPart}>
-        <Icon
+        {media1200 && (<> <Icon
           name={"icon-location"}
           className={
             creator === "frontVlad"
@@ -32,7 +34,7 @@ const ContentModal = () => {
           width={604}
           height={416}
           className={css.map}
-        />
+        /></>)}
         <InfoCreator creator={creator} />
       </div>
       <SliderCards setCreator={setCreator} creator={creator} />

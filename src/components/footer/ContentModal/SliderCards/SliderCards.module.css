@@ -81,10 +81,7 @@
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1100px;
-  }
-
-  .container {
-    margin: 0 auto;
+    margin: -40px auto 0 auto;
   }
 
   .mySwiper {
@@ -98,8 +95,14 @@
     overflow: hidden;
   }
 
+  .slideImage,
+  .slideImageActive {
+    width: 224px;
+    height: 224px;
+  }
+
   .textContent {
-    width: 246px;
+    width: 224px;
     height: 39px;
     color: white;
     background-color: var(--accent-color);
@@ -110,9 +113,9 @@
     justify-content: center;
     filter: grayscale(100%);
   }
-  
+
   .textContentActive {
-    width: 246px;
+    width: 224px;
     height: 39px;
     color: white;
     background-color: var(--accent-color);
@@ -122,11 +125,6 @@
     align-items: center;
     justify-content: center;
     filter: grayscale(0);
-  }
-
-  .slideImageActive,
-  .slideImage {
-    object-position: -24px 0px;
   }
 }
 
@@ -145,8 +143,14 @@
     margin: -60px auto 0 auto;
   }
 
+  .slideImage,
+  .slideImageActive {
+    width: 286px;
+    height: 286px;
+  }
+
   .slide {
-    transform: translate(240px)!important;
+    transform: translate(240px) !important;
   }
 
   .slide {

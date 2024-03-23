@@ -7,7 +7,6 @@
   backdrop-filter: blur(20px);
   background: rgba(38, 38, 38, 0.21);
   z-index: 999;
-  overflow-y: scroll;
 }
 
 .modal {
@@ -94,7 +93,7 @@
   .modal {
     transform: translate(-50%, -50%) scale(0.6);
     width: 1100px;
-    height: 1000px;
+    height: 900px;
   }
 }
 
