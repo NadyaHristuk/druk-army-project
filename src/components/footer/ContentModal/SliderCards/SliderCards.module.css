@@ -73,16 +73,23 @@
 }
 
 @media only screen and (min-width: 960px) {
-  .mySwiper,
   .container {
     width: 960px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .mySwiper,
   .container {
-    width: 1200px;
+    width: 1100px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 1100px;
+    margin-top: 44px;
   }
 }
 
@@ -90,6 +97,15 @@
   .container,
   .mySwiper {
     width: 1920px;
+  }
+
+  .mySwiper {
+    max-width: 1920px;
+    margin-top: 0;
+  }
+
+  .container {
+    margin: -60px auto 0 auto;
   }
 
   .slide {

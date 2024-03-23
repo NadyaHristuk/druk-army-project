@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import teamLead from "/public/img/createdBy/teamlead/teamlead.webp"
 import frontVlad from "/public/img/createdBy/frontend/front1.webp";
@@ -52,12 +53,15 @@ const creators = [
 ];
 
 const SliderCards = ({setCreator, creator}) => {
+   const media1200 = useMediaQuery({minWidth: 1200});
+   const media1919 = useMediaQuery({maxWidth: 1919.98});
+
   return (
     <>
       <div className={css.container}>
         <Swiper
           spaceBetween={4}
-          slidesPerView={6.6}
+          slidesPerView={media1200 && media1919 ? 4 : 6.6}
           centeredSlides={true}
           autoplay={{
             delay: 2500,

@@ -62,3 +62,31 @@
   color: var(--paragraph-text);
   text-align: left;
 }
+
+@media screen and (min-width: 1200px) {
+  .mainContainerInfo {
+    max-width: 420px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainContainerInfo {
+    max-width: 520px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

@@ -12,7 +12,7 @@ const ContentModal = () => {
   const [creator, setCreator] = useState("webDesign");
 
   return (
-    <div>
+    <div className={css.modalGeneralContainer}>
       <div className={css.upperPart}>
         <Icon
           name={"icon-location"}
@@ -29,8 +29,8 @@ const ContentModal = () => {
         <Image
           src={mapImg}
           alt="карта України"
-          width={1168}
-          height={778}
+          width={604}
+          height={416}
           className={css.map}
         />
         <InfoCreator creator={creator} />

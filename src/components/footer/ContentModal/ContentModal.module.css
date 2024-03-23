@@ -1,70 +1,109 @@
-.map {
-  margin-top: 88px;
-  margin-left: 39px;
-  position: relative;
-  z-index: 2;
-}
-
-.upperPart {
-  display: flex;
-  align-items: center;
-  column-gap: 48px;
-}
-
-.locationIconKyiv {
-  position: absolute;
-  top: 18%;
-  left: 28%;
-  width: 82px;
-  height: 82px;
-  fill: var(--paragraph-text);
-  z-index: 3;
-  animation: pulsar 1000ms infinite;
-}
-
-.locationIconOdesa {
-    position: absolute;
-    top: 51%;
-    left: 29%;
-    width: 82px;
-    height: 82px;
-    fill: var(--paragraph-text);
-    z-index: 3;
-    animation: pulsar 1000ms infinite;
-}
-
-.locationIconDnipro {
-    position: absolute;
-    top: 36%;
-    left: 43%;
-    width: 82px;
-    height: 82px;
-    fill: var(--paragraph-text);
-    z-index: 3;
-    animation: pulsar 1000ms infinite;
-}
-
-.locationIconFenevichi {
-    position: absolute;
-    top: 15%;
-    left: 26.65%;
-    width: 82px;
-    height: 82px;
-    fill: var(--paragraph-text);
-    z-index: 3;
-    animation: pulsar 1000ms infinite;
-}
-
 @keyframes pulsar {
-    0% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(8px);
-    }
+  50% {
+    transform: translateY(8px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modalGeneralContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .map {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .upperPart {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+    margin-top: 54px;
+  }
+
+  .locationIconDnipro,
+  .locationIconFenevichi,
+  .locationIconKyiv,
+  .locationIconOdesa {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    fill: var(--paragraph-text);
+    z-index: 3;
+    animation: pulsar 1000ms infinite;
+  }
+
+  .locationIconKyiv {
+    top: 9%;
+    left: 25.5%;
+  }
+
+  .locationIconOdesa {
+    top: 29%;
+    left: 26%;
+  }
+
+  .locationIconDnipro {
+    top: 20%;
+    left: 39%;
+  }
+
+  .locationIconFenevichi {
+    top: 8%;
+    left: 24%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .upperPart {
+    align-items: center;
+    column-gap: 48px;
+    margin-top: 24px;
+  }
+
+  .locationIconDnipro,
+  .locationIconFenevichi,
+  .locationIconKyiv,
+  .locationIconOdesa {
+    width: 82px;
+    height: 82px;
+  }
+
+  .locationIconKyiv {
+    top: 13%;
+    left: 31%;
+  }
+
+  .locationIconOdesa {
+    top: 47%;
+    left: 31.5%;
+  }
+
+  .locationIconDnipro {
+    top: 32%;
+    left: 45.5%;
+  }
+
+  .locationIconFenevichi {
+    top: 10%;
+    left: 29%;
+  }
+
+  .map {
+    width: 1168px;
+    height: 778px;
+  }
 }
