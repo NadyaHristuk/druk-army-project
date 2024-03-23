@@ -55,6 +55,42 @@
   text-align: left;
 }
 
+@keyframes fotoAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fotoAppear {
+  animation: fotoAppear 1500ms ease 1;
+}
+
+.titleAppear {
+  animation: textAppear 1500ms ease 1;
+}
+
+.textAppear {
+  animation: textAppear 1900ms ease 1;
+}
+
 @media screen and (min-width: 768px) {
   .mainContainerInfo {
     max-width: 90%;

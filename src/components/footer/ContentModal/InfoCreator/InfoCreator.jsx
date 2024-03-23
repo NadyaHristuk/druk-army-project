@@ -76,30 +76,22 @@ const InfoCreator = ({ creator }) => {
   },
 ];
 
-  let activeInfo = {};
-  creatorsInfo.map((info) => {
-    if (info.id === creator) {
-      activeInfo = info;
-    }
-  });
-
   return (
     <div className={css.mainContainerInfo}>
-      <div className={css.imgContainer}>
-        <Image
-          src={activeInfo.img}
-          alt={activeInfo.name}
+        {creatorsInfo.map(info => info.id === creator && (<><div className={`${css.imgContainer} ${css.fotoAppear}`}><Image
+          src={info.img}
+          alt={info.name}
           width={181}
           height={261}
         />
       </div>
       <div>
-        <p className={css.role}>{activeInfo.role}</p>
-        <div className={css.nameAndLink}>
-          <p className={css.name}>{activeInfo.name}</p>
+        <p className={`${css.role} ${css.titleAppear}`}>{info.role}</p>
+        <div className={`${css.nameAndLink} ${css.titleAppear}`}>
+          <p className={css.name}>{info.name}</p>
           {creator === "webDesign" ? (
             <Link
-              href={activeInfo.website}
+              href={info.website}
               target="_blank"
               className={css.website}
             >
@@ -107,7 +99,7 @@ const InfoCreator = ({ creator }) => {
             </Link>
           ) : (
             <Link
-              href={activeInfo.link}
+              href={info.link}
               target="_blank"
               className={css.linkedin}
             >
@@ -115,8 +107,8 @@ const InfoCreator = ({ creator }) => {
             </Link>
           )}
         </div>
-        <p className={css.text}>{activeInfo.text}</p>
-      </div>
+        <p className={`${css.text} ${css.textAppear}`}>{info.text}</p> </div></>))
+    }
     </div>
   );
 };

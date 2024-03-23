@@ -18,6 +18,7 @@
   min-width: 300px;
   min-height: 897px;
   padding: 0 0 20px 0;
+  overflow: hidden;
 }
 
 .bgModal1 {
