@@ -61,7 +61,7 @@ const SliderCards = ({setCreator, creator}) => {
       <div className={css.container}>
         <Swiper
           spaceBetween={4}
-          slidesPerView={media1200 && media1919 ? 4 : 6.6}
+          slidesPerView={media1200 && media1919 ? 5 : 6.6}
           centeredSlides={true}
           autoplay={{
             delay: 2500,
