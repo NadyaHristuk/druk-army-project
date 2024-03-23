@@ -18,17 +18,17 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #333333;
+  background-color: var(--paginator-btn-bg);
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--buttons-text);
 }
 .btn.accent {
-  background-color: #5169ff;
+  background-color: var(--accent-color);
 }
 .notNumber {
   height: fit-content;
@@ -43,7 +43,7 @@
 .chevronIcon {
   width: 100%;
   height: 100%;
-  fill: #333333;
+  fill: var(--paginator-btn-bg);
 }
 
 .chevron:disabled .chevronIcon {
@@ -60,5 +60,5 @@
 .dotsIcon {
   width: 6px;
   height: 6px;
-  fill: #ffffff;
+  fill: var(--buttons-text);
 }
