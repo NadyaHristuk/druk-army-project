@@ -20,7 +20,7 @@ export const VacanciesModal = ({ isOpen, onClose, children }) => {
             className={styles.vacModalBtnClose}
             onClick={onClose}
           >
-            <Image src={btnClose} className={styles.vacModalBtnCloseImg} />
+            <Image src={btnClose} className={styles.vacModalBtnCloseImg} alt="close modal"/>
           </button>
           {children}
         </div>

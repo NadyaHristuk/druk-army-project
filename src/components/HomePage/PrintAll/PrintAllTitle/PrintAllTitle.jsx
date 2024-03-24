@@ -32,7 +32,7 @@ const PrintAllTitle = () => {
         aria-label={t("home:participate")}
         className={css.btn}
       >
-        <span className={css.btnText}>
+        <span className={currentLocale === "de" ? css.btnTextGermany : css.btnText}>
           <Icon className={css.communityIcon} name={"icon-people"} />
           {t("home:participate")}
         </span>

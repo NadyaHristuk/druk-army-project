@@ -1,0 +1,197 @@
+.slideImageActive,
+.slideImage {
+  object-fit: cover;
+  object-position: 0px 0px;
+  transition: all 400ms ease;
+}
+
+.slideImage {
+  filter: grayscale(100%);
+}
+
+.slideImageActive {
+  filter: grayscale(0%);
+}
+
+.mySwiper {
+  max-width: 300px;
+  width: 300px;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.textContentActive,
+.textContent {
+  width: 286px;
+  height: 39px;
+  color: white;
+  background-color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContent {
+  filter: grayscale(100%);
+}
+
+.textContentActive {
+  filter: grayscale(0);
+}
+
+.slide {
+  cursor: pointer;
+  max-width: 300px;
+  width: 300px !important;
+  transform: translate(6px) !important;
+  overflow: hidden;
+}
+
+.slide:hover > .slideImage,
+.slide:focus > .slideImage {
+  filter: grayscale(0%);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 384px;
+    margin-top: 20px;
+  }
+
+  .mySwiper {
+    max-width: 384px;
+    width: 384px;
+  }
+
+  .slide {
+    transform: translate(80px) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 768px;
+    width: 768px;
+  }
+
+  .slide {
+    max-width: 220px;
+    width: 220px;
+    transform: translate(0px) !important;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 220px;
+    height: 220px;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 220px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 768px;
+    margin: 16px auto 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 768px;
+  }
+
+  .slide {
+    max-width: 170px;
+    width: 170px;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 170px;
+    height: 224px;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 170px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1100px;
+    margin: -40px auto 0 auto;
+  }
+
+  .mySwiper {
+    max-width: 1100px;
+    width: 1100px;
+    margin-top: 44px;
+  }
+
+  .slide {
+    max-width: 224px;
+    overflow: hidden;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 224px;
+    height: 224px;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 224px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container,
+  .mySwiper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    margin-top: 0;
+  }
+
+  .container {
+    margin: -60px auto 0 auto;
+  }
+
+  .slideImage,
+  .slideImageActive {
+    width: 286px;
+    height: 286px;
+  }
+
+  .slide {
+    max-width: 286px;
+    width: 286px;
+    margin: 0 auto;
+  }
+
+  .textContentActive,
+  .textContent {
+    width: 286px;
+  }
+}

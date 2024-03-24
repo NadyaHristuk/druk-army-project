@@ -1,12 +1,12 @@
 import { Providers } from "@/app/[locale]/providers";
 import { Suspense } from "react";
 import initTranslations from "@/app/i18n";
+import { GlobalProvider } from "@/app/GlobalProvider";
 import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
-
+import Loading from "./loading";
 import "../globals.css";
-import { GlobalProvider } from "@/app/GlobalProvider";
 
 const i18nNamespaces = [
   "header",
@@ -41,7 +41,7 @@ export default async function RootLayout({ children, params: { locale } }) {
             <GlobalProvider>
               <Header />
               <main>
-                <Suspense>{children}</Suspense>
+                <Suspense fallback={<Loading/>}>{children}</Suspense>
               </main>
               <Footer />
             </GlobalProvider>

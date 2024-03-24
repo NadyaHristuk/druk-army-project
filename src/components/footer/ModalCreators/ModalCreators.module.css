@@ -1,0 +1,121 @@
+.backdropModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  backdrop-filter: blur(20px);
+  background: rgba(38, 38, 38, 0.21);
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: var(--header-bg);
+  min-width: 300px;
+  min-height: 897px;
+  padding: 0 0 20px 0;
+  overflow: hidden;
+}
+
+.bgModal1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bgModal2 {
+  position: absolute;
+  bottom: 324px;
+  left: -2px;
+  z-index: -1;
+}
+
+.closeBtn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btnCloseIcon {
+  width: 20.38px;
+  height: 20.32px;
+  stroke: var(--paragraph-text);
+}
+
+@media screen and (min-width: 480px) {
+  .closeBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .btnCloseIcon {
+    width: 30.38px;
+    height: 30.32px;
+  }
+
+  .modal {
+    min-height: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .closeBtn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .btnCloseIcon {
+    width: 40.38px;
+    height: 40.32px;
+  }
+
+  .modal {
+    min-height: 100px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .closeBtn {
+    width: 66px;
+    height: 66px;
+  }
+
+  .btnCloseIcon {
+    width: 56.38px;
+    height: 56.32px;
+  }
+
+  .modal {
+    transform: translate(-50%, -50%) scale(0.6);
+    width: 1100px;
+    height: 900px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .closeBtn {
+    width: 76px;
+    height: 76px;
+  }
+
+  .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 1920px;
+    height: 1080px;
+  }
+}

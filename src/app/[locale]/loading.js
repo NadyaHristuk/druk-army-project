@@ -1,8 +1,10 @@
-import React from "react"
+import PreLoader from "@/components/PreLoader/PreLoader";
 
 const Loading = () => {
   return (
-    <div>Loading...</div>
+    <>
+      <PreLoader/>
+    </>
   )
 }
 

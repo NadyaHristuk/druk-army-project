@@ -10,11 +10,11 @@ const NavMenuFooter = () => {
   const linksFooter = [
     {
       title: t("footer:toEnter"),
-      path: "/login",
+      path: "https://app.drukarmy.org.ua",
     },
     {
       title: t("footer:toOrder"),
-      path: "/reservations",
+      path: "/merch",
     },
     {
       title: t("footer:toVacancies"),

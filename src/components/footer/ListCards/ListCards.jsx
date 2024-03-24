@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import imgSpecialForce from "/public/img/footer-logo/logo-1.webp";
-import imgMirotvorec from "/public/img/footer-logo/logo-2.webp";
+import imgMirotvorec from "/public/img/footer-logo/logo-1.webp";
+import imgSpecialForce from "/public/img/footer-logo/logo-2.webp";
 import imgAeroRozvidka from "/public/img/footer-logo/logo-3.webp";
 import css from "./ListCards.module.css";
 
