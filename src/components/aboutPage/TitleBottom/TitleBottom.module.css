@@ -1,9 +1,12 @@
 .titleBottom {
-  margin: 50px 5px 15px;
+  margin: 50px 5px 15px; /* Base style for mobile and up */
+}
 
-  @media only screen and (min-width: 1920px) {
-    margin-bottom: 118px;
-
-    margin-top: 15px;
+@media only screen and (min-width: 1920px) {
+  .titleBottom {
+    margin-top: 15px; /* Explicitly defined, even though it's the same as in the base style */
+    margin-right: 5px;  /* Maintained from the base style for clarity */
+    margin-bottom: 118px; /* Adjusted for larger screens */
+    margin-left: 5px;  /* Maintained from the base style for clarity */
   }
 }

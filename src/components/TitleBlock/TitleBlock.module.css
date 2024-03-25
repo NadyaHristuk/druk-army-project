@@ -1,11 +1,17 @@
 .container {
   margin: 0 auto;
+}
 
-  @media only screen and (min-width: 960px) {
+/* Стилі для екранів вище 960px */
+@media only screen and (min-width: 960px) {
+  .container {
     max-width: 906px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+/* Стилі для екранів вище 1920px */
+@media only screen and (min-width: 1920px) {
+  .container {
     max-width: 1024px;
   }
 }
@@ -14,27 +20,37 @@
   margin-bottom: 0;
   color: var(--accent-color);
   text-align: center;
-  font-family: Benzin-ExtraBold;
-  font-size: 24px;
+  font-family: "Benzin-ExtraBold";
+  font-size: 24px; /* Базовий розмір шрифту */
   line-height: 1;
   text-transform: uppercase;
+}
 
-  @media only screen and (min-width: 960px) {
-    font-size: 64px;
+/* Стилі для екранів вище 960px */
+@media only screen and (min-width: 960px) {
+  .title {
+    font-size: 58px; /* Збільшений розмір шрифту */
     line-height: 1.13;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
-    line-height: 1;
+/* Стилі для екранів вище 1920px */
+@media only screen and (min-width: 1920px) {
+  .title {
+    font-size: 64px; /* Збільшений розмір шрифту */
+    line-height: 1.13;
   }
 }
 
 .description {
   text-align: center;
-  font-size: 14px;
+  font-size: 14px; /* Базовий розмір шрифту */
+}
 
-  @media only screen and (min-width: 960px) {
-    font-size: 20px;
+/* Стилі для екранів вище 960px */
+@media only screen and (min-width: 960px) {
+  .description {
+    font-size: 20px; /* Збільшений розмір шрифту */
     line-height: 130%;
   }
 }
@@ -43,8 +59,11 @@
   margin: 10px auto;
   width: 78%;
   border-top: 2px solid var(--paragraph-text);
+}
 
-  @media only screen and (min-width: 960px) {
+/* Стилі для екранів вище 960px */
+@media only screen and (min-width: 960px) {
+  .line {
     margin: 16px auto;
     border-top: 4px solid var(--paragraph-text);
   }

@@ -8,47 +8,55 @@
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 auto;
-
   margin-bottom: 45px;
+}
 
-  @media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
+  .about {
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
   }
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .about {
     padding-top: 72px;
     margin-bottom: 100px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .about {
     flex-direction: row;
     gap: 15px;
     justify-content: space-around;
-
     margin-bottom: 220px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
-    
+@media only screen and (min-width: 1920px) {
+  .about {
     margin-bottom: 52px;
   }
 }
 
-.aboutCard {
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .aboutCard {
     min-width: 450px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .aboutCard {
     min-width: 572px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .aboutCard {
     min-width: 495px;
     padding-bottom: 52px;
-
   }
 }
 
@@ -59,13 +67,14 @@
 
 .aboutTitle {
   margin-top: 5px;
-
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
   color: var(--title-small);
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .aboutTitle {
     margin-top: 8px;
     font-size: 36px;
   }
@@ -75,29 +84,26 @@
   font-weight: 500;
   font-size: 16px;
   color: var(--title-small);
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .aboutText {
     font-size: 20px;
   }
 }
 
-.aboutInfo {
-  /* padding-left: 5px;
-    padding-right: 5px; */
-}
-
 .backgroundAbout {
   display: none;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .backgroundAbout {
     display: block;
     position: absolute;
     top: 0;
     left: -33%;
-
     width: 800px;
     height: 384px;
-
     background: url("/img/about/bg-960.png");
     background-position-x: center;
     z-index: -1;

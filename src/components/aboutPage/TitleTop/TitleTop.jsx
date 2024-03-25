@@ -9,12 +9,11 @@ const TitleTop = () => {
 
   return (
     <>
-      <div className={css.wrapper}>
-        <p className={css.backText}>{t("about:ambassadors")}</p>
-      </div>
-
       <div className={css.titleTop}>
         <div className={css.container}>
+        <div className={css.wrapper}>
+        <p className={css.backText}>{t("about:ambassadors")}</p>
+      </div>
           <TitleBlock
             title={t("about:aboutPageTitle")}
             description={t("about:aboutPageDescription")}

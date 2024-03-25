@@ -1,45 +1,55 @@
 .accent {
   background-color: var(--accent-color);
   padding: 18px 5px 29px;
+}
 
-  @media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
+  .accent {
     padding-top: 120px;
   }
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .accent {
     padding-top: 300px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .accent {
     padding-top: 100px;
-
     padding-bottom: 80px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .accent {
     background-color: transparent;
     padding-bottom: 150px;
   }
-
- 
 }
 
 .marginLeft {
   display: inline-block;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .marginLeft {
     position: relative;
     left: 232px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .marginLeft {
     position: static;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .marginLeft {
     position: relative;
     left: 30px;
-
   }
 }
 
@@ -47,13 +57,16 @@
   position: relative;
   width: 100%;
   height: 452px;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .mapWrapper {
     height: 800px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
-    /* overflow: hidden; */
+@media only screen and (min-width: 1200px) {
+  .mapWrapper {
     width: fit-content;
   }
 }
@@ -66,27 +79,19 @@
   width: 100%;
   height: 60%;
   background-color: var(--accent-color);
-  /* ! */
   z-index: -1;
-  /* ! */
 }
 
 @media only screen and (min-width: 1200px) {
   .mapWrapper::after {
-    /* display: none; */
     bottom: 20%;
-    left: 0;
     min-width: 1200px;
-    height: 60%;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .mapWrapper::after {
-    bottom: 20%;
-    left: 0;
     min-width: 1920px;
-    width: 100%;
     height: 70%;
   }
 }
@@ -94,115 +99,125 @@
 .map {
   width: 320px;
   margin: 0 auto;
+}
 
-  @media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
+  .map {
     width: 480px;
   }
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .map {
     width: 768px;
   }
-  @media only screen and (min-width: 960px) {
+}
+
+@media only screen and (min-width: 960px) {
+  .map {
     width: 960px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .map {
     width: 1200px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .map {
     width: 1920px;
   }
 }
 
 .support {
   position: relative;
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .support {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  @media only screen and (min-width: 1200px) {
+    /* This will override the previous 'space-between' since it's in the same media query range */
     justify-content: start;
+    align-items: center;
     gap: 36px;
   }
 }
 
 .backgroundMapTop {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 235px;
   height: 235px;
-  background: url("/img/about/bg-320.png");
+  background: url("/img/about/bg-320.png") no-repeat;
   background-repeat: no-repeat;
   top: 60px;
+  left: 0;
   z-index: -1;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .backgroundMapTop {
     width: 800px;
     height: 383px;
     top: 120px;
     left: 80px;
-    background: url("/img/about/bg-960.png");
-
+    background: url("/img/about/bg-960.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .backgroundMapTop {
     display: none;
-
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .backgroundMapTop {
     display: block;
+    width: 800px; /* If you want this to be the size on 1920px, keep this line, otherwise remove it */
+    height: 383px; /* Same as width: if you want this size at 1920px, keep it */
     top: 180px;
     left: 50px;
-    background: url("/img/about/bg-1920.png");
+    background: url("/img/about/bg-1920.png") no-repeat;
+    background-size: contain;
     z-index: -1;
   }
 }
 
 .backgroundMapBottom {
   position: absolute;
-  top: 0;
+  top: 135px; /* Set the intended starting top position */
   left: 0;
   width: 235px;
   height: 235px;
-  background: url("/img/about/bg-320.png");
-  z-index: -1;
-  background-repeat: no-repeat;
-  z-index: 0;
-  top: 135px;
+  background: url("/img/about/bg-320.png") no-repeat;
+  z-index: 0; /* Use the intended z-index here */
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .backgroundMapBottom {
     width: 800px;
     height: 383px;
     top: 120px;
     left: 80px;
-    background: url("/img/about/bg-960.png");
-
+    background: url("/img/about/bg-960.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .backgroundMapBottom {
     display: none;
-
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .backgroundMapBottom {
     display: block;
-    width: 800px;
-    height: 383px;
-    top: 120px;
-    left: 80px;
-    background: url("/img/about/bg-1920.png");
+    /* If the size or position needs to change for 1920px, adjust them here */
+    background: url("/img/about/bg-1920.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
   }
 }

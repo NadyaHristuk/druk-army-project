@@ -1,24 +1,26 @@
 .container {
   display: inline-block;
   max-width: fit-content;
-  
-  border-left-width: 2px;
-  border-left-style: solid;
-  /* border-left-color: ; */
+  border-left: 2px solid; /* Define a default color if necessary */
   padding: 0 6px;
+}
 
-
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .container {
     max-width: 450px;
     padding: 0 18px;
     border-left-width: 4px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .container {
     max-width: 590px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .container {
     max-width: 772px;
   }
 }
@@ -31,29 +33,37 @@
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .firstTitle {
     font-size: 32px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .firstTitle {
     font-size: 36px;
   }
 }
 
 .secondTitle {
   margin-bottom: 5px;
-  font-family: Benzin-ExtraBold;
+  font-family: 'Benzin-ExtraBold';
   font-size: 24px;
   text-transform: uppercase;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .secondTitle {
     line-height: 0.9;
     margin-bottom: 16px;
     font-size: 48px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .secondTitle {
     font-size: 64px;
   }
 }
@@ -61,8 +71,11 @@
 .description {
   width: 95%;
   font-size: 14px;
+  font-weight: 400; /* Define the base font-weight for consistency, if it should be different for mobile, set it here */
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .description {
     font-size: 20px;
     font-weight: 500;
   }

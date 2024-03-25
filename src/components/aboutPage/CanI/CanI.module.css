@@ -5,12 +5,17 @@
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 21px;
+}
 
-  @media only screen and (min-width: 960px) {
+/* Adjustments for larger screens should be added within these media queries */
+@media only screen and (min-width: 960px) {
+  .family {
     padding-bottom: 72px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .family {
     padding-top: 72px;
     margin-top: 70px;
   }
@@ -25,36 +30,45 @@
   display: inline-block;
   margin-bottom: 62px;
   margin-left: 8px;
+}
 
-  @media only screen and (min-width: 960px) {
-    
+/* Adjust properties for larger screens, if necessary */
+@media only screen and (min-width: 960px) {
+  .canI {
+    /* Styles for screens wider than 960px */
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .canI {
+    /* Styles for screens wider than 1200px */
   }
-  @media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 1920px) {
+  .canI {
     width: fit-content;
     align-self: start;
     display: block;
-
     margin-bottom: 0;
-
     vertical-align: top;
-
   }
 }
 
 .canIWrapper {
-  /* position: relative; */
   width: 100%;
+  /* Base styles should be set here if they are needed regardless of the screen size */
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .canIWrapper {
     display: flex;
     gap: 20px;
   }
+}
 
-
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .canIWrapper {
     position: static;
     width: 1575px;
     margin: 0 auto;
@@ -67,30 +81,31 @@
   left: 0;
   width: 235px;
   height: 235px;
-  background: url("/img/about/bg-320.png");
+  background: url("/img/about/bg-320.png") no-repeat;
   z-index: -1;
-  background-repeat: no-repeat;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .backgroundPeople {
     width: 610px;
     height: 400px;
     top: 10px;
-    background: url("/img/about/bg-960.png");
-
+    background: url("/img/about/bg-960.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
+  .backgroundPeople {
     display: none;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .backgroundPeople {
     display: block;
-
     left: -50px;
-    background: url("/img/about/bg-1920.png");
+    background: url("/img/about/bg-1920.png") no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
   }
 }

@@ -3,15 +3,19 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 26px;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .buttonWrapper {
     flex-direction: row;
     justify-content: center;
     gap: 13px;
     margin-bottom: 59px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
+  .buttonWrapper {
     margin-bottom: 0;
     margin-top: 35px;
   }
@@ -25,19 +29,22 @@
 
   margin: 0 auto 18px;
   padding: 10px 15px;
+  /* Uncomment width: fit-content; if you need the button width to fit its content. */
   /* width: fit-content; */
 
   background-color: var(--bg-details);
   color: var(--buttons-text);
-  font-family: Benzin-Regular;
+  /* Use only one font-family declaration, assuming "Benzin-Medium" is the correct choice. */
   font-family: "Benzin-Medium", sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
+}
 
-  @media only screen and (min-width: 960px) {
-    margin: 0;
+@media only screen and (min-width: 960px) {
+  .button {
+    margin: 0; /* Removes the auto margin and bottom margin set for mobile. */
   }
 }
 

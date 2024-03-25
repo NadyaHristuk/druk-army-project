@@ -4,36 +4,52 @@
 
 .container {
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 10px;  
+}
 
-  @media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
+  .container {
     padding-left: 15px;
     padding-right: 15px;
-  }
+  } 
+}
 
-  @media only screen and (min-width: 768px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  @media only screen and (min-width: 960px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 768px) {
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 960px) {
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
     padding-left: 200px;
     padding-right: 200px;
   }
+
 }
 
 .titleTop {
@@ -56,10 +72,17 @@
   color: var(--bg-details);
   opacity: 0.1;
 
-  @media only screen and (min-width: 960px) {
+ 
+}
+@media only screen and (min-width: 960px) {
+  .backText {
     font-size: 96px;
   }
-  @media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 1920px) {
+  .backText {
     font-size: 128px;
   }
+
 }
