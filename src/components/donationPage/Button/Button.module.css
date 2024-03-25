@@ -7,25 +7,23 @@
   padding: 15px 20px;
   margin-bottom: 13px;
 
-  font-family: "Benzin-Medium";
+  font-family: "Benzin-Medium", sans-serif; /* Ensure you have a fallback font */
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--buttons-text);
   background-color: var(--accent-color);
   border: none;
+}
 
-  @media only screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
+  .button {
     padding: 15px 20px;
-    width: 249px;
-    height: 73px;
-
-    font-size: 20px;
-  }
-
-  @media only screen and (min-width: 960px) {
+    /* Combined the two media queries, choosing 400px as the final width */
     width: 400px;
-    margin: 0 auto;
+    height: 73px;
+    font-size: 20px;
+    margin: 0 auto; /* Center the button for viewports wider than 960px */
   }
 }
 

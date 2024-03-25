@@ -2,53 +2,19 @@
   width: 320px;
   padding-top: 42px;
   margin: 0 auto;
-
-  @media only screen and (min-width: 960px) {
-    width: 960px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  @media only screen and (min-width: 1920px) {
-    width: 1920px;
-    padding-left: 328px;
-  }
 }
 
 .topBlock {
   padding: 0 7px;
-
-  @media only screen and (min-width: 960px) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media only screen and (min-width: 960px) {
-    justify-content: center;
-    gap: 55px;
-  }
 }
 
 .monobankImg {
   width: 309px;
   height: auto;
   margin-bottom: 20px;
-
-  @media only screen and (min-width: 960px) {
-    margin-top: 132px;
-  }
-
-  @media only screen and (min-width: 1920px) {
-    width: 554px;
-  }
 }
 
-.supportBlock {
-  @media only screen and (min-width: 960px) {
-    width: 590px;
-    margin-right: 20px;
-  }
-}
+.supportBlock {}
 
 .supportInfo,
 .donateInfo {
@@ -61,7 +27,6 @@
 .supportList {
   list-style: disc;
   list-style-position: outside;
-  /* text-indent: 20px; */
   padding-left: 20px;
 }
 
@@ -70,10 +35,6 @@
   font-size: 15px;
   text-transform: uppercase;
   color: var(--title-small);
-
-  @media only screen and (min-width: 960px) {
-    font-size: 36px;
-  }
 }
 
 .secondTitle {
@@ -83,58 +44,27 @@
   font-size: 24px;
   text-transform: uppercase;
   color: var(--title-small);
-
-  @media only screen and (min-width: 960px) {
-    font-size: 64px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-  }
 }
 
 .description {
   font-size: 16px;
-
-  @media only screen and (min-width: 960px) {
-    width: 450px;
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-
-  @media only screen and (min-width: 1200px) {
-  }
 }
 
 .donation {
   padding: 20px 14px;
   margin-bottom: 20px;
-
   background-color: var(--accent-color);
-
-  @media only screen and (min-width: 960px) {
-    width: 100%;
-    padding: 21px 54px 30px;
-  }
 }
 
 .title {
   margin-bottom: 14px;
-
   font-family: "Benzin-ExtraBold";
   font-size: 36px;
   text-transform: uppercase;
   color: var(--cards-text);
-
-  @media only screen and (min-width: 960px) {
-    font-size: 64px;
-  }
 }
 
-.radioWrapper {
-  @media only screen and (min-width: 960px) {
-    display: flex;
-  }
-}
+.radioWrapper {}
 
 .radioInput {
   display: none;
@@ -147,17 +77,14 @@
   width: 215px;
   height: 40px;
   margin-bottom: 5px;
-
   border: 2px solid var(--main-bg);
   background-color: var(--main-bg);
   color: var(--accent-color);
-
   font-family: "Benzin-Medium";
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-
   cursor: pointer;
 }
 
@@ -168,16 +95,13 @@
   width: 137px;
   height: 40px;
   margin-bottom: 14px;
-
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-
   border: 2px solid var(--main-bg);
   background-color: var(--accent-color);
   color: var(--main-bg);
-
   cursor: pointer;
 }
 
@@ -185,32 +109,17 @@
   cursor: pointer;
 }
 
-/* .oneTime input[type="radio"]:checked + label {
-  background-color: var(--accent-color);
-  color: var(--main-bg);
-}
-
-.subscription input[type="radio"]:checked + label {
-  background-color: var(--main-bg);
-  color: var(--accent-color);
-} */
-
 .contribution {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 14px;
-
-  @media only screen and (min-width: 960px) {
-    justify-content: start;
-  }
 }
 
 .contributionAmount {
   flex: 1;
   height: 60px;
   width: 100%;
-
   font-family: "Benzin-Medium";
   font-weight: 400;
   font-size: 20px;
@@ -221,9 +130,7 @@
 
 .contributionCurrency {
   height: 60px;
-
   border: transparent;
-
   font-family: "Benzin-Medium";
   font-weight: 400;
   font-size: 20px;
@@ -240,15 +147,10 @@
   height: 48px;
   padding: 15px 20px;
   margin-bottom: 12px;
-
   background-color: var(--accent-color);
   color: var(--main-bg);
   border: 2px solid var(--main-bg);
   text-transform: uppercase;
-
-  @media only screen and (min-width: 960px) {
-    font-size: 20px;
-  }
 }
 
 .icon {
@@ -262,10 +164,6 @@
   font-size: 16px;
   color: var(--main-bg);
   font-family: "Montserrat-Medium";
-
-  @media only screen and (min-width: 960px) {
-    font-size: 20px;
-  }
 }
 
 .cancelText {
@@ -274,10 +172,6 @@
   font-weight: 500;
   font-size: 15px;
   color: var(--bg-loader);
-
-  @media only screen and (min-width: 960px) {
-    margin: 0 50px;
-  }
 }
 
 .donateList {
@@ -291,33 +185,18 @@
 .underline {
   text-decoration: underline;
 }
-
 .inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-
-  @media only screen and (min-width: 960px) {
-    justify-content: start;
-    gap: 23px;
-  }
 }
 
 .flex {
-  @media only screen and (min-width: 960px) {
-    display: flex;
-    margin-top: 98px;
-  }
-
-  @media only screen and (min-width: 1920px) {
-    gap: 80px;
-  }
+  display: flex;
 }
 
 .flexItem {
-  @media only screen and (min-width: 960px) {
-    width: 50%;
-  }
+  flex: 1;
 }
 
 .accountsList {
@@ -335,22 +214,13 @@
   font-size: 14px;
   color: var(--paragraph-text);
   font-family: "Montserrat-Regular";
-
-  @media only screen and (min-width: 1920px) {
-    font-size: 20px;
-  }
 }
 
 .requisiteValue {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   color: var(--paragraph-text);
-  font-weight: 700;
   font-family: "Montserrat-Medium";
-
-  @media only screen and (min-width: 1920px) {
-    font-size: 20px;
-  }
 }
 
 .copyBlock {
@@ -371,10 +241,6 @@
   font-weight: 500;
   font-size: 14px;
   color: var(--black);
-
-  @media only screen and (min-width: 1920px) {
-    font-size: 20px;
-  }
 }
 
 .accountsItem {
@@ -392,10 +258,6 @@
   padding-bottom: 49px;
   background-color: var(--bg-details);
   color: var(--cards-text);
-
-  @media only screen and (min-width: 1920px) {
-    padding: 80px 128px;
-  }
 }
 
 .whiteText {
@@ -407,7 +269,6 @@
   margin-right: 33px;
   margin-top: 29px;
   margin-bottom: 22px;
-
   border-left: 2px solid var(--cards-text);
 }
 
@@ -429,4 +290,59 @@
 
 .cryptoAccount {
   word-wrap: break-word;
+}
+
+/* Adding media queries */
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .topBlock {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+  }
+
+  .monobankImg {
+    margin-top: 132px;
+  }
+
+  .supportBlock {
+    width: 590px;
+    margin-right: 20px;
+  }
+
+  .firstTitle {
+    font-size: 36px;
+  }
+
+  .secondTitle {
+    font-size: 64px;
+  }
+}
+
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+    padding-left: 328px;
+  }
+
+  .monobankImg {
+    width: 554px;
+  }
+
+  .requisiteName,
+  .requisiteValue,
+  .accountIBAN,
+  .crypto {
+    font-size: 20px;
+  }
+
+  .crypto {
+    padding: 80px 128px;
+  }
 }
