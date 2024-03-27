@@ -147,6 +147,7 @@ const ContentDonationPage = () => {
 
       <div className={css.flex}>
         <div className={css.flexItem}>
+          <div className={css.donations}>
           <div className={css.donateInfo}>
             <h2 className={css.firstTitle}>
               {t("donation:donateInfo.firstTitle")}
@@ -264,7 +265,7 @@ const ContentDonationPage = () => {
             </li>
           </ul>
         </div>
-
+        </div>
         <div className={css.flexItem}>
           <div className={css.crypto}>
             <div className={css.cryptoInfo}>

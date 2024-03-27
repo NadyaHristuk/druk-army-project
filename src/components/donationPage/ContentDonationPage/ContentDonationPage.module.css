@@ -14,6 +14,31 @@
   margin-bottom: 20px;
 }
 
+.monobankImg {
+  width: 309px; /* Default mobile size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+  .monobankImg {
+    width: 419px;  /* Example percentage-based size for small tablets */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .monobankImg {
+    width: 474px;/* Adjust for landscape tablets */
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .monobankImg {
+    width: 554px;
+    height: 513px; /* Adjust for small desktops */
+  }
+}
+
 .supportBlock {}
 
 .supportInfo,
@@ -56,15 +81,31 @@
   background-color: var(--accent-color);
 }
 
+@media only screen and (min-width: 768px) {
+  .donation {
+    padding: 30px 14px 30px 30px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .donation {
+    padding: 25px 70px 25px 50px;
+  }
+}
+
 .title {
   margin-bottom: 14px;
   font-family: "Benzin-ExtraBold";
   font-size: 36px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--cards-text);
 }
 
-.radioWrapper {}
+.radioWrapper {
+  display: flex;
+  gap: 20px;
+}
 
 .radioInput {
   display: none;
@@ -197,6 +238,12 @@
 
 .flexItem {
   flex: 1;
+  width: 50%;
+}
+
+.flexItem:first-child{
+  flex: 1;
+  width: 50%;
 }
 
 .accountsList {
@@ -260,6 +307,12 @@
   color: var(--cards-text);
 }
 
+.donations {
+  padding-top: 80px;
+  padding-right: 128px;
+  width: 621px;
+}
+
 .whiteText {
   color: var(--cards-text);
 }
@@ -295,7 +348,7 @@
 /* Adding media queries */
 @media only screen and (min-width: 960px) {
   .container {
-    width: 960px;
+    width: fit-content;
     padding-left: 0;
     padding-right: 0;
   }
@@ -304,10 +357,6 @@
     display: flex;
     justify-content: center;
     gap: 55px;
-  }
-
-  .monobankImg {
-    margin-top: 132px;
   }
 
   .supportBlock {
@@ -328,11 +377,6 @@
 @media only screen and (min-width: 1920px) {
   .container {
     width: 1920px;
-    padding-left: 328px;
-  }
-
-  .monobankImg {
-    width: 554px;
   }
 
   .requisiteName,
