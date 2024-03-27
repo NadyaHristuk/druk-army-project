@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 import Icon from "@/components/Icon/Icon";
 import CopyButton from "../CopyButton/CopyButton";
-import css from "./ContentDonationPage.module.css";
+import css from "./DonationPage.module.css";
 import { useState } from "react";
 
-const ContentDonationPage = () => {
+const DonationPage = () => {
   const { t } = useTranslation();
   const [contributionType, setContributionType] = useState("one-time");
   const [amount, setAmount] = useState("");
@@ -361,4 +361,4 @@ const ContentDonationPage = () => {
   );
 };
 
-export default ContentDonationPage;
+export default DonationPage;

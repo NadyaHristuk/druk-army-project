@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./Vacancies.module.css";
 import Section from "@/components/Section/Section";
-import Container from "@/components/container/Container";
+import Container from "@/components/Container/Container";
 import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";

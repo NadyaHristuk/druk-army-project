@@ -21,20 +21,14 @@
   }
 }
 
-.button {
+.donateButton, .infoButton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-
-  margin: 0 auto 18px;
   padding: 10px 15px;
-  /* Uncomment width: fit-content; if you need the button width to fit its content. */
-  /* width: fit-content; */
-
   background-color: var(--bg-details);
   color: var(--buttons-text);
-  /* Use only one font-family declaration, assuming "Benzin-Medium" is the correct choice. */
   font-family: "Benzin-Medium", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -42,14 +36,32 @@
   text-align: center;
 }
 
+.donateButton {
+  margin: 0 auto 18px;
+}
+
+.infoButton {
+  margin: 0 auto 18px;
+  background-color: var(--buttons-text);
+  color: var(--bg-details);
+  border: 2px solid var(--bg-details);
+}
+
 @media only screen and (min-width: 960px) {
-  .button {
-    margin: 0; /* Removes the auto margin and bottom margin set for mobile. */
+  .donateButton, .infoButton {
+    margin: 0;
   }
 }
 
 .icon {
   width: 27px;
   height: 18px;
+}
+
+.donateButton .icon {
   fill: var(--buttons-text);
+}
+
+.infoButton .icon {
+  fill: var(--bg-details);
 }

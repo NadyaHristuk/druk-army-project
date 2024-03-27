@@ -1,8 +1,7 @@
-import ContentDonationPage from '@/components/donationPage/ContentDonationPage/ContentDonationPage';
+import DonationPage from '@/components/DonationPage/DonationPage/DonationPage';
 
 const Donations = () => {
-  return <ContentDonationPage />;
-
+  return <DonationPage />;
 }
 
 export default Donations

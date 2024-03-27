@@ -2,13 +2,13 @@
 
 import { useTranslation } from "react-i18next";
 import InfoBlock from "@/components/InfoBlock/InfoBlock";
-import css from "./CanI.module.css";
+import css from "./ParticipationCriteria.module.css";
 
-const CanI = () => {
+const ParticipationCriteria = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={css.canIWrapper}>
+    <div className={css.ParticipationCriteriaWrapper}>
       <div className={css.family}>
         <div className={css.backgroundPeople}></div>
         <picture className={css.photo}>
@@ -51,11 +51,11 @@ const CanI = () => {
         </picture>
       </div>
 
-      <div className={css.canI}>
+      <div className={css.ParticipationCriteria}>
         <InfoBlock
-          firstTitle={t("about:canIFirstTitle")}
-          secondTitle={t("about:canISecondTitle")}
-          description={t("about:canIDescription")}
+          firstTitle={t("about:ParticipationCriteriaFirstTitle")}
+          secondTitle={t("about:ParticipationCriteriaSecondTitle")}
+          description={t("about:ParticipationCriteriaDescription")}
           color="var(--accent-color)"
           centerAlign={true}
         />
@@ -64,4 +64,4 @@ const CanI = () => {
   );
 };
 
-export default CanI;
+export default ParticipationCriteria;

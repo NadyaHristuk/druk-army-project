@@ -4,13 +4,24 @@
   margin-bottom: 40px;
   margin-left: -10px;
   margin-right: -10px;
+}
 
-  @media only screen and (min-width: 768px) {
-    margin-left: -20px;
-    margin-right: -20px;
+@media screen and (min-width: 480px) {
+  .imageContainer {
+    margin-left: -21px;
+    margin-right: -21px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
+  .imageContainer {
+    margin-left: -19px;
+    margin-right: -19px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .imageContainer {
     margin-left: -50px;
     margin-right: -50px;
   }
@@ -29,9 +40,22 @@
   text-transform: uppercase;
   color: var(--paragraph-text);
   text-align: center;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacTitle {
     font-size: 32px;
+  }
+
+  .vacTitle span {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .vacTitleDescription {
+    font-size: 20px;
+    width: 552px;
+    margin: 0 auto;
   }
 }
 
@@ -42,11 +66,6 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--accent-color);
-
-  @media only screen and (min-width: 768px) {
-    font-size: 48px;
-    line-height: 1;
-  }
 }
 
 .vacTitleDescription {
@@ -54,27 +73,20 @@
   font-size: 14px;
   text-align: center;
   color: var(--paragraph-text);
-
-  @media only screen and (min-width: 768px) {
-    font-size: 20px;
-    width: 552px;
-    margin: 0 auto;
-  }
 }
 
-.allVacanciesContainer {
-  @media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+  .allVacanciesContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
-    display: grid;
+@media screen and (min-width: 1200px) {
+  .allVacanciesContainer {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-gap: 20px;
   }
 }
 
@@ -82,8 +94,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 39px;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacancieContainer {
     margin-top: 40px;
   }
 }
@@ -94,21 +108,29 @@
   align-items: flex-start;
   width: 290px;
   margin-top: 30px;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacancieDescriptionContainer {
     margin-top: 50px;
     width: 727px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+  .vacancieDescriptionContainer {
     width: 450px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .vacancieDescriptionContainer {
     width: 391px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  .vacancieDescriptionContainer {
     width: 493px;
   }
 }
@@ -117,25 +139,37 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
 
-  @media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .vacImgBtnContainer {
     width: 440px;
     height: 344px;
   }
-  @media only screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .vacImgBtnContainer {
     width: 728px;
     height: 344px;
   }
-  @media only screen and (min-width: 960px) {
+}
+
+@media screen and (min-width: 960px) {
+  .vacImgBtnContainer {
     width: 450px;
     height: 344px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .vacImgBtnContainer {
     width: 374px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  .vacImgBtnContainer {
     width: 493px;
   }
 }
@@ -145,39 +179,51 @@
   height: 300px;
   object-fit: cover;
   margin-bottom: 20px;
+}
 
-  @media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .vacancieImg {
     width: 440px;
     height: 344px;
   }
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacancieImg {
     width: 728px;
     height: 344px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+  .vacancieImg {
     width: 450px;
     height: 344px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .vacancieImg {
     width: 374px;
   }
+}
 
-  @media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  .vacancieImg {
     width: 493px;
   }
 }
 
 .vacancieTitle {
   color: var(--paragraph-text);
-  font-family: Montserrat-Bold;
+  font-family: "Montserrat-Bold", sans-serif;
   font-size: 24px;
   line-height: normal;
   text-transform: uppercase;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacancieTitle {
     font-size: 36px;
   }
 }
@@ -192,22 +238,25 @@
 
 .skillsDescription {
   color: var(--paragraph-text);
-
-  font-family: Montserrat-Medium, sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-size: 14px;
   line-height: normal;
-
   list-style: disc;
   margin-left: 20px;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .skillsDescription {
     font-size: 20px;
   }
+}
 
-  @media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
+  .skillsDescription {
     margin-bottom: 8px;
   }
 }
+
 
 .btnRespond {
   width: 247px;
@@ -231,10 +280,6 @@
   z-index: 1;
   margin-top: -55px;
   margin-left: 53px;
-
-  @media only screen and (min-width: 768px) {
-    width: 247px;
-  }
 }
 
 .vacBottomSectionContainer {
@@ -246,13 +291,18 @@
   font-size: 14px;
   text-align: center;
   color: var(--paragraph-text);
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacBottomDescription {
     font-size: 20px;
     width: 726px;
     margin: 0 auto;
   }
-  @media only screen and (min-width: 960px) {
+}
+
+@media screen and (min-width: 960px) {
+  .vacBottomDescription {
     width: 866px;
   }
 }
@@ -261,8 +311,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacanciesContacts {
     flex-direction: row-reverse;
   }
 }
@@ -272,8 +324,10 @@
   font-size: 16px;
   text-align: center;
   color: #5e6a8a;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .vacContactInfo {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
@@ -291,7 +345,7 @@
   color: var(--buttons-text);
   text-align: center;
   border: none;
-  font-family: Benzin-Medium;
+  font-family: "Benzin-Medium";
   font-size: 15px;
   line-height: normal;
   text-transform: uppercase;
@@ -303,11 +357,12 @@
   gap: 10px;
   background: var(--bg-details);
   margin: 8px auto;
-
   overflow: hidden;
   z-index: 1;
+}
 
-  @media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .btnContactUs {
     margin: 8px 0;
     width: 298px;
   }

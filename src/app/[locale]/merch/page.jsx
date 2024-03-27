@@ -1,4 +1,4 @@
-import Container from "@/components/container/Container";
+import Container from "@/components/Container/Container";
 import MerchHero from "@/components/merch/merchHero/merchHero";
 import MerchList from "@/components/merch/merchList/merchList";
 import MerchOrder from "@/components/merch/merchOrder/merchOrder";

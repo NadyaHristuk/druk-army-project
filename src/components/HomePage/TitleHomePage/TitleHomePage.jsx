@@ -2,7 +2,7 @@
 
 import { useTranslation } from 'react-i18next';
 import Link from "next/link";
-import Container from "@/components/container/Container";
+import Container from "@/components/Container/Container";
 import Icon from "@/components/Icon/Icon";
 import css from "./TitleHomePage.module.css";
 

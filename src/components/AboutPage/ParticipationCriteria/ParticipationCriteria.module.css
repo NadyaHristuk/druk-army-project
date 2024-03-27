@@ -26,7 +26,7 @@
   height: auto; */
 }
 
-.canI {
+.ParticipationCriteria {
   display: inline-block;
   margin-bottom: 62px;
   margin-left: 8px;
@@ -34,19 +34,19 @@
 
 /* Adjust properties for larger screens, if necessary */
 @media only screen and (min-width: 960px) {
-  .canI {
+  .ParticipationCriteria {
     /* Styles for screens wider than 960px */
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .canI {
+  .ParticipationCriteria {
     /* Styles for screens wider than 1200px */
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .canI {
+  .ParticipationCriteria {
     width: fit-content;
     align-self: start;
     display: block;
@@ -55,20 +55,20 @@
   }
 }
 
-.canIWrapper {
+.ParticipationCriteriaWrapper {
   width: 100%;
   /* Base styles should be set here if they are needed regardless of the screen size */
 }
 
 @media only screen and (min-width: 1200px) {
-  .canIWrapper {
+  .ParticipationCriteriaWrapper {
     display: flex;
     gap: 20px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
-  .canIWrapper {
+  .ParticipationCriteriaWrapper {
     position: static;
     width: 1575px;
     margin: 0 auto;

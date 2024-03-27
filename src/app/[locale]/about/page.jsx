@@ -1,11 +1,11 @@
 import {
   TitleTop,
   AboutFounders,
-  CanI,
+  ParticipationCriteria,
   Support,
   TitleBottom,
   Buttons,
-} from "@/components/aboutPage";
+} from "@/components/AboutPage";
 import css from "./page.module.css";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
     <div className={css.pageWrapper}>
         <TitleTop />
         <AboutFounders />
-        <CanI />
+        <ParticipationCriteria />
         <Support />
 
         <div className={css.picture}>

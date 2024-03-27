@@ -4,7 +4,7 @@ import {
   NewsList,
   PageWrapper,
 } from '@/components/newsPage';
-import Container from '@/components/container/Container';
+import Container from '@/components/Container/Container';
 
 const News = () => {
   return (
