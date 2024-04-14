@@ -4,7 +4,7 @@ import styles from "@/components/dashboard/news/news.module.css";
 import Search from "@/components/dashboard/search/search";
 import Pagination from "@/components/dashboard/pagination/pagination";
 import { fetchNewsArticles } from "@/app/lib/data";
-import { deleteNews } from "@/app/lib/actions";
+import { deleteNewsArticle } from "@/app/lib/actions";
 import { NewsList } from "@/components/newsPage";
 
 const newsPage = async ({ searchParams }) => {
@@ -25,8 +25,10 @@ const newsPage = async ({ searchParams }) => {
           <tr>
             <td>Title</td>
             <td>Description</td>
-            <td>Created At</td>
-            <td>Action</td>
+            <td>Date</td>
+            <td>Time to read (minutes)</td>
+            <td>Views</td>  
+            <td>Action</td>            
           </tr>
         </thead>
         <tbody>
@@ -44,8 +46,10 @@ const newsPage = async ({ searchParams }) => {
                   {news.title}
                 </div>
               </td>
-              <td>{news.desc}</td>
-              <td>{news.createdAt?.toString().slice(4, 16)}</td>
+              <td>{news.description}</td>
+              <td>{news.date}</td>
+              <td>{news.timeToRead}</td>
+              <td>{news.views}</td>
               <td>
                 <div className={styles.buttons}>
                   <Link href={`/dashboard/news/${news.id}`}>
@@ -53,7 +57,7 @@ const newsPage = async ({ searchParams }) => {
                       View
                     </button>
                   </Link>
-                  <form action={deleteNews}>
+                  <form action={deleteNewsArticle}>
                     <input type="hidden" name="id" value={news.id} />
                     <button className={`${styles.button} ${styles.delete}`}>
                       Delete

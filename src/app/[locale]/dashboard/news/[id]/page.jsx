@@ -21,18 +21,15 @@ const SingleNewsPage = async ({ params }) => {
         <p>Views: {article.views}</p>
       </div>
       <div className={styles.formContainer}>
-        <form action={updateNewsArticle} method="POST" className={styles.form}>
-          <input type="hidden" name="_id" value={article._id} />
+        <form action="/api/news" method="POST" className={styles.form} enctype="multipart/form-data">
+          <input type="hidden" name="id" value={article._id} />
           <label>Title</label>
           <input type="text" name="title" defaultValue={article.title} />
           <label>Description</label>
-          <textarea
-            name="description"
-            id="description"
-            rows="10"
-            defaultValue={article.description}
-          ></textarea>
-           <label>Author</label>
+          <textarea name="description" id="description" rows="10" defaultValue={article.description}></textarea>
+          <label>Image</label>
+          <input type="file" name="image" />
+          <label>Author</label>
           <input type="text" name="author" defaultValue={article.author} />
           <label>Date</label>
           <input type="text" name="date" defaultValue={article.date} />

@@ -1,5 +1,3 @@
-import { cards } from "../../lib/data";
-
 import styles from "../../../components/dashboard/dashboard.module.css";
 
 const Dashboard = () => {

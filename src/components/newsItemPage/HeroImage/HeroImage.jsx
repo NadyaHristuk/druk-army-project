@@ -6,7 +6,7 @@ const HeroImage = () => {
       <picture>
         <source
           media="(min-width: 1920px)"
-          srcset="/img/news-item/hero.d.jpg"
+          srcSet="/img/news-item/hero.d.jpg"
         />
 
         <img
